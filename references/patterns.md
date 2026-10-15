@@ -1,166 +1,56 @@
-# Common LLM prose patterns — diagnose the cause, do not word-swap
+# Frequent LLM phrasings and what they usually hide
 
-This file is a locator aid for L5 diagnosis. A match is not automatically a problem. The editor must identify the underlying defect and fix that defect. Never use this as a replacement table.
+Use this list to **find candidates**, not to substitute words. Each pattern points to a layer; fix the underlying problem there. If the manuscript does not contain the information needed for the fix, raise an L1 finding with `[AUTHOR: …]`.
 
-## Empty importance framing
+## Evaluation without content → L5 (or L1 if evidence is missing)
 
-Typical forms:
+| Pattern | Usual underlying problem | Fix |
+|---|---|---|
+| crucial, pivotal, vital, essential, key role | Importance asserted, reason not given | State what depends on it (mechanism) or the measured effect (evidence); else delete |
+| robust, comprehensive, extensive, thorough | Scope or test conditions not stated | State the conditions tested (noise levels, datasets, ablations) |
+| significant(ly) | Statistical vs. practical meaning unclear | Report the test and effect size, or use a non-statistical word with a number |
+| substantially, remarkably, notably, dramatically | Size of the effect hidden | Give the number and the baseline |
+| novel, first, unique | Novelty claim without delimitation | State what is new relative to which prior work; L1 if unsupported |
+| state-of-the-art | Comparison set unstated | Name benchmark, metric, and compared methods |
 
-- `It is important to note that ...`
-- `It should be noted that ...`
-- `It is worth noting that ...`
-- `plays a crucial/important/key role in ...`
-- `is crucial/essential/vital for ...`
-- `This is particularly important because ...`
+## Empty framing → L5
 
-Usual underlying problem: the sentence asserts importance instead of stating evidence, mechanism, or scope.
+| Pattern | Fix |
+|---|---|
+| It is important/worth noting that | Delete; state the fact |
+| In this paper/section, we aim to | State what is done or shown |
+| plays a crucial/important role in | State the relation (X determines / limits / enables Y) |
+| delve into, shed light on, pave the way for | Use the precise verb (measure, show, allow) |
+| In the realm/landscape/context of | Delete or name the field once |
+| serves as a testament to, underscores | Say what the result shows |
 
-Fix: replace the evaluation with the evidence, mechanism, or scope already present in the manuscript, or delete the framing. If the necessary support is absent, create an L1 finding; do not invent it.
+## Connectors standing in for logic → L4
 
-Bad repair: `crucial` → `important`.
+| Pattern | Check |
+|---|---|
+| Furthermore, Moreover, Additionally, In addition | Is it really an addition? Often cause, contrast, condition or example |
+| Notably, Importantly | Why is it notable? State the reason or delete |
+| Thus, Therefore, Hence | Does the previous sentence actually imply this? |
+| In other words, That is | Is the restatement needed (L6)? |
 
-## Empty paper-intent framing
+## Structure → L2 / L6
 
-Typical forms:
+| Pattern | Underlying problem |
+|---|---|
+| Paragraph ends with "Overall, …" / "In summary, …" repeating its first sentence | Redundant closing (L6) |
+| "This section introduces… First… Next… Finally…" | Roadmap without content; replace with a real overview only if needed (L2) |
+| Method subsection starts directly with component details | Missing overview (L2) |
+| Abstract/Introduction opens with a universal truth ("X is a major cause of…", "With the rapid development of…") | A legitimate centrality claim executed generically; replace with the shared premise closest to the gap (L0) |
+| Equation followed by "where x is…, y is…" and nothing else | Symbols listed, meaning absent; add what the equation computes and why this form (L1) |
+| Overview figure with section names in boxes joined by arrows | Roadmap in figure form; show inputs, outputs and data flow (L2) |
+| Three-item lists everywhere ("X, Y, and Z") | Padding to a rhythm; check each item is needed (L0/L6) |
+| "not only X but also Y" | Often inflation; check Y is a real result |
+| Generic Limitations ("future work could explore more datasets") | Real weaknesses not stated (L1) |
 
-- `In this paper, we aim to ...`
-- `This paper seeks to ...`
-- `The purpose of this study is to ...`
-- `In this section, we describe/present/discuss ...`
+## Terminology drift → L3
 
-Usual underlying problem: meta-language delays the actual action or claim.
+Same concept, several names: region / area / zone; framework / approach / method / pipeline / system; risk / hazard / danger; metric / measure / score. Fix one term per concept, matching the definition or equation.
 
-Fix: state the research action or content directly when possible. Keep explicit objective statements when they genuinely orient the reader, especially around RQs.
+## Formatting habits (low priority)
 
-## Additive connectors hiding the real relation
-
-Typical forms:
-
-- `Furthermore, ...`
-- `Moreover, ...`
-- `Additionally, ...`
-- `In addition, ...`
-
-Usual underlying problem: the sentences are not merely additive. The second may be a consequence, contrast, condition, example, or restatement.
-
-Fix: identify and state the real relation, or reorder the sentences so the relation is evident. Do not simply delete the connector if that would remove needed logic.
-
-## Restatement and recap
-
-Typical forms:
-
-- `In other words, ...`
-- `Put differently, ...`
-- `Taken together, ...`
-- `Overall, these results suggest that ...`
-- a paragraph's final sentence repeats its first sentence
-
-Usual underlying problem: local generation tries to make each paragraph self-contained, producing duplicate information.
-
-Fix: keep the version that best advances the argument. Retain a restatement only when it materially changes abstraction level or resolves genuine difficulty.
-
-## Vague evaluative adjectives
-
-Typical words:
-
-- `robust`
-- `comprehensive`
-- `significant`
-- `substantial`
-- `effective`
-- `promising`
-- `novel`
-- `sophisticated`
-- `seamless`
-- `meaningful`
-
-Usual underlying problem: evaluation substitutes for a measurable result or bounded claim.
-
-Fix: replace with a reported quantity, comparison, mechanism, or explicit scope if already supported. Otherwise narrow or delete the evaluation. `significant` must be disambiguated between statistical significance and practical importance.
-
-## Abstract nouns and nominalization
-
-Typical forms:
-
-- `the evaluation of X was conducted`
-- `the characterization of X was performed`
-- `an investigation into X was carried out`
-- `the utilization of X enables ...`
-
-Usual underlying problem: the agent and action are hidden, increasing sentence length and processing cost.
-
-Fix: restore the verb and, when appropriate, the agent: `We evaluated X`; `X enables Y`.
-
-## Generic transition or conclusion sentences
-
-Typical forms:
-
-- `These findings highlight the importance of ...`
-- `These results underscore the need for ...`
-- `This demonstrates the effectiveness of ...`
-- `This provides valuable insights into ...`
-
-Usual underlying problem: the manuscript says that a result matters without specifying what scientific inference follows.
-
-Fix: state the inference directly, including its scope and condition. If no distinct inference exists, delete the sentence.
-
-## Premature or repeated roadmaps
-
-Typical forms:
-
-- `First, we ... Next, we ... Finally, we ...`
-- `The remainder of this section is organized as follows ...`
-- repeated mini-roadmaps at the beginning of short subsections
-
-Usual underlying problem: a roadmap is standing in for a conceptual overview.
-
-Fix: when the reader needs a mental model, explain the input, output, component relationships, and decomposition rationale. Otherwise remove the roadmap.
-
-## Synonym drift
-
-Typical examples:
-
-- `region / area / zone`
-- `method / approach / framework / scheme`
-- `interaction / encounter / event` when they denote the same defined object
-
-Usual underlying problem: stylistic variation conflicts with technical precision.
-
-Fix: choose one term per concept, preferably the term used in its formal definition, equation, figure, or data schema. Do not vary terminology merely to avoid repetition.
-
-## Uniform sentence rhythm
-
-Symptoms:
-
-- many sentences of similar length and syntax
-- repeated `This X ... This Y ... This Z ...`
-- every paragraph starts with a claim and ends with a summary
-
-Usual underlying problem: repeated local generation template rather than content-driven syntax.
-
-Fix: do **not** vary sentence length artificially. Rebuild sentences according to logical structure. If the content naturally produces similar lengths, leave them alone.
-
-## Boilerplate limitations
-
-Typical forms:
-
-- `Despite these promising results, several limitations remain.`
-- `Future work will explore ...`
-- limitations that could apply to almost any paper
-
-Usual underlying problem: a generic genre template replaces the actual validity boundary.
-
-Fix: name the concrete limitation, what inference it threatens, and whether it affects internal validity, external validity, measurement, or generalization. Never invent a limitation just to fill the section.
-
-## Overclaim patterns
-
-Typical forms:
-
-- `demonstrates that X is generally applicable`
-- `establishes a new paradigm`
-- `outperforms existing methods` when only a subset was compared
-- `solves` a problem evaluated only on one dataset or condition
-
-Usual underlying problem: claim scope exceeds experiment scope.
-
-Fix: bound the claim to the evaluated datasets, conditions, baselines, metrics, and uncertainty. This is an L1 issue, not merely an L5 wording issue.
+Bold for emphasis inside paragraphs, colon-led mini-headings, em-dash chains, bullet lists inside prose sections. Convert to prose where the venue style expects it.
