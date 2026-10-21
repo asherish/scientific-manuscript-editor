@@ -1,41 +1,39 @@
 # Scientific Manuscript Editor
 
-A reusable skill for diagnosing, editing, and verifying English scientific manuscripts for readability while preserving their scientific content.
+A reader-centered skill for writing and improving English scientific papers and paper-form research drafts without inventing scientific content.
 
-This repository is the canonical source for the skill. It is designed for manuscripts that may be LLM-drafted, but the goal is not to "humanize" prose or evade AI detection. The skill addresses deeper readability problems such as unsupported claims, unnecessary content, weak global structure, terminology drift, unclear logical relations, undefined notation, and poor information density or draft completeness.
+The skill asks what the intended reader needs to understand and identifies genuine obstacles to comprehension, rather than applying a mechanical list of prose rules. It can support drafts that also serve as specifications for experiments, while preserving scientific meaning and sources.
 
-## Structure
+## Repository contents
 
 ```text
 .
 ├── SKILL.md
 ├── references/
-│   └── patterns.md
+│   ├── patterns.md
+│   ├── notation.md
+│   └── draft-checklist.md
 └── scripts/
     └── verify_protected.py
 ```
 
-## Modes
+- [`SKILL.md`](SKILL.md) contains the core principles, modes, editing safeguards, and reference triggers.
+- `references/` contains **optional** tools for diagnosing recurring prose problems, resolving notation choices, and reviewing experimental completeness. These are not checklists to run on every draft.
+- `scripts/verify_protected.py` compares protected surface elements before and after a revision. The editor must still perform semantic verification.
 
-- `diagnose`: review the manuscript without changing it.
-- `edit`: apply the diagnosed edits to a copy while preserving protected scientific elements.
-- `verify`: compare the original and revised manuscripts and report potentially unsafe changes.
+## Workflow
 
-See [`SKILL.md`](./SKILL.md) for the complete workflow and editing rules.
+1. `diagnose`: find material reader difficulties; do not change the manuscript.
+2. `edit`: make feasible changes on a copy; write a change log and `approved_changes.txt` for editor-intended protected-element additions/removals.
+3. `verify`: run deterministic and semantic checks. For example:
 
-## Targets
+   ```bash
+   python3 scripts/verify_protected.py original.tex revised.tex \
+      --approved approved_changes.txt --out verify_report.md --strict
+   ```
 
-- `draft`: a pre-experiment manuscript in submission-paper form that also serves as the implementation specification. Completeness and implementability take priority over brevity.
-- `submission`: a manuscript with results headed for a venue. Reviewer-facing information density and venue conventions take priority.
+For intentional mathematical changes, prefer `math:<symbol or expression>` in `approved_changes.txt`; spaces in expressions are accepted. An approval-list entry records an **intended** change; it is not author sign-off or proof of semantic correctness. The script has known extraction limits (including some compound units and LaTeX unit macros), and `--strict` does not fail on every context warning. Examine these separately.
 
-## Verification script
+For new prose without an original file, verify scientific grounding against the supplied research material rather than pretending a before-and-after comparison exists.
 
-```bash
-python3 scripts/verify_protected.py ORIGINAL REVISED --strict
-```
-
-The script checks protected surface elements such as numbers, units, citation keys, labels, cross-references, and mathematical expressions. Semantic changes such as new claims, lost assumptions, scope expansion, and weakened qualifications still require semantic verification.
-
-## Version
-
-Current canonical skill: **v0.2.1**.
+**Current version:** v0.3.2
