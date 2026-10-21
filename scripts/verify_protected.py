@@ -239,10 +239,10 @@ def main() -> int:
         for item in list(approved):
             if item.startswith("math:"):
                 body = item[len("math:"):]
-                approved |= {f"math-symbol:{body}", f"math-expr:{re.sub(r'\\s+', '', body)}"}
+                approved |= {f"math-symbol:{body}", f"math-expr:{re.sub(r'\s+', '', body)}"}
             elif item.startswith("math-expr:"):
                 body = item[len("math-expr:"):]
-                approved.add(f"math-expr:{re.sub(r'\\s+', '', body)}")
+                approved.add(f"math-expr:{re.sub(r'\s+', '', body)}")
 
     is_tex = lambda p: Path(p).suffix.lower() in (".tex", ".ltx", ".sty")
     rows = compare(extract(orig_text, is_tex(a.original)), extract(rev_text, is_tex(a.revised)), approved)
