@@ -234,6 +234,15 @@ def main() -> int:
     if a.approved:
         approved = {ln.strip() for ln in Path(a.approved).read_text(encoding="utf-8").splitlines()
                     if ln.strip() and not ln.startswith("#")}
+        # Accept whitespace as written in the manuscript for mathematical expressions.
+        # "math:X" is shorthand for both a math symbol and a whole math expression X.
+        for item in list(approved):
+            if item.startswith("math:"):
+                body = item[len("math:"):]
+                approved |= {f"math-symbol:{body}", f"math-expr:{re.sub(r'\\s+', '', body)}"}
+            elif item.startswith("math-expr:"):
+                body = item[len("math-expr:"):]
+                approved.add(f"math-expr:{re.sub(r'\\s+', '', body)}")
 
     is_tex = lambda p: Path(p).suffix.lower() in (".tex", ".ltx", ".sty")
     rows = compare(extract(orig_text, is_tex(a.original)), extract(rev_text, is_tex(a.revised)), approved)
