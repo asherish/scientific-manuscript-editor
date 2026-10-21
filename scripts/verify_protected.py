@@ -11,7 +11,8 @@ Usage:
     python3 verify_protected.py ORIGINAL REVISED [--approved FILE] [--out FILE] [--strict]
 
 --approved FILE  One element per line (e.g. "cite:smith2020", "num:12.4%",
-                 "label:fig:overview", "math:x_t"). Listed elements are
+                 "label:fig:overview", "math:x_t"; "math:" covers both
+                 math symbols and whole math expressions). Listed elements are
                  marked as approved when they are added or removed.
 --strict         Exit with status 1 if any unapproved added/removed element exists.
 """
