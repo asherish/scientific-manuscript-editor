@@ -1,119 +1,89 @@
 ---
 name: scientific-manuscript-editor
-description: Support reader-centered writing, diagnosis, revision, and verification of scientific papers and paper-form research drafts. Improve readers' understanding without imposing mechanical prose rules or inventing scientific content. Use for readability reviews, revisions of LLM-drafted manuscripts, and readability-focused drafting from supplied scientific material.
+description: Write, diagnose, revise, or verify scientific manuscripts using reader-centered argument design, coherent paragraphs, and scientific safeguards. Support both pre-experiment manuscripts that specify implementable research and post-experiment manuscripts prepared for a target venue. Do not invent scientific content or enforce mechanical prose templates.
 ---
 
 # Scientific Manuscript Editor
 
 ## Purpose
 
-Help the intended reader understand a paper's scientific contribution **accurately, efficiently, and without unnecessary effort**. The aim is not to enforce a writing template, eliminate recognizable AI phrases, or maximize brevity.
+Help authors communicate scientific research **accurately, coherently, and in a form the intended reader can understand without unnecessary effort**. This skill supports writing from supplied research material, diagnosing an existing manuscript, revising it at any appropriate scale, and verifying an existing revision. Its goal is scientific understanding, not shorter prose, a uniform writing style, or the removal of recognizable AI phrases.
 
-**Every proposed change must have a plausible benefit for the reader.** Identify what the reader is trying to understand, what the text currently enables them to understand, and what prevents progress. Edit only when an intervention is likely to help. Keeping effective text unchanged is a valid outcome.
+Scientific reasoning and its presentation must work together. Establish what the author can substantiate, decide what readers need to understand, arrange the explanation, and check whether the resulting manuscript conveys that meaning. Writing and revision may require different actions, but they share this purpose.
 
-Treat rhetorical principles and examples as **diagnostic tools, not requirements**. A conventional sentence, repeated explanation, passive construction, or unusual notation is not automatically a problem. Fluent prose can still obscure definitions or logic. **Flag unsupported or overstated consequential claims even when the wording is easy to read**: accuracy is part of clarity.
+## Core principles
 
-## Establish the reading context
+Apply these four principles at the scale relevant to the task. They are **questions for judgment**, not quotas for producing edits.
 
-Before diagnosing or writing, establish a compact working model:
+1. **Purpose — What understanding should this element enable?** Identify the scientific idea, claim, explanation, or relationship that the paper, section, paragraph, sentence, equation, or figure contributes. A topic label alone is not a communicative purpose: a paragraph about a probability may define it, motivate it, derive it, or explain its limitations.
+2. **Coherence — How does the information fit together?** Make relations among claims, evidence, conditions, explanations, and neighboring passages recoverable. Arrange the material so that each part connects to what readers already know and advances the argument rather than merely following a conventional outline.
+3. **Comprehensibility — Can the intended reader understand it?** Account for disciplinary background, introduced concepts, necessary explanation, and the effort of following dependencies. Use paragraph writing and clear expression as means to understanding, not as fixed templates. **A useful default is to move from information already established or reasonably known to the reader toward new information**—within sentences, across paragraphs, and across sections. Reorder when another sequence better serves the explanation; never force a rigid known-before-new sentence pattern.
+4. **Scientific Accuracy — Is the meaning supported and preserved?** Keep definitions, assumptions, mathematical relationships, evidence, scope, and claim strength faithful to the supplied material and verified sources. Fluent prose is not sufficient if it obscures a condition or overstates an inference. Scientific accuracy takes precedence over stylistic elegance.
 
-- **Reader:** What relevant knowledge can the intended audience reasonably bring? What should they learn from this paper? Avoid assuming either a novice or an expert without justification.
-- **Scientific argument:** What are the research questions, contributions, central claims, and evidence or planned evaluations? If extracted rather than supplied by the author, label RQs and contributions `[INFERRED]`.
-- **Manuscript stage:** `draft` or `submission`.
-  - `draft` is already written in paper form but may precede experiments and also guide their implementation. Preserve the detail needed to understand and implement the work; page length is not the priority.
-  - `submission` must communicate the contribution and evidence efficiently to reviewers, subject to the venue's requirements. Do not sacrifice validity, reproducibility, or essential qualification for brevity.
-- **Venue and constraints:** When available, consult author guidelines for person, voice, tense, anonymization, spelling, and formatting. Otherwise retain consistent manuscript practice; do not invent venue rules.
+Do not invent a problem just to apply a principle. A clear paragraph can remain unchanged; useful context, repetition, and discipline-specific terminology may be worth keeping. Every proposed intervention needs a plausible benefit for the reader.
 
-If details are missing, proceed with stated assumptions where reasonable. Do not treat an inferred RQ as sufficient justification for deleting substantive scientific content.
+## Establish the context
 
-## Diagnose the reader's path through the argument
+Before writing or diagnosing, form a compact model of **the task, the reader, the research, and the manuscript's purpose**. Determine whether the user wants new writing, diagnosis only, improvement of an existing text, or independent verification; honor any explicit limit on scope. Identify the research questions, proposed or completed contributions, central claims, methods, assumptions, and available or planned evidence. Label research questions or contributions `[INFERRED]` if you infer them rather than receive them from the author. Do not use an inferred research question to justify silently deleting substantive content.
 
-Read the complete available manuscript, including figures, tables, captions, and relevant linked sections. Build a **brief manuscript map** (argument, section roles, definitions, evidence). When structure seems confusing, use a **reverse outline** (one purpose per paragraph) of the affected section or whole paper to find gaps, repetition, and dependencies.
+Distinguish two primary manuscript purposes:
 
-At the paper, section, and passage levels, ask:
+- **Pre-experiment specification:** Experiments have yet to be implemented, and the paper-form manuscript also guides their implementation. Specify inputs, definitions, mathematical meaning, methods, and evaluation plans at the detail needed to implement and appraise the research. Necessary explanation takes priority over page count. Clearly distinguish a proposed experiment from a completed one; do not fabricate results or unresolved design decisions.
+- **Post-experiment submission preparation:** Research results are available and the manuscript is being prepared for a target venue. Communicate contributions and evidence efficiently, and **check current official venue requirements** for page limits, person and voice, tense, anonymization, spelling, figures, and formatting before applying them. Do not sacrifice scientific validity, reproducibility, or essential qualifications for brevity.
 
-1. **What should the reader understand here?** What question is this passage meant to resolve?
-2. **What is already accessible?** Which terms, assumptions, claims, and relationships have been introduced or can reasonably be assumed?
-3. **What blocks understanding?** Look for likely confusion, unsupported interpretations, missing context, unnecessary memory load, excessive searching backward, or detail that obscures the point.
-4. **What would help?** Could a definition, explanation, different order, tighter claim, example, useful repetition, or visual overview remove the obstacle? Would leaving the text alone be better?
+These are purposes rather than a rigid chronology. For partly completed research or other manuscript types, identify which obligations apply and state material assumptions. If a missing detail would substantially change the output, ask the author; otherwise proceed with bounded, explicit assumptions. Never invent venue policies.
 
-Explain findings in terms of their **anticipated effect on a reader**, grounded in the manuscript. Do not claim to know how actual readers reacted.
+## Design and assess the explanation at the right scale
 
-Use the following lenses only where they clarify a diagnosed problem; **do not apply all lenses to every section or produce findings just to fill categories**:
+Work from the larger scientific argument toward its presentation, then check both local clarity and connections across levels:
 
-| Lens | Possible source of difficulty |
+| Scale | Main responsibility |
 |---|---|
-| L0 — Relevance | Material does not help establish the problem, contribution, method, evidence, or interpretation. |
-| L1 — Scientific support | A consequential claim lacks adequate support, exceeds the evaluated scope, or conflicts with a figure, table, equation, or assumption. |
-| L2 — Structure | The reader cannot see how parts fit together, why they appear in this order, or how they lead to the contribution. |
-| L3 — Concepts and notation | Ambiguous terminology, undefined concepts, or inconsistent symbols prevent correct interpretation. |
-| L4 — Logical continuity | The intended cause, contrast, condition, inference, or transition is hard to recover. |
-| L5 — Expression | Sentence construction imposes avoidable effort or obscures the actual agent, action, or meaning. |
-| L6 — Information allocation | Necessary explanation is missing, or detail/repetition consumes attention without helping the reader. |
+| **Paper** | Make the research problem, gap, questions, contribution, methods, evidence or planned evaluation, and conclusions form a defensible whole. |
+| **Section** | Give each section a clear role in that whole; align its title with its contents, order its explanations, and connect it to surrounding sections. |
+| **Paragraph** | Make a coherent contribution to the section through a central idea and appropriate support; use paragraph writing without mandating a topic-sentence/support/conclusion template. |
+| **Sentence** | State information precisely, with recoverable agents, references, modifiers, and relations to neighboring sentences; prefer constructions the intended reader can follow. |
 
-Useful heuristics include accessible-context-to-new-information, context–content–conclusion, and the progression from established context toward a research gap (Haviland & Clark; Mensh & Kording; Swales). They are guides to reader expectations, **not mandatory sentence shapes or fixed section templates**.
+**Integrate equations, figures, and tables with the surrounding prose.** An equation expresses a definition or relation precisely; nearby sentences establish why it is needed, explain its symbols and assumptions, and interpret its meaning. A figure or table presents structure, comparison, or evidence; captions make the element intelligible while the prose directs attention to consequential observations and their scientific interpretation. Neither repeat the element line by line nor leave readers to infer its role. Check consistency across text, equations, captions, labels, and evidence. A visual overview is valuable when it materially clarifies relationships, not because every paper needs a pipeline diagram.
 
-For a generic-seeming opening, ask: **Does the next sentence build toward the research gap? Could this opener introduce many other papers unchanged?** These are probes, not rules about sentence count or citation. Consult `references/patterns.md` for recurring prose symptoms, never as a banned-phrases list.
+Use `references/argument-and-exposition.md` when planning a new argument, restructuring a paper or section, composing substantial passages, or diagnosing paragraph flow. It develops the established-context-to-new-information heuristic, paragraph writing, section roles, and integration of visual or mathematical elements. Use `references/introduction.md` only when writing or substantially restructuring an Introduction.
 
-## Consider visual overviews when relationships are hard to convey
+## Work according to the requested task
 
-A figure can give the reader a mental model before the detailed explanation. Evaluate whether a visual representation would **materially reduce the effort of understanding relationships, processes, or the contribution**. Examples at different scales include:
+**Write from scratch.** Map the supplied scientific material and the reader's likely prerequisites, design a defensible paper/section argument, compose coherent paragraphs, and verify that all scientific substance is grounded. Clearly distinguish planned work, observed results, inference, and author decisions still needed. There is no original manuscript to compare against; do not pretend that a before/after verification exists.
 
-- **Whole paper:** An early overview of the problem setting, central scientific idea, contribution relative to existing methods, study design, or an illustrative comparison. This may be Figure 1, but neither an early figure nor a pipeline diagram is mandatory.
-- **Section:** A conceptual diagram of the entities, assumptions, components, or data relationships explained across several subsections, so readers can locate each detail within a larger structure.
-- **Method or processing pipeline:** A diagram showing inputs, transformations, intermediate representations, component dependencies, and outputs, particularly when the stages are difficult to hold together from prose alone.
+**Diagnose an existing manuscript.** Read the complete material available, including figures, tables, captions, equations, and linked sections relevant to the argument. Identify consequential obstacles to understanding and scientific support, not harmless deviations from stylistic conventions. When structure is suspect, create a brief manuscript map or reverse outline of the affected part. Explain the expected reader difficulty, evidence for it in the manuscript, and the intervention likely to help. **If diagnosis alone was requested, stop without editing.** Consult `references/diagnosis.md` for detailed lenses, diagnostic patterns, and report fields when needed.
 
-A good overview communicates substantive relationships; **boxes labeled with section headings and connected by arrows are not sufficient**. Check that labels agree with the manuscript and that the figure and caption communicate their intended point without requiring a line-by-line reading of the method. The prose should complement, not merely repeat, the figure.
+**Revise an existing manuscript.** Diagnose first, then choose an intervention at the scale of the actual cause: **leave unchanged, make a local edit, reorganize paragraphs or sections, or rewrite the argument and prose extensively**. A fundamental argument or structure problem can justify rewriting from the scientific material rather than polishing each sentence. Preserve the original and respect the user's scope; a request for minor polishing does not authorize an unrequested wholesale rewrite. Record semantic and structural changes prominently and inspect their consequences. Use the safeguards in `references/verification.md`.
 
-Do not request figures reflexively: if a concise explanation, equation, or table works better, use it. When a figure would help but cannot be produced from available material, propose what it should communicate or add a `[FIGURE: ...]` placeholder; never fabricate a result or diagram content.
+**Verify a revision.** Compare the original and revised material at the level of scientific meaning, not merely writing style or matching tokens. Use deterministic checks when suitable sources and the bundled script are available, and assess every substantive semantic or structural change. A clean automated report does not prove equivalence. Follow `references/verification.md`.
 
-## Choose the smallest effective intervention
+For writing and revision, repeat **design or diagnose → compose or intervene → check scientific meaning and reader understanding** as necessary. Do not repeat whole-manuscript sentence polishing after the author's manual edits unless asked; it may reintroduce rejected choices.
 
-Prefer repairing the cause of confusion over changing surface wording. For example, a vague importance claim may need a concrete mechanism or bounded inference—not a different adjective. A difficult equation may need an explanation of its purpose—not a recitation of every symbol. An introductory context sentence may be useful even when general or cited; judge whether it helps readers approach the actual research gap.
+## Protect scientific content
 
-Keep useful repetition where passages must stand alone, especially abstracts and figure captions. Preserve deliberate terminology and the author's voice. Fix notation only for reader-facing ambiguity or inconsistency. Consult `references/notation.md` for **optional defaults** when setting or repairing a convention, not a list of deviations to report. If a symbol must be renamed, identify its **semantic role and all corresponding occurrences** first; never perform an unscoped global replacement.
+**Do not fabricate** data, results, numbers, citations, sources, experimental conditions, mechanisms, definitions of author-created concepts, or design decisions. Treat claims, datasets, assumptions, results, scope qualifiers, numbers and units, citations, mathematical expressions and symbol meanings, and labels and references as protected scientific content. Any substantive change requires a reason and semantic verification, even if it improves the prose.
 
-For `draft`, clarify what is already specified without dropping definitions, equation explanations, or experimental conditions needed for implementation. Consult `references/draft-checklist.md` as **optional, applicability-sensitive prompts** only when the user explicitly asks for research-design, implementation-specification, reproducibility, or completeness review. The `draft` stage alone does not trigger this audit, even though such drafts may guide experiment implementation. Otherwise keep the task focused on readability.
+If important information is unavailable, use `[AUTHOR: ...]` for an author decision or `[VERIFY: ...]` for a claim requiring checking **only where the gap materially matters**. A `[FIGURE: ...]` placeholder may describe an evidence-grounded figure that cannot yet be produced; never invent its contents. Collect unresolved placeholders in a concise author-to-do section. Do not quietly strengthen a tentative claim or delete substantive information because it appears outside an inferred contribution.
 
-## Workflow: diagnose → edit → verify
+For actual revisions with suitable source files, record intentional protected-element additions and removals in `approved_changes.txt` (empty if none), and run the verifier as described in `references/verification.md`. This file records **editor intent, not author approval**. Never whitelist an element merely to suppress a warning. If materials necessary for a complete check are unavailable, explain the verification limit rather than claiming success.
 
-Keep the passes separate, even when completing them in one request. If the user asks only for a diagnosis, stop after `diagnose`. Otherwise perform all three without requiring an intermediate approval step.
+## Load specialized guidance only when relevant
 
-### 1. Diagnose — no manuscript changes
+The principles and workflow above always apply. Load detailed guidance for the task at hand; do not turn references into mandatory audits for every manuscript.
 
-Report **meaningful, actionable obstacles**, prioritized by their expected effect on understanding; a short report is better than exhaustive low-value comments. For each finding include:
+| Situation | Reference |
+|---|---|
+| Argument design, substantial writing, section/paragraph restructuring, known-to-new information flow, or text–visual integration | `references/argument-and-exposition.md` |
+| Writing or substantially revising an Introduction | `references/introduction.md` |
+| Detailed diagnosis, reverse outlining, or recurring prose/argument symptoms | `references/diagnosis.md` |
+| Writing an implementation-oriented pre-experiment specification, or explicitly reviewing research-design/completeness | `references/pre-experiment-specification.md` |
+| Preparing a post-experiment manuscript for a target venue | `references/submission-preparation.md` |
+| Resolving notation ambiguity or establishing a consistent notation scheme | `references/notation.md` |
+| Editing an existing manuscript or checking an original against a revision | `references/verification.md` |
 
-- **ID and location**, with a short quote if useful.
-- **Reader difficulty:** what a reader may misunderstand or have to work unusually hard to infer, and why.
-- **Intervention and benefit:** what to change and how that helps.
-- **Risk:** `Local` (expression only), `Semantic` (meaning, claim strength, definition, or symbol identity), or `Structural` (ordering, inclusion, or organization).
-- **Feasibility:** `Yes` (grounded edit possible), `Partial` (only a placeholder or limited repair possible), or `No` (author input required).
+Pre-experiment status alone does **not** authorize a full research-design audit when the user requested only readability feedback. Conversely, when asked to **write** an implementation-ready specification, include the detail necessary for implementation. Judge applicability from the task and explain material gaps rather than mechanically checking every item.
 
-Do not automatically raise findings for harmless conventions or patterns. Group repeated instances when they share one cause. Use L0–L6 as optional labels, not required quotas.
+## Deliver the result
 
-### 2. Edit — produce a revised copy
-
-Apply the diagnosed, feasible improvements unless the user limits scope. Preserve the original. Record changes with finding ID, location, **reader benefit**, before/after excerpt, and risk. List substantive `Semantic` and `Structural` changes first so the author can review them efficiently. **Write `approved_changes.txt`** (empty if none) listing intentional protected-element additions/removals using identifiers such as `cite:smith2020`, `label:fig:overview`, or `math:<symbol or expression>`. For mathematics, **prefer `math:`**: it accepts whitespace and expands to the script's `math-symbol` and `math-expr` keys. Explicit `math-symbol:` and `math-expr:` identifiers are also accepted, and the verifier normalizes whitespace in `math-expr:`. Document both the original and revised expressions when an equation is intentionally changed. Despite its name, this file records **editor intent, not author approval**. Explain changes in the log and review them semantically; never whitelist merely to silence an error.
-
-The editor may reorganize, shorten, expand, or narrow text **using information justified by the supplied manuscript and verified sources**, but may not make up experimental facts. If a scientifically necessary value, citation, novel definition, mechanism, or decision is absent, insert `[AUTHOR: ...]` or `[VERIFY: ...]` only when it is genuinely needed. Collect all placeholders in an author-to-do section. Do not silently convert a tentative claim into a stronger one.
-
-### 3. Verify — no new edits
-
-Check the original against the revision, focusing on meaning rather than conformity to prose rules:
-
-- Run `python3 scripts/verify_protected.py ORIGINAL REVISED --approved approved_changes.txt --out verify_report.md --strict` when the script and suitable text sources are available. Inspect every flagged change in numbers and units, citation keys, references, math, and labels; distinguish deliberate changes documented in the log from accidental ones. **Strict mode does not catch semantic errors or all context changes.** Entries are element-level rather than occurrence-level: check their contexts independently.
-- Semantically examine **every Semantic and Structural edit** for changes to claims, evidence links, definitions, assumptions, scope, qualifications, causal direction, experiment conditions, and information lost or misplaced. Spot-check Local edits.
-- Report unresolved issues explicitly. A clean script result **does not prove scientific equivalence**: extraction is imperfect (especially with complex LaTeX), and only a meaning-level comparison can catch many important errors.
-
-Do not claim that verification passed if relevant source files, figures, or referenced material were unavailable.
-
-## Non-negotiable constraints
-
-- **Do not fabricate** data, results, numerical values, citations, sources, experimental conditions, mechanisms, or definitions of author-created concepts.
-- Treat numbers and units, citations, equations, symbol meanings, labels and references, datasets, results, claims, assumptions, and scope qualifiers as **protected scientific content**. Any necessary change must have an explicit reason and be examined in `verify`.
-- Do not remove substantive material merely because it appears unrelated to an `[INFERRED]` RQ. Prefer retaining, relocating, or flagging it for the author.
-- Do not invent a readability problem to satisfy a checklist. **An unchanged passage can be the correct result.**
-
-Report in the **user's language**; quote the original manuscript language. After manual author edits, **do not repeat whole-manuscript sentence polishing unless asked**: this can reintroduce rejected patterns.
-
-For newly drafted passages, plan with the same reader model and verify grounding against supplied research material, not a nonexistent original. **Do not invent scientific substance.**
+Report in the **user's language**, while quoting source manuscript passages in their original language. For a diagnosis, prioritize meaningful, actionable findings with locations and anticipated reader benefits. For a revision, provide the revised copy, a change log (especially semantic and structural decisions), protected-element check results when available, and unresolved author questions. For new writing, provide the manuscript and explain material assumptions or information still needed. Keep reports concise enough that the author can act on them; an unchanged passage or a short set of findings can be the right outcome.

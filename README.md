@@ -1,8 +1,17 @@
 # Scientific Manuscript Editor
 
-A reader-centered skill for writing and improving English scientific papers and paper-form research drafts without inventing scientific content.
+A reader-centered skill for **writing, diagnosing, revising, and verifying scientific manuscripts** without inventing scientific content. Its goal is to communicate defensible research so that intended readers can understand the scientific argument and evidence with reasonable effort.
 
-The skill asks what the intended reader needs to understand and identifies genuine obstacles to comprehension, rather than applying a mechanical list of prose rules. It can support drafts that also serve as specifications for experiments, while preserving scientific meaning and sources.
+The skill uses four common principles—**Purpose, Coherence, Comprehensibility, and Scientific Accuracy**—at paper, section, paragraph, and sentence scales. Paragraph writing is a method for organizing an explanation, not a rigid topic-sentence template. Equations, figures, and tables complement surrounding prose and must be explained and interpreted as part of the scientific argument.
+
+An important information-ordering heuristic is to **connect information already established or reasonably known by the reader to new information**. It applies across sentences and sections without forcing a fixed sentence shape.
+
+## Manuscript purposes
+
+- **Pre-experiment specification:** Write a paper-form, implementation-ready account of planned methods and evaluations; necessary detail takes priority over page length.
+- **Post-experiment submission preparation:** Present completed research and its evidence efficiently while following the current official requirements of the target venue.
+
+These purposes are independent of whether the task is new writing, diagnosis, local revision, structural reorganization, a full rewrite, or verification. An existing manuscript may need no changes at all.
 
 ## Repository contents
 
@@ -10,30 +19,33 @@ The skill asks what the intended reader needs to understand and identifies genui
 .
 ├── SKILL.md
 ├── references/
-│   ├── patterns.md
+│   ├── argument-and-exposition.md
+│   ├── introduction.md
+│   ├── diagnosis.md
+│   ├── pre-experiment-specification.md
+│   ├── submission-preparation.md
 │   ├── notation.md
-│   └── draft-checklist.md
+│   └── verification.md
 └── scripts/
     └── verify_protected.py
 ```
 
-- [`SKILL.md`](SKILL.md) contains the core principles, modes, editing safeguards, and reference triggers.
-- `references/` contains **optional** tools for diagnosing recurring prose problems, resolving notation choices, and reviewing experimental completeness. These are not checklists to run on every draft.
-- `scripts/verify_protected.py` compares protected surface elements before and after a revision. The editor must still perform semantic verification.
+`SKILL.md` contains the always-applicable purpose, principles, workflow, scientific safeguards, and **conditions for consulting references**. Each file under `references/` expands a specific task; none is a universal checklist. The verification script compares protected surface elements between two manuscript versions, but semantic verification remains necessary.
 
-## Workflow
+## Working approach
 
-1. `diagnose`: find material reader difficulties; do not change the manuscript.
-2. `edit`: make feasible changes on a copy; write a change log and `approved_changes.txt` for editor-intended protected-element additions/removals.
-3. `verify`: run deterministic and semantic checks. For example:
+1. Establish the user task, intended reader, scientific material, and manuscript purpose.
+2. Design an argument for new writing, or diagnose the actual reader difficulties in existing material.
+3. Write or intervene at an appropriate scale: local editing, paragraph/section restructuring, or a justified full rewrite.
+4. Check reader comprehension and scientific accuracy. For an existing revision, preserve the original, document changes, and verify protected content and meaning.
 
-   ```bash
-   python3 scripts/verify_protected.py original.tex revised.tex \
-      --approved approved_changes.txt --out verify_report.md --strict
-   ```
+For revisions with suitable text files, use `references/verification.md` and the bundled script:
 
-For intentional mathematical changes, prefer `math:<symbol or expression>` in `approved_changes.txt`; spaces in expressions are accepted. An approval-list entry records an **intended** change; it is not author sign-off or proof of semantic correctness. The script has known extraction limits (including some compound units and LaTeX unit macros), and `--strict` does not fail on every context warning. Examine these separately.
+```bash
+python3 scripts/verify_protected.py original.tex revised.tex \
+  --approved approved_changes.txt --out verify_report.md --strict
+```
 
-For new prose without an original file, verify scientific grounding against the supplied research material rather than pretending a before-and-after comparison exists.
+`approved_changes.txt` records intended protected-element additions/removals, **not author approval**; `--strict` cannot prove semantic equivalence. For a brand-new manuscript, check scientific grounding against supplied sources instead of inventing a baseline for comparison.
 
-**Current version:** v0.3.2
+**Current version:** v0.4.0
