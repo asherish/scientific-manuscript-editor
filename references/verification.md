@@ -22,7 +22,7 @@ Inspect changes in numbers and units, citation keys, references, labels, mathema
 
 Semantically inspect **every `Semantic` and `Structural` edit** for changed claims, evidence links, symbol identities, definitions, assumptions, scope qualifiers, causal direction, conditions, results, or information silently lost or misplaced. Spot-check `Local` edits. For a wholesale rewrite, compare the scientific argument and every substantive element to the original or author-supplied research material; matching paragraphs one-to-one is not expected, but preserving or explicitly accounting for meaning is.
 
-When an equation symbol must change, identify its semantic role and all corresponding equations, definitions, figure labels, prose mentions, and cross-references **before** editing. Never make an unscoped global replacement. Use `notation.md` for optional notation conventions only if notation itself is a reader-facing problem.
+When an equation symbol must change, identify its semantic role and all corresponding equations, definitions, figure labels, prose mentions, and cross-references **before** editing. Never make an unscoped global replacement. Read `references/notation.md` for the scope and consistency of a symbol-identity change; do not impose optional typography conventions unless notation itself is a reader-facing problem.
 
 ## Report limitations and unresolved issues
 

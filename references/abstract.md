@@ -6,7 +6,7 @@ Use this reference when composing, diagnosing, or substantially revising an Abst
 
 Select a small set of questions the Abstract should resolve: What scientific context is necessary? What is the specific unresolved problem or objective? What approach was taken or is proposed? What main evidence or findings are available? What conclusion is warranted, and why does it matter? The answer to each question supplies content; it does **not** mandate one sentence per question.
 
-A useful context–content–conclusion (CCC) progression moves from a relevant shared premise through the research problem to the approach and findings, then to a bounded interpretation. The information can also be viewed as background → gap/question → approach → results → significance. Use the structure that best supports intended readers, without forcing a complete paper outline into miniature form.
+A useful progression moves from a relevant shared premise through the research problem to the approach and findings, then to a bounded interpretation. It can be viewed as background → gap/question → approach → results → significance. Use the information order that best supports intended readers, without forcing a complete paper outline into miniature form.
 
 Avoid giving an unfamiliar result before the reader has enough context to know why it matters. Conversely, do not consume most of the Abstract on generic background. The familiar-to-new heuristic and the paper's central contribution should determine the information order.
 

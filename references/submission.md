@@ -28,4 +28,4 @@ Read the assembled manuscript, including abstract, main text, references, captio
 
 For Abstract-specific exposition, consult `abstract.md`. Further guidance on evidence-linked Results paragraphs and scientific argument structure appears in Mensh and Kording (2017): https://doi.org/10.1371/journal.pcbi.1005619.
 
-For a requested section-by-section question review, `question-bank.md` provides an adapted 60QA inventory. Use only relevant questions and do not turn method-specific items into mandatory submission requirements.
+For a requested section-by-section question review, select relevant prompts from `references/questions.md` under the routing rule in `SKILL.md`. Do not turn method-specific items into mandatory submission requirements.

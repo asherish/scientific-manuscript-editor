@@ -1,60 +1,58 @@
 # Scientific Manuscript Editor
 
-A reader-centered skill for **writing, diagnosing, revising, and verifying scientific manuscripts** without inventing scientific content. Its goal is to communicate defensible research so that intended readers can understand the scientific argument and evidence with reasonable effort.
+A skill for **writing and improving scientific manuscripts so readers can follow the research without losing scientific accuracy**.
 
-The skill uses four common principles—**Purpose, Coherence, Comprehensibility, and Scientific Accuracy**—at paper, section, paragraph, and sentence scales. They apply throughout the workflow, not as a checklist requiring an edit for each principle. Paragraph writing is a method for organizing an explanation, not a rigid topic-sentence template. Equations, figures, and tables complement surrounding prose and must be explained and interpreted as part of the scientific argument.
+Scientific Manuscript Editor helps researchers turn scientific material into a clear explanation of the problem, approach, evidence, and conclusions. It can also diagnose an existing manuscript, identify where understanding breaks down, and improve the writing at the scale the problem requires.
 
-For substantial writing whose purpose or structure is unclear, an **optional Question → Answer → Paragraph** scaffold makes a reader question explicit, plans an evidence-grounded answer, and then composes the prose. It is informed by question-driven manuscript outlining such as 60QA but does not require a literal Q&A or one question for every paragraph. Topic/support relationships, Pyramid, context–content–conclusion, Problem–Solution, and CARS are available as conditional techniques rather than mandatory templates.
+## When to use it
 
-The optional [`references/question-bank.md`](references/question-bank.md) retains **60 adapted, section-organized planning questions** from the 60QA approach, with applicability notes. They support detailed outlines and explicitly requested completeness reviews, not a universal 60-question audit or a 60-paragraph requirement.
+Use the skill to:
 
-An important information-ordering heuristic is to **connect information already established or reasonably known by the reader to new information**. It applies across sentences and sections without forcing a fixed sentence shape.
+- **Write before experiments:** Produce a paper-form specification detailed enough to implement the proposed methods and evaluations. Necessary explanations may take more pages than a submission allows.
+- **Write after experiments:** Turn completed research and actual evidence into a manuscript suitable for a target venue.
+- **Diagnose without editing:** Identify unclear reasoning, missing explanations, unsupported claims, or problems in the manuscript's structure.
+- **Revise at the right scale:** Improve a passage, reorganize sections, or rewrite an argument when smaller edits cannot solve the problem.
+- **Verify changes:** Check whether revisions preserve definitions, claims, equations, results, and other protected scientific content.
 
-## Manuscript purposes
+## Try it
 
-- **Pre-experiment specification:** Write a paper-form, implementation-ready account of planned methods and evaluations; necessary detail takes priority over page length.
-- **Post-experiment submission preparation:** Present completed research and its evidence efficiently while following the current official requirements of the target venue.
+With the skill available in your assistant, provide your research materials or manuscript and state what you want done. For example:
 
-These purposes are independent of whether the task is new writing, diagnosis, local revision, structural reorganization, a full rewrite, or verification. An existing manuscript may need no changes at all.
+> Write a pre-experiment manuscript from this research plan. Include enough methodological and evaluation detail for another researcher to implement it. Flag unresolved decisions.
 
-## Repository contents
+> Diagnose the logical structure of this manuscript and explain the most important problems. Do not revise the text yet.
 
-```text
-.
-├── SKILL.md
-├── references/
-│   ├── argument-and-exposition.md
-│   ├── introduction.md
-│   ├── abstract.md
-│   ├── diagnosis.md
-│   ├── question-bank.md
-│   ├── pre-experiment-specification.md
-│   ├── submission-preparation.md
-│   ├── notation.md
-│   └── verification.md
-└── scripts/
-    └── verify_protected.py
-```
+> Revise this completed manuscript for submission to [venue]. Verify the current official author instructions before applying page limits or style requirements.
 
-`SKILL.md` is the always-loaded source of purpose, principles, the full workflow, shared definitions, scientific safeguards, and **conditions for consulting references**. Individual `references/` files supply conditional methods and examples; they should not duplicate shared definitions. The verification script compares protected surface elements between two manuscript versions, but semantic verification remains necessary.
+> Compare the original and revised LaTeX manuscripts. Report substantive changes and any scientific information that may have been lost.
 
-## Working approach
+You can ask for a diagnosis only, request a specific section, or set strict limits on what may be changed. The skill does not assume that every passage needs editing.
 
-1. **Establish context:** identify the requested task, intended reader, scientific material, manuscript phase, and constraints.
-2. **Design or diagnose:** plan the reader's path through supported scientific content, or diagnose existing material before changing it.
-3. **Write or revise:** compose paragraphs, or choose no change, local editing, paragraph/section restructuring, or a justified complete rewrite.
-4. **Review and verify:** check reader comprehension and scientific accuracy; when revising, preserve the original and inspect consequential changes.
-5. **Deliver:** provide the requested text or diagnosis, change log as applicable, verification limitations, and unresolved questions.
+## How it works
 
-The workflow is **iterative and task-dependent**. A diagnosis-only request stops before editing; a verification-only request need not produce new prose. The distinction between pre-experiment and post-experiment manuscripts changes the writing obligations, not the list of allowed actions.
+The workflow is **Context → Design / Diagnose → Write / Revise → Review / Verify → Deliver**. It is iterative: a problem found during review may require returning to the argument's design.
 
-For substantive revisions, consult `references/verification.md`. When suitable original/revised source files are available, the bundled script may be run as follows:
+The central idea is to decide **what the reader needs to understand** and then make the paper, sections, paragraphs, sentences, equations, figures, and tables work together to communicate it. A useful planning question is: *What should readers understand here, and which evidence or explanation lets them understand it?* The answer may need a paragraph, an equation, a figure, or a combination.
 
-```bash
-python3 scripts/verify_protected.py original.tex revised.tex \
-  --approved approved_changes.txt --out verify_report.md --strict
-```
+Four principles guide the work: **Purpose, Coherence, Comprehensibility, and Scientific Accuracy**. Paragraph writing, claim–support reasoning, Context–Content–Conclusion (CCC), and moving from familiar context to new information are available as techniques, not rigid templates. Figures and tables complement the surrounding prose rather than replacing its explanation.
 
-`references/verification.md` is the sole specification of the `approved_changes.txt` syntax. The file records intended protected-element additions/removals, **not author approval**; `--strict` cannot prove semantic equivalence. A whitelist file is not required when the verifier is not run. For a brand-new manuscript, check scientific grounding against supplied sources instead of inventing a baseline for comparison.
+## Scientific safeguards
 
-**Current version:** v0.5.2
+The skill does **not invent** results, data, citations, mechanisms, or research decisions. It distinguishes proposed experiments from completed work and flags consequential missing information for the author. For submissions, it checks current official venue requirements rather than assuming a universal page limit or writing style.
+
+For revisions, the original should remain available for comparison. A bundled [verification script](scripts/verify_protected.py) can help detect changed citations, numbers, labels, and mathematical elements when suitable text or LaTeX sources are available. Its output is not proof of semantic equivalence; scientific review remains necessary.
+
+## Repository guide
+
+- [SKILL.md](SKILL.md) — Always-applicable purpose, principles, workflow, scientific safeguards, and rules for loading specialized guidance.
+- [composition.md](references/composition.md) — Scientific argument, paragraph writing, reader questions, information order, and integration of equations, figures, and tables.
+- [questions.md](references/questions.md) — Optional adapted 60QA planning questions; select those relevant to the work rather than treating all 60 as mandatory.
+- [pre-experiment.md](references/pre-experiment.md) and [submission.md](references/submission.md) — Stage-specific guidance.
+- [introduction.md](references/introduction.md) and [abstract.md](references/abstract.md) — Section-specific guidance.
+- [diagnosis.md](references/diagnosis.md), [verification.md](references/verification.md), and [notation.md](references/notation.md) — Focused checks and conventions.
+
+The assistant reads `SKILL.md` when the skill activates and loads relevant reference files only when needed. That separation keeps core instructions available without imposing every detailed checklist on every task.
+
+The optional question bank adapts the *60 Questions & Answers (60QA)* approach attributed to [Komei Sugiura](https://komeisugiura.jp/software/software_jp.html). Paragraph-structure guidance is also informed by [Mensh and Kording (2017)](https://doi.org/10.1371/journal.pcbi.1005619) and [Seitaro Iwama's academic-writing lecture](https://speakerdeck.com/neuroiwm/paragurafu-kara-hajimeru-akademikku).
+
+**Current version:** v0.6.0

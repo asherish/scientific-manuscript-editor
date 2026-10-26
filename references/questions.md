@@ -1,4 +1,4 @@
-# Adaptable 60QA question bank
+# Adaptable writing questions (60QA)
 
 This is an **adapted, paraphrased set of 60 optional planning questions**, organized using the seven sections and IDs of Komei Sugiura's *60 Questions & Answers (60QA)* approach. It preserves the coverage of the original question set while reframing some prompts to be useful beyond machine-learning conference papers. The source is acknowledged below; this file is not a verbatim reproduction or a venue requirement.
 
@@ -101,15 +101,13 @@ For **pre-experiment specifications**, use questions about experiments and resul
 | 7-2 | What contributions or findings are actually supported by the work? | Match wording and tense to completed versus planned work and venue style. |
 | 7-3 | What important limitation, open question, or future direction follows from the evidence? | Do not invent generic future work merely to fill a closing sentence. |
 
-## Turn selected questions into writing
+## Use the questions selectively
 
-1. Establish the intended reader, writing/revision task, manuscript stage, and scientific sources.
-2. Pick **only** questions that illuminate actual parts of this paper; merge overlapping questions and add missing domain-specific ones.
-3. Draft an evidence-grounded answer for each selected question, marking material missing facts or author decisions instead of guessing.
-4. Group compatible answers into section and paragraph roles. Use **Question → Answer → Paragraph** when it helps; one question may span several paragraphs, and one paragraph may resolve related subquestions.
-5. Choose an explanatory pattern (claim–support, context–content–conclusion, problem–solution, derivation, comparison, etc.) that serves the reader. Integrate equations, figures, and tables with prose rather than turning them into detached answers.
-6. Check Purpose, Coherence, Comprehensibility, and Scientific Accuracy, including whether the supporting evidence warrants the conclusion. Do not generate a 60-item compliance report unless explicitly requested.
+1. Pick questions that expose actual reader needs or material gaps in this paper. Merge overlaps, omit irrelevant prompts, and add domain-specific questions.
+2. Answer from author-supplied or verified scientific material. Identify missing evidence or unresolved decisions rather than inventing them.
+3. Apply the logical-construction and paragraph-writing guidance in `SKILL.md` to organize answers as prose, equations, figures, or tables. A question need not become a separate paragraph.
+4. Do not produce a 60-item compliance report unless the user explicitly requests one.
 
-The question order here follows the **presentation sections** of the original 60QA, not a prescribed **writing order**. Drafting a sound formulation and evaluation plan before the Introduction can reduce rework; actual writing order should follow dependencies in the research and the author's needs. The source set has no standalone Discussion category; use `submission-preparation.md` for interpreting results, relating evidence to prior work, and discussing limitations.
+The question order here follows the **presentation sections** of the original 60QA, not a prescribed **writing order**. Drafting a sound formulation and evaluation plan before the Introduction can reduce rework; actual writing order should follow dependencies in the research and the author's needs. The source set has no standalone Discussion category; use `references/submission.md` when a venue-specific interpretation of results, literature, and limitations is needed.
 
 **Attribution:** Adapted from the publicly described *60 Questions & Answers (60QA)* method of Komei Sugiura and his laboratory: https://komeisugiura.jp/software/software_jp.html. Additional paragraph-writing context: Mensh & Kording (2017), https://doi.org/10.1371/journal.pcbi.1005619, and Seitaro Iwama's lecture, https://speakerdeck.com/neuroiwm/paragurafu-kara-hajimeru-akademikku.

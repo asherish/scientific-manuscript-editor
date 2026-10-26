@@ -54,10 +54,10 @@ The following are **diagnostic prompts, not banned expressions or automatic subs
 | Terminology drift (region/area/zone; method/framework/pipeline; risk/hazard/score) | Are different terms describing one concept without reason? Use a defined term consistently. |
 | Bold mini-headings, em-dash chains, lists inside prose | Do these conflict with reader needs or venue style? Treat as low-priority if harmless. |
 
-Known-to-new information flow can diagnose abrupt transitions: if a sentence introduces several unfamiliar entities before giving readers a usable anchor, move established context forward or add a bridge. But **do not impose a fixed given-before-new word order**; see `argument-and-exposition.md` for the full heuristic.
+Known-to-new information flow can diagnose abrupt transitions: if a sentence introduces several unfamiliar entities before giving readers a usable anchor, move established context forward or add a bridge. But **do not impose a fixed given-before-new word order**; see `references/composition.md` for examples and exceptions when that file is also selected by `SKILL.md`.
 
 ## Report actionable findings
 
-Prioritize by expected impact on understanding. For each material finding, provide an **ID and location**, the likely reader difficulty and its textual basis, a proposed intervention and expected benefit, the **change type(s)** defined in `SKILL.md` (`Local`, `Semantic`, and/or `Structural`), and **feasibility** (`Yes`, `Partial`, or `No`). Report any consequential risk separately rather than treating the types as risk levels. Group repeated manifestations of one cause.
+Prioritize by expected impact on understanding. For each material finding, provide an **ID and location**, the likely reader difficulty and its textual basis, a proposed intervention and expected benefit, and **feasibility** (`Yes`, `Partial`, or `No`). When the likely intervention is clear, indicate its anticipated **change type(s)** from `SKILL.md` (`Local`, `Semantic`, and/or `Structural`); do not present them as risk levels or pretend an edit has already occurred. Report consequential scientific risks separately and group repeated manifestations of one cause.
 
 Keep diagnosis separate from editing. An author may choose a local fix, section reorganization, or complete rewrite after understanding the diagnosis. Do not promise to fix a missing scientific definition, result, or citation without author input or verifiable evidence.
