@@ -1,6 +1,6 @@
 # Introduction: establish the problem and contribution
 
-Use this reference only when writing or substantially restructuring an Introduction. Its job is to make the research problem and the paper's reason for existing intelligible to the intended audience. It is not required to follow a fixed number of paragraphs or a universal funnel structure.
+Use this reference when writing, diagnosing, or substantially revising an Introduction. Its job is to make the research problem and the paper's reason for existing intelligible to the intended audience. It is not required to follow a fixed number of paragraphs or a universal funnel structure.
 
 ## Move from shared context to the research gap
 

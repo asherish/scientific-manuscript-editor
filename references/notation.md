@@ -29,7 +29,7 @@ First consider established usage in the target venue, field, and central prior w
 - Keep a defined object's representation consistent enough to be identifiable (for example, do not alternate between $x$ and $\mathbf{x}$ for one vector without explanation).
 - A notation table can be useful when the formalism has many interdependent symbols, but is not mandatory for a short, simple derivation.
 - If a symbol is overloaded, identify which equations, definitions, figure labels, prose descriptions, and cross-references belong to **each semantic role**. Rename only the relevant role. Do not run a global string replacement.
-- Treat a consequential renaming as a **Semantic** edit. Document all touched protected elements and the reason in the change log and `approved_changes.txt`; then verify every occurrence semantically. For `approved_changes.txt`, prefer `math:<symbol or expression>`; whitespace is allowed and the verifier expands it to its `math-symbol` and `math-expr` keys. Explicit `math-symbol:` and `math-expr:` entries also work (whitespace in `math-expr:` is normalized). A whitelist entry cannot prove that the correct occurrence was changed.
+- Treat a consequential renaming as a **Semantic** change under `SKILL.md`. Document the reason and all affected scientific elements, and verify every occurrence semantically. Follow `references/verification.md` for the authoritative `approved_changes.txt` syntax and verification procedure.
 
 ## References for conventions
 

@@ -1,6 +1,6 @@
 # Diagnose obstacles to scientific understanding
 
-Use this reference for substantive readability or structure diagnosis. Diagnose problems because they affect the reader, **not** because text violates a preferred phrasing rule. If the user requests diagnosis only, do not edit the manuscript.
+Use this reference for substantive readability or structure diagnosis. Diagnose problems because they affect the reader, **not** because text violates a preferred phrasing rule. Follow the task boundary and intervention choices in `SKILL.md`.
 
 ## Trace the reader's path
 
@@ -58,6 +58,6 @@ Known-to-new information flow can diagnose abrupt transitions: if a sentence int
 
 ## Report actionable findings
 
-Prioritize by expected impact on understanding. For each material finding, provide an **ID and location**, the likely reader difficulty and its textual basis, a proposed intervention and expected benefit, a **risk** (`Local`, `Semantic`, or `Structural`), and **feasibility** (`Yes`, `Partial`, or `No`). `Local` changes expression; `Semantic` changes meaning, claim strength, definition, or symbol identity; `Structural` changes ordering, inclusion, or organization. Group repeated manifestations of one cause.
+Prioritize by expected impact on understanding. For each material finding, provide an **ID and location**, the likely reader difficulty and its textual basis, a proposed intervention and expected benefit, the **change type(s)** defined in `SKILL.md` (`Local`, `Semantic`, and/or `Structural`), and **feasibility** (`Yes`, `Partial`, or `No`). Report any consequential risk separately rather than treating the types as risk levels. Group repeated manifestations of one cause.
 
 Keep diagnosis separate from editing. An author may choose a local fix, section reorganization, or complete rewrite after understanding the diagnosis. Do not promise to fix a missing scientific definition, result, or citation without author input or verifiable evidence.

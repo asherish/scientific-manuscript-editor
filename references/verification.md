@@ -1,12 +1,12 @@
 # Verify scientific content across manuscript changes
 
-Use this reference when revising an existing manuscript or when asked to compare an original with a revision. Verification protects scientific meaning; matching surface tokens is neither necessary nor sufficient proof of semantic equivalence. Keep diagnosis, editing, and verification logically separate even if one task executes them consecutively.
+Use this reference when making substantive revisions to an existing manuscript, running protected-element checks, or comparing original and revised versions. Verification protects scientific meaning; matching surface tokens is neither necessary nor sufficient proof of semantic equivalence. The workflow and `Local`/`Semantic`/`Structural` change types are defined in `SKILL.md`.
 
 ## Preserve the original and record intent
 
-Produce a revised copy; do not overwrite the only original. Record changes by finding ID or clear location, before/after excerpts, anticipated reader benefit, and risk. Prioritize `Semantic` changes (claims, definitions, mathematical meaning, conditions) and `Structural` changes (organization or inclusion) in the change log, then summarize `Local` expression edits.
+Produce a revised copy; do not overwrite the only original. Record changes by finding ID or clear location, before/after excerpts, anticipated reader benefit, change type(s), and any distinct scientific risk. Prioritize `Semantic` and `Structural` changes in the change log, then summarize `Local` expression edits. A change can have multiple types.
 
-**Write `approved_changes.txt`**, empty if no protected additions or removals are intended. List identifiers for intentionally changed protected elements, one per line, e.g. `cite:smith2020`, `label:fig:overview`, `math:<symbol or expression>`. Prefer `math:` for mathematics: it permits whitespace and expands to the verifier's `math-symbol` and `math-expr` keys. Explicit `math-symbol:` and `math-expr:` are also accepted; the verifier normalizes whitespace in `math-expr:`. Document both original and revised forms for an intentional equation change. The filename is historical: its entries represent **editor intent, not author approval**, and do not prove correctness. Do not add entries merely to silence errors.
+**When running the bundled verifier, write `approved_changes.txt`**, empty if no protected additions or removals are intended. For other revisions without suitable source files or a verifier run, document intentional substantive changes in the change log instead; a separate whitelist file is not required. List identifiers for intentionally changed protected elements, one per line, e.g. `cite:smith2020`, `label:fig:overview`, `math:<symbol or expression>`. Prefer `math:` for mathematics: it permits whitespace and expands to the verifier's `math-symbol` and `math-expr` keys. Explicit `math-symbol:` and `math-expr:` are also accepted; the verifier normalizes whitespace in `math-expr:`. Document both original and revised forms for an intentional equation change. The filename is historical: its entries represent **editor intent, not author approval**, and do not prove correctness. Do not add entries merely to silence errors.
 
 ## Run the deterministic protected-element check
 
@@ -28,4 +28,3 @@ When an equation symbol must change, identify its semantic role and all correspo
 
 Report intended protected changes, unexpected discrepancies, unresolved author decisions, and materials not available for comparison. A clean script result **does not prove scientific equivalence**. Do not claim full verification if figures, source files, or other necessary information were unavailable.
 
-For entirely new writing, verify scientific grounding against supplied material and verified sources. There is no original manuscript and no meaningful original-versus-revision comparison; do not create a fictional baseline or require `approved_changes.txt` for a first draft.
