@@ -8,6 +8,14 @@ Begin with the scientific content the author can substantiate. At paper scale, i
 
 Build an explanation that exposes dependencies. If a method depends on an assumption, introduce or point to that assumption before relying on it. If a result supports a claim only in a particular setting, keep the qualification near the inference. Use a brief outline or a map of claims and evidence when the connections are hard to hold in memory. Do not force one contribution per section, one experiment per research question, or a fixed IMRaD outline if the research calls for another organization.
 
+## Optionally outline by reader questions
+
+**Question → Answer → Paragraph** is a useful scaffold when a passage's purpose or content is not yet clear. Formulate the question an intended reader should be able to answer after reading it; identify an answer grounded in the author's material; gather the supporting definitions, reasoning, evidence, or qualifications; and then write a coherent paragraph or group of paragraphs. The question may remain only in the author's outline. It is not necessary to write an explicit Q&A for every paragraph, and some questions need several paragraphs or a figure and accompanying prose.
+
+This approach can turn a difficult paper-scale writing task into manageable modules. For example, a problem-formulation section may need to answer what the target task is, what inputs are available, what output is sought, which assumptions limit it, and how success is assessed. A method section may need to answer why a component is introduced, what it consumes and produces, and how it supports the objective. **These are prompts to adapt, not a universal questionnaire.** Remove irrelevant questions and add those specific to the research. The question-first approach draws on Komei Sugiura's 60 Questions & Answers (60QA); its particular question count, section order, and machine-learning-specific prompts are not requirements.
+
+Outlining the answer before prose can reveal missing information and invalid inferences early. Do not fill a gap by inventing a design decision, result, or citation. In an existing well-structured passage, simply use the four core principles and leave it alone when no substantive obstacle exists.
+
 ## Make section roles and headings agree
 
 Each section should contribute something identifiable to the paper's argument. Check that its heading names what the section actually covers; its opening establishes the question or purpose when that is not already clear; its subsections arrive in a comprehensible order; and its closing or transition gives readers enough context to proceed. Move material when it depends on an explanation presented later, but keep useful repetition where an abstract, caption, or other passage must stand alone.
@@ -19,6 +27,21 @@ Do not replace substantive headings with generic process labels merely to make a
 A paragraph should have a recognizable central idea or role and enough support for the intended reader to understand it. The support may be a definition, mechanism, example, comparison, derivation, caveat, or evidence. Arrange sentences so that the relation among them is recoverable. Split a paragraph if it is performing unrelated moves that readers cannot comfortably integrate; combine fragments if their separation hides one continuous explanation.
 
 A topic sentence can help, but it need not be the first sentence in every paragraph. A concluding sentence can help when the paragraph needs an inference or transition, but a formulaic summary often adds no value. Paragraph unity does not mean every sentence repeats the same claim; a well-placed qualification or contrast may be essential. Prefer purpose and reader comprehension to a rigid topic–support–conclusion template.
+
+## Choose a rhetorical pattern for the purpose
+
+Several established patterns can make a paragraph or larger explanation easier to compose or assess. They answer **different questions** and can be combined; none is a mandatory template.
+
+| Pattern | Useful question | Appropriate use |
+|---|---|---|
+| **Topic–Supporting–(optional) Concluding** | What is this paragraph's central move, and how do its sentences support it? | Paragraph unity, supporting details, evidence, and necessary qualifications. |
+| **Pyramid / claim–support** | Why or how does the evidence justify this claim? | Presenting a claim alongside reasons or mechanisms; checking whether the conclusion exceeds its premises. |
+| **Context–Content–Conclusion (CCC)** | What context is needed, what advances the explanation, and what follows? | Organizing paragraphs, sections, Abstracts, or an argument as a whole when context-first exposition helps. |
+| **Problem–Solution** | What difficulty motivates the approach, and how is it addressed? | Explaining a research problem, intervention, or methodological choice. |
+
+In a claim–support paragraph, ask whether the cited results actually entail or substantiate the stated conclusion. A convenient or flexible method is not automatically effective, reliable, or generalizable. An optional concluding sentence should communicate a warranted inference, not inflate the opening claim. A CCC sequence should orient readers without burying the central contribution in background. A Problem–Solution passage should distinguish the proposed solution from demonstrated success. These patterns help diagnose meaning, not merely rearrange labels.
+
+Use the same ideas across scales cautiously. A whole paper can establish context in the Introduction, develop evidence in Methods and Results, and interpret it in Discussion, but disciplinary structures vary. Section-level CCC can be useful; requiring every section and paragraph to follow identical three-part shapes creates repetition. Paragraphs can be designed as modules without forcing a fixed count or length.
 
 ## Lead from established context toward new information
 
@@ -32,7 +55,7 @@ For illustration, compare a jarring transition—“The estimator uses a calibra
 
 Do not mechanically put old information at the beginning of every sentence. Surprise, contrast, definitions, and mathematical exposition can justify another order. Also do not mistake an unsupported or unknown premise for shared knowledge. Ask what context the intended reader can actually retrieve, and place genuinely new information where its role is clear.
 
-Other useful, nonbinding patterns include context–content–conclusion and the progression from established research context toward an identifiable gap (Mensh & Kording; Swales). These are ways to reason about reader expectations, not templates to impose on every paragraph or Introduction.
+The progression from established research context toward an identifiable gap (Mensh & Kording; Swales) is another way to reason about reader expectations, especially in an Introduction. None of these patterns is a template to impose on every paragraph.
 
 ## Integrate mathematical and visual elements with prose
 
@@ -47,3 +70,10 @@ At paper scale, an overview figure may establish the problem setting, central sc
 After composing or rearranging, follow the reader's path: What do they know at this point? What question does the next passage answer? Can they understand important terms, equations, evidence, and relations without excessive searching backward? Does a transition express cause, contrast, condition, inference, or mere addition accurately? Does each section deliver what its heading promises?
 
 Repair the source of confusion at the smallest effective scale. That may mean defining a term, changing a sentence, moving a paragraph, adding a conceptual overview, or redesigning a whole argument. An unchanged passage is acceptable when it already serves its readers.
+
+## Further reading
+
+- Seitaro Iwama, *パラグラフから始めるアカデミック・ライティング* (2026): https://speakerdeck.com/neuroiwm/paragurafu-kara-hajimeru-akademikku
+- Mensh and Kording (2017), *Ten simple rules for structuring papers*: https://doi.org/10.1371/journal.pcbi.1005619
+- Minto (1996), *The Pyramid Principle: Logic in Writing and Thinking*.
+- Komei Sugiura, *60 Questions & Answers (60QA)*: https://komeisugiura.jp/software/software_jp.html

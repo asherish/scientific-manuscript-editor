@@ -1,6 +1,6 @@
 ---
 name: scientific-manuscript-editor
-description: Write, diagnose, revise, or verify scientific manuscripts using reader-centered argument design, coherent paragraphs, and scientific safeguards. Support both pre-experiment manuscripts that specify implementable research and post-experiment manuscripts prepared for a target venue. Do not invent scientific content or enforce mechanical prose templates.
+description: Write, diagnose, revise, or verify scientific manuscripts using reader-centered argument design, optional question-driven outlining, coherent paragraphs, and scientific safeguards. Support both pre-experiment specifications and post-experiment submission preparation without inventing content or enforcing prose templates.
 ---
 
 # Scientific Manuscript Editor
@@ -44,13 +44,15 @@ Work from the larger scientific argument toward its presentation, then check bot
 | **Paragraph** | Make a coherent contribution to the section through a central idea and appropriate support; use paragraph writing without mandating a topic-sentence/support/conclusion template. |
 | **Sentence** | State information precisely, with recoverable agents, references, modifiers, and relations to neighboring sentences; prefer constructions the intended reader can follow. |
 
+When the purpose or organization of a substantial passage is unclear, **optionally plan it as a reader question → evidence-grounded answer → paragraph or group of paragraphs**. The question clarifies what understanding the passage should provide; the answer identifies the claim, explanation, definitions, and support to convey. This is a planning aid, **not** a requirement to draft a separate Q&A for every paragraph, to write the question explicitly in the manuscript, or to make each question correspond to exactly one paragraph. Structure the resulting prose using topic/support relationships or another organization suited to its purpose.
+
 **Integrate equations, figures, and tables with the surrounding prose.** An equation expresses a definition or relation precisely; nearby sentences establish why it is needed, explain its symbols and assumptions, and interpret its meaning. A figure or table presents structure, comparison, or evidence; captions make the element intelligible while the prose directs attention to consequential observations and their scientific interpretation. Neither repeat the element line by line nor leave readers to infer its role. Check consistency across text, equations, captions, labels, and evidence. A visual overview is valuable when it materially clarifies relationships, not because every paper needs a pipeline diagram.
 
-Use `references/argument-and-exposition.md` when planning a new argument, restructuring a paper or section, composing substantial passages, or diagnosing paragraph flow. It develops the established-context-to-new-information heuristic, paragraph writing, section roles, and integration of visual or mathematical elements. Use `references/introduction.md` only when writing or substantially restructuring an Introduction.
+Use `references/argument-and-exposition.md` when planning a new argument, restructuring a paper or section, composing substantial passages, or diagnosing paragraph flow. It develops question-driven planning, paragraph writing, optional rhetorical structures, established-context-to-new-information flow, and integration of visual or mathematical elements. Consult `references/introduction.md` for substantial Introduction work and `references/abstract.md` for an Abstract or summary paragraph.
 
 ## Work according to the requested task
 
-**Write from scratch.** Map the supplied scientific material and the reader's likely prerequisites, design a defensible paper/section argument, compose coherent paragraphs, and verify that all scientific substance is grounded. Clearly distinguish planned work, observed results, inference, and author decisions still needed. There is no original manuscript to compare against; do not pretend that a before/after verification exists.
+**Write from scratch.** Map the supplied scientific material and the reader's likely prerequisites, design a defensible paper/section argument, compose coherent paragraphs, and verify that all scientific substance is grounded. Where useful, outline passages by the reader questions they answer, then develop each answer with appropriate support before turning it into prose. Clearly distinguish planned work, observed results, inference, and author decisions still needed. There is no original manuscript to compare against; do not pretend that a before/after verification exists.
 
 **Diagnose an existing manuscript.** Read the complete material available, including figures, tables, captions, equations, and linked sections relevant to the argument. Identify consequential obstacles to understanding and scientific support, not harmless deviations from stylistic conventions. When structure is suspect, create a brief manuscript map or reverse outline of the affected part. Explain the expected reader difficulty, evidence for it in the manuscript, and the intervention likely to help. **If diagnosis alone was requested, stop without editing.** Consult `references/diagnosis.md` for detailed lenses, diagnostic patterns, and report fields when needed.
 
@@ -76,6 +78,7 @@ The principles and workflow above always apply. Load detailed guidance for the t
 |---|---|
 | Argument design, substantial writing, section/paragraph restructuring, known-to-new information flow, or text–visual integration | `references/argument-and-exposition.md` |
 | Writing or substantially revising an Introduction | `references/introduction.md` |
+| Writing or substantially revising an Abstract or summary paragraph | `references/abstract.md` |
 | Detailed diagnosis, reverse outlining, or recurring prose/argument symptoms | `references/diagnosis.md` |
 | Writing an implementation-oriented pre-experiment specification, or explicitly reviewing research-design/completeness | `references/pre-experiment-specification.md` |
 | Preparing a post-experiment manuscript for a target venue | `references/submission-preparation.md` |

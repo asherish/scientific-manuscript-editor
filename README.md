@@ -4,6 +4,8 @@ A reader-centered skill for **writing, diagnosing, revising, and verifying scien
 
 The skill uses four common principles—**Purpose, Coherence, Comprehensibility, and Scientific Accuracy**—at paper, section, paragraph, and sentence scales. Paragraph writing is a method for organizing an explanation, not a rigid topic-sentence template. Equations, figures, and tables complement surrounding prose and must be explained and interpreted as part of the scientific argument.
 
+For substantial writing whose purpose or structure is unclear, an **optional Question → Answer → Paragraph** scaffold makes a reader question explicit, plans an evidence-grounded answer, and then composes the prose. It is informed by question-driven manuscript outlining such as 60QA but does not require a literal Q&A or one question for every paragraph. Topic/support relationships, Pyramid, context–content–conclusion, Problem–Solution, and CARS are available as conditional techniques rather than mandatory templates.
+
 An important information-ordering heuristic is to **connect information already established or reasonably known by the reader to new information**. It applies across sentences and sections without forcing a fixed sentence shape.
 
 ## Manuscript purposes
@@ -21,6 +23,7 @@ These purposes are independent of whether the task is new writing, diagnosis, lo
 ├── references/
 │   ├── argument-and-exposition.md
 │   ├── introduction.md
+│   ├── abstract.md
 │   ├── diagnosis.md
 │   ├── pre-experiment-specification.md
 │   ├── submission-preparation.md
@@ -48,4 +51,4 @@ python3 scripts/verify_protected.py original.tex revised.tex \
 
 `approved_changes.txt` records intended protected-element additions/removals, **not author approval**; `--strict` cannot prove semantic equivalence. For a brand-new manuscript, check scientific grounding against supplied sources instead of inventing a baseline for comparison.
 
-**Current version:** v0.4.0
+**Current version:** v0.5.0

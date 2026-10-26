@@ -8,6 +8,8 @@ Read all available relevant text, equations, figures, tables, and captions befor
 
 For each suspected obstacle, ask what the passage should enable the intended reader to understand, what knowledge is already available, where understanding breaks down, and which change would help. A likely difficulty is a prediction about readers, not observed user-study evidence; explain it as such.
 
+When a paragraph seems directionless, **optionally reconstruct its implicit reader question and the answer it offers**. Check that the supporting explanations or evidence actually establish that answer, and that the conclusion does not go beyond them. A missing literal question, a topic sentence that is not first, or an absent concluding sentence is not a defect by itself. For complex sections, a question-to-paragraph map can reveal redundant answers, missing links, or unanswered reader needs. This is a diagnostic scaffold, not another mandatory output artifact.
+
 ## Optional diagnostic lenses
 
 Use the lens or lenses that explain a material problem. **Do not produce findings merely to fill every category.**
@@ -40,6 +42,9 @@ The following are **diagnostic prompts, not banned expressions or automatic subs
 | “Thus,” “Therefore,” “Hence” | Does the previous sentence really support the inference? |
 | “Notably,” “Importantly” | Why is the result notable? State the reason if needed. |
 | “In other words,” “Overall,” “In summary” | Does repetition help independent comprehension, or merely restate the same idea? |
+| Paragraph has several unrelated topic moves | Would splitting or reordering the explanations make the central purpose recoverable? |
+| Topic sentence or closing claim exceeds the supporting details | What narrower conclusion actually follows from the presented evidence? |
+| A section lists analyses but not their motivating questions | Can readers see why the analyses were performed and which claims they inform? |
 | Method starts with component details | Would an overview of purpose, dependencies, and inputs/outputs orient readers? |
 | Abstract/Introduction starts with a universal truth | Does the premise lead specifically toward this paper's problem and gap? |
 | Equation followed only by “where x is…” | Does the reader know what the equation computes or defines and why it is needed? |
