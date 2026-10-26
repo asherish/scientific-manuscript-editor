@@ -27,3 +27,5 @@ First address broken reasoning, unsupported claims, undefined concepts, or poor 
 Read the assembled manuscript, including abstract, main text, references, captions, figures, tables, and any required supplemental information. Check consistency of claims, units, sample sizes, labels, abbreviations, and terminology. Verify that title, abstract, Introduction, results, and conclusion describe the **same supported contribution**. Apply the change-protection workflow in `verification.md` when revising from an existing version, and report any unresolved policy or science questions.
 
 For Abstract-specific exposition, consult `abstract.md`. Further guidance on evidence-linked Results paragraphs and scientific argument structure appears in Mensh and Kording (2017): https://doi.org/10.1371/journal.pcbi.1005619.
+
+For a requested section-by-section question review, `question-bank.md` provides an adapted 60QA inventory. Use only relevant questions and do not turn method-specific items into mandatory submission requirements.

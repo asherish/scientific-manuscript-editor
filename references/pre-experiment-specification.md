@@ -6,7 +6,7 @@ The goal is an understandable scientific paper that specifies enough to implemen
 
 ## Use adaptable implementation questions
 
-When creating a substantial specification or conducting an explicitly requested completeness review, it may help to treat each part of the manuscript as an answer to a question an implementer or reviewer would ask. This borrows the question-driven organization of Sugiura's *60 Questions & Answers (60QA)* without treating the number 60, one-question-per-paragraph, or any discipline-specific question as mandatory. Customize the questions to the research, then write integrated prose rather than a questionnaire unless the user explicitly requests a Q&A document.
+When creating a substantial specification or conducting an explicitly requested completeness review, it may help to treat each part of the manuscript as an answer to a question an implementer or reviewer would ask. This borrows the question-driven organization of Sugiura's *60 Questions & Answers (60QA)* without treating the number 60, one-question-per-paragraph, or any discipline-specific question as mandatory. See `question-bank.md` for all 60 adapted prompts when that level of planning detail is useful. Customize the questions to the research, then write integrated prose rather than a questionnaire unless the user explicitly requests a Q&A document.
 
 | Part of the research | Illustrative implementer/reviewer questions |
 |---|---|

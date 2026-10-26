@@ -77,6 +77,7 @@ The principles and workflow above always apply. Load detailed guidance for the t
 | Situation | Reference |
 |---|---|
 | Argument design, substantial writing, section/paragraph restructuring, known-to-new information flow, or text–visual integration | `references/argument-and-exposition.md` |
+| A detailed question-driven outline, section-specific planning prompts, or an explicitly requested completeness audit | `references/question-bank.md` (adapted 60QA; select relevant questions only) |
 | Writing or substantially revising an Introduction | `references/introduction.md` |
 | Writing or substantially revising an Abstract or summary paragraph | `references/abstract.md` |
 | Detailed diagnosis, reverse outlining, or recurring prose/argument symptoms | `references/diagnosis.md` |

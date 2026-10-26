@@ -6,6 +6,8 @@ The skill uses four common principles—**Purpose, Coherence, Comprehensibility,
 
 For substantial writing whose purpose or structure is unclear, an **optional Question → Answer → Paragraph** scaffold makes a reader question explicit, plans an evidence-grounded answer, and then composes the prose. It is informed by question-driven manuscript outlining such as 60QA but does not require a literal Q&A or one question for every paragraph. Topic/support relationships, Pyramid, context–content–conclusion, Problem–Solution, and CARS are available as conditional techniques rather than mandatory templates.
 
+The optional [`references/question-bank.md`](references/question-bank.md) retains **60 adapted, section-organized planning questions** from the 60QA approach, with applicability notes. They support detailed outlines and explicitly requested completeness reviews, not a universal 60-question audit or a 60-paragraph requirement.
+
 An important information-ordering heuristic is to **connect information already established or reasonably known by the reader to new information**. It applies across sentences and sections without forcing a fixed sentence shape.
 
 ## Manuscript purposes
@@ -25,6 +27,7 @@ These purposes are independent of whether the task is new writing, diagnosis, lo
 │   ├── introduction.md
 │   ├── abstract.md
 │   ├── diagnosis.md
+│   ├── question-bank.md
 │   ├── pre-experiment-specification.md
 │   ├── submission-preparation.md
 │   ├── notation.md
@@ -51,4 +54,4 @@ python3 scripts/verify_protected.py original.tex revised.tex \
 
 `approved_changes.txt` records intended protected-element additions/removals, **not author approval**; `--strict` cannot prove semantic equivalence. For a brand-new manuscript, check scientific grounding against supplied sources instead of inventing a baseline for comparison.
 
-**Current version:** v0.5.0
+**Current version:** v0.5.1
