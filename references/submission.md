@@ -1,31 +1,21 @@
-# Post-experiment submission preparation
+# Post-experiment manuscripts: submission preparation
 
-Use this reference when experiment results or analyses are available and the manuscript is being prepared for a target conference or journal. The aim is to make claims and evidence clear to reviewers **within verified venue requirements**, not to cut length at the expense of scientific validity.
+Use this reference when research results are available and a manuscript is being prepared for a specific journal, conference, or article type. The aim is to make the scientific contribution and actual evidence understandable **within verified venue requirements**, not to reduce word count at any scientific cost.
 
-## Establish submission requirements
+## Establish the applicable venue rules
 
-Identify the exact target venue, article type, version of author instructions, and applicable template. Check the **current official venue guidelines** before imposing page count, word count, reference limits, person/voice, tense, spelling, anonymization, figure/table placement, supplementary-material rules, or formatting. When a requirement cannot be verified, state the uncertainty and retain a consistent manuscript convention; do not invent a venue policy. Venue rules may differ between initial review and accepted versions.
+Identify the exact venue, article type, submission stage, current official author instructions, and template. Verify page or word limits, structure, allowed supplements, anonymization, citation style, figure placement, required disclosures, person or voice conventions, and other binding requirements **before** enforcing them. Distinguish the venue's stated rules from field conventions and personal stylistic preferences. Do not invent requirements if the official policy cannot be confirmed.
 
-## Reconcile the manuscript with completed work
+## Reconcile the manuscript with the completed research
 
-Separate planned, performed, and analyzed work. Ensure methods and experimental settings correspond to what was actually done, and results are neither extrapolated nor embellished. Tie central claims to the evidence that supports them. Make uncertainty, scope limitations, negative results, and conditions of validity clear. Reconcile tables and figures with numerical claims, statistical interpretations, and conclusions. Do not infer causal effects from descriptive associations without an adequate design.
+Check that the text describes procedures, data, settings, deviations, analyses, and results as actually performed. Planned methods must not quietly become completed methods, and initial hypotheses must not be presented as empirical findings. Ensure that the main contribution advertised by the title, Abstract, Introduction, and Conclusion matches the verified results. Keep consequential qualifications, uncertainty, and failure conditions near the corresponding claims.
 
-## Connect questions, results, and interpretations
+Use the relevant section references from `SKILL.md` when substantive exposition needs work. In particular, `results.md` contains the guidance for evidence-linked findings, and `discussion.md` covers scientific interpretation and limitations. This file governs the submission-stage reconciliation, not the detailed construction of those sections.
 
-For a substantial Results passage, ask what question the analysis addresses, what observations or estimates answer it, and what conclusion those observations support. When useful, develop the paragraph as **question or motivation → method/observation and evidence → warranted answer**, with later paragraphs building on established results. This can make Results read as connected propositions rather than as a chronology of experiments. It is an optional organizing pattern, not a demand that every paragraph start with a question or end with a formulaic summary. Exploratory, descriptive, and qualitative analyses may call for a different sequence.
+## Revise under space constraints without losing meaning
 
-Figures and tables often carry the detailed evidence. Use prose to name the relevant comparison, explain the consequential observations, and interpret their meaning without duplicating every number or graphical element. A claim-bearing subsection or figure title can help orient readers, provided the claim is no stronger than the evidence. Captions should make the visual content identifiable, including essential conditions and encodings, while the surrounding paragraphs establish why it matters.
+Resolve unsupported claims, broken logic, inconsistent definitions, and missing scientific explanation before shortening passages. Then reduce unnecessary repetition and detail that does not help the intended reader, preserving necessary methods, evidence, and qualifications. If the venue's main-text limit conflicts with information needed for validity or reproducibility, identify the trade-off and use permitted supplements where appropriate.
 
-In Discussion, relate supported findings to the original question and relevant prior work, then consider interpretation, scope boundaries, limitations, and implications. Do not force each paragraph into a limitation–future-work template or require speculative future experiments. Avoid mandatory checkboxes such as a particular p-value threshold, confusion matrix, ablation, or number of examples: their value depends on the research question and evaluation design.
+## Verify the assembled submission
 
-## Improve exposition under space constraints
-
-First address broken reasoning, unsupported claims, undefined concepts, or poor structural organization. Then remove repetition or compress wording where it reduces reader effort without losing essential detail. Use the paper/section/paragraph/sentence hierarchy: a shorter sentence cannot repair a missing logical bridge between sections. Keep abstractions, important notation, methods, and experimental conditions sufficiently explicit for validity and reproducibility. If constraints are incompatible with necessary detail, identify the trade-off and use supplements only where permitted and appropriate.
-
-## Verify the submission-ready version
-
-Read the assembled manuscript, including abstract, main text, references, captions, figures, tables, and any required supplemental information. Check consistency of claims, units, sample sizes, labels, abbreviations, and terminology. Verify that title, abstract, Introduction, results, and conclusion describe the **same supported contribution**. Apply the change-protection workflow in `verification.md` when revising from an existing version, and report any unresolved policy or science questions.
-
-For Abstract-specific exposition, consult `abstract.md`. Further guidance on evidence-linked Results paragraphs and scientific argument structure appears in Mensh and Kording (2017): https://doi.org/10.1371/journal.pcbi.1005619.
-
-For a requested section-by-section question review, select relevant prompts from `references/questions.md` under the routing rule in `SKILL.md`. Do not turn method-specific items into mandatory submission requirements.
+Read the assembled manuscript, including figures, tables, captions, equations, references, and required supplementary material. Check consistency of terminology, quantities, sample sizes, labels, claims, and the paper's central takeaway. Use `verification.md` for the original-to-revised scientific comparison when an existing manuscript has been edited, and report unresolved policy or author decisions explicitly.

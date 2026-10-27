@@ -32,7 +32,7 @@ You can ask for a diagnosis only, request a specific section, or set strict limi
 
 The workflow is **Context → Design / Diagnose → Write / Revise → Review / Verify → Deliver**. It is iterative: a problem found during review may require returning to the argument's design.
 
-The central idea is to decide **what the reader needs to understand** and then make the paper, sections, paragraphs, sentences, equations, figures, and tables work together to communicate it. A useful planning question is: *What should readers understand here, and which evidence or explanation lets them understand it?* The answer may need a paragraph, an equation, a figure, or a combination.
+The central idea is to decide **what the reader needs to understand** and then make the paper, sections, paragraphs, sentences, equations, figures, and tables work together to communicate it. A useful planning question is: *What should readers understand here, and which evidence or explanation lets them understand it?* The answer may need a paragraph, an equation, a figure, or a combination. **Question → Answer → Paragraph** is a flexible reasoning aid, not a prescribed questionnaire or paragraph count.
 
 Four principles guide the work: **Purpose, Coherence, Comprehensibility, and Scientific Accuracy**. Paragraph writing, claim–support reasoning, Context–Content–Conclusion (CCC), and moving from familiar context to new information are available as techniques, not rigid templates. Figures and tables complement the surrounding prose rather than replacing its explanation.
 
@@ -45,14 +45,14 @@ For revisions, the original should remain available for comparison. A bundled [v
 ## Repository guide
 
 - [SKILL.md](SKILL.md) — Always-applicable purpose, principles, workflow, scientific safeguards, and rules for loading specialized guidance.
-- [composition.md](references/composition.md) — Scientific argument, paragraph writing, reader questions, information order, and integration of equations, figures, and tables.
-- [questions.md](references/questions.md) — Optional adapted 60QA planning questions; select those relevant to the work rather than treating all 60 as mandatory.
-- [pre-experiment.md](references/pre-experiment.md) and [submission.md](references/submission.md) — Stage-specific guidance.
-- [introduction.md](references/introduction.md) and [abstract.md](references/abstract.md) — Section-specific guidance.
-- [diagnosis.md](references/diagnosis.md), [verification.md](references/verification.md), and [notation.md](references/notation.md) — Focused checks and conventions.
+- [composition.md](references/composition.md) and [notation.md](references/notation.md) — Shared principles for scientific argument, paragraphs, known-to-new information, complementary prose/visuals, and notation.
+- **Sections:** [abstract.md](references/abstract.md), [introduction.md](references/introduction.md), [related-work.md](references/related-work.md), [problem.md](references/problem.md), [method.md](references/method.md), [experiments.md](references/experiments.md), [results.md](references/results.md), [discussion.md](references/discussion.md), and [conclusion.md](references/conclusion.md) — Guidance tailored to the part being written or reviewed.
+- [ml.md](references/ml.md) — Conditional, machine-learning-specific guidance, such as backbone descriptions, train/validation/test use, complexity reporting, and classification error analysis.
+- [pre-experiment.md](references/pre-experiment.md) and [submission.md](references/submission.md) — Stage-specific implementation readiness and venue requirements.
+- [diagnosis.md](references/diagnosis.md) and [verification.md](references/verification.md) — Diagnose reader difficulties and check whether revisions preserve scientific meaning.
 
-The assistant reads `SKILL.md` when the skill activates and loads relevant reference files only when needed. That separation keeps core instructions available without imposing every detailed checklist on every task.
+The assistant reads `SKILL.md` when the skill activates and loads relevant reference files only when needed. That separation keeps core instructions available without imposing every section's specialized guidance on every task. A complete manuscript may use several section references; a focused revision should load only the relevant ones.
 
-The optional question bank adapts the *60 Questions & Answers (60QA)* approach attributed to [Komei Sugiura](https://komeisugiura.jp/software/software_jp.html). Paragraph-structure guidance is also informed by [Mensh and Kording (2017)](https://doi.org/10.1371/journal.pcbi.1005619) and [Seitaro Iwama's academic-writing lecture](https://speakerdeck.com/neuroiwm/paragurafu-kara-hajimeru-akademikku).
+The section-specific advice incorporates generalized writing lessons informed by [Komei Sugiura's *60 Questions & Answers (60QA)*](https://komeisugiura.jp/software/software_jp.html); the repository does not reproduce a numbered 60-question checklist. Paragraph-structure guidance is also informed by [Mensh and Kording (2017)](https://doi.org/10.1371/journal.pcbi.1005619) and [Seitaro Iwama's academic-writing lecture](https://speakerdeck.com/neuroiwm/paragurafu-kara-hajimeru-akademikku).
 
-**Current version:** v0.6.0
+**Current version:** v0.7.0

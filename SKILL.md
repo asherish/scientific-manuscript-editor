@@ -88,20 +88,27 @@ For revisions with suitable original and revised sources, follow `references/ver
 
 ## 6. Reference selection and deliverables
 
-The definitions and workflow above always apply. **Reference files are not automatically in context.** Read a file when its condition below is met, and do not assume another reference has been read. All shared definitions needed across tasks are in this file; references expand task-specific techniques and should not duplicate common rules.
+The definitions and workflow above always apply. **Reference files are not automatically in context.** Read each file whose condition is met; never assume that loading one reference also loads another. These references are organized by writing principle, manuscript section, research method, and task. Use their advice selectively rather than treating any section-specific technique as a universal checklist.
 
 | Read when the task involves… | Reference |
 |---|---|
 | Substantial logical design, writing, restructuring, or reader-oriented review across paper, paragraph, equation, figure, or table | `references/composition.md` |
-| Detailed question-driven planning or an explicitly requested completeness audit; select only relevant prompts | `references/questions.md` (optional adapted 60QA) |
 | Writing, diagnosing, or substantially revising an Introduction | `references/introduction.md` |
 | Writing, diagnosing, or substantially revising an Abstract or summary paragraph | `references/abstract.md` |
+| Writing, diagnosing, or substantially revising Related Work or a literature-positioning passage | `references/related-work.md` |
+| Defining or auditing a research task, formal problem, assumptions, inputs, or outputs | `references/problem.md` |
+| Writing, diagnosing, or substantially revising a Method, Model, or Approach section | `references/method.md` |
+| Planning, writing, or auditing an empirical study, experimental setup, metrics, data handling, or evaluation protocol | `references/experiments.md` |
+| Writing, diagnosing, or interpreting an empirical Results or Findings section | `references/results.md` |
+| Writing, diagnosing, or substantially revising a Discussion or interpretation-of-findings passage | `references/discussion.md` |
+| Writing, diagnosing, or substantially revising a Conclusion or closing summary | `references/conclusion.md` |
+| A learning model, ML training, ML-specific experiment, or task-specific classification evaluation | `references/ml.md` (in addition to the relevant section reference) |
 | Systematic diagnosis, reverse outlining, or a structured reader-difficulty report | `references/diagnosis.md` |
 | Writing or substantially revising an implementation-ready pre-experiment manuscript, or explicitly auditing design completeness | `references/pre-experiment.md` |
 | Checking a target venue's submission requirements or refining a post-experiment manuscript for that venue | `references/submission.md` |
 | Establishing notation conventions, resolving symbol ambiguity, or changing symbol identities | `references/notation.md` |
 | Substantive scientific revisions, protected-element checks, or comparing original and revised versions | `references/verification.md` |
 
-Pre-experiment status alone does **not** authorize a full research-design audit when the user requested only readability feedback; writing an implementation-ready specification does require sufficient implementation detail. Do not use optional references as compulsory checklists.
+When designing or revising a complete manuscript, read relevant section references as that work reaches each section, rather than loading every reference by default. The **Question → Answer → Paragraph** scaffold in Section 4 remains available for planning and review, but there is no fixed 60-question file or requirement to present a questionnaire. Pre-experiment status alone does **not** authorize a full research-design audit when the user requested only readability feedback; writing an implementation-ready specification does require sufficient implementation detail.
 
 Report in the **user's language**, while quoting manuscript excerpts in their source language. For a diagnosis, prioritize actionable findings with locations and expected reader benefits. For a revision, provide the revised copy, major decisions, relevant scientific checks, and unresolved questions. For new writing, provide the manuscript and material assumptions or gaps. Keep the report proportionate to the request.

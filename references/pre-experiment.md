@@ -1,47 +1,25 @@
-# Pre-experiment manuscript as an implementable specification
+# Pre-experiment manuscripts: implementation readiness
 
-Use this reference when writing or substantially revising a paper-form manuscript whose experiments are not yet implemented and whose details will guide implementation. Also use it when the user explicitly requests research-design, reproducibility, implementation-specification, or completeness review. **Pre-experiment status alone does not trigger a separate exhaustive audit for a readability-only request.**
+Use this reference when writing or substantially revising a paper-form manuscript before the proposed experiments have been implemented, or when an author explicitly requests a design-completeness or implementation-readiness audit. A readability-only diagnosis of an early manuscript does not authorize a comprehensive research-design review.
 
-The goal is an understandable scientific paper that specifies enough to implement and appraise the work, not a standalone engineering manual. Page count is subordinate to necessary scientific detail. Mark planned work as planned; never write prospective outcomes as observed results.
+The objective is a **scientifically understandable manuscript that can guide implementation and critical appraisal**. Necessary definitions, procedures, assumptions, and evaluation choices take priority over a submission page limit. This remains a paper, not merely a software specification or a sequence of planning answers.
 
-## Use adaptable implementation questions
+## Distinguish commitments from open decisions
 
-When creating a substantial specification or conducting an explicitly requested completeness review, treat an implementer's unanswered questions as potential gaps in the specification. For detailed optional section prompts, load `references/questions.md` according to the selection rule in `SKILL.md`. Customize questions to the research, then write integrated prose rather than a questionnaire unless the user explicitly requests a Q&A document.
+Identify which research questions, hypotheses, problem definitions, design choices, data sources, and evaluation procedures are already decided by the author. Mark material unknowns explicitly instead of inventing plausible implementation details. Distinguish a proposed outcome from an empirical finding, and do not fill a conventional Results slot with expected numbers or untested conclusions.
 
-| Part of the research | Illustrative implementer/reviewer questions |
-|---|---|
-| Problem and scope | What exactly is being studied? What counts as a valid output or solution? Which cases and assumptions are in or out of scope? |
-| Data and inputs | What observations or data are available? At what unit or resolution? Why are these data suitable? |
-| Method | What components are necessary, and what does each one consume, produce, and accomplish? Which definitions or parameters remain unsettled? |
-| Evaluation | Which questions will each analysis inform? What comparisons, metrics, splits, and uncertainty assessments are needed? |
-| Reproducibility | Which preprocessing, algorithmic decisions, data versions, selection procedures, and resources must be specified to repeat the essential work? |
+If definitions or evaluation objectives are unsettled, resolve or flag these upstream dependencies before polishing descriptions that rely on them. Writing the problem and evaluation protocol before a polished Introduction can reduce rework, but do not impose a fixed drafting order independent of the project.
 
-There is no prescribed writing order. If definitions and evaluation targets are unstable, settle or flag them before polishing downstream sections. Some authors find it easier to draft the problem formulation and experimental plan before the Introduction; others have a clearer contribution after writing the evidence. Select an order that avoids propagating unresolved assumptions, rather than adopting one workflow mechanically.
+## Audit whether the plan can be implemented and tested
 
-## State the argument and formulation
+Read the relevant section references selected in `SKILL.md` for the scientific particulars: `problem.md` for the task and assumptions, `method.md` for the algorithm, and `experiments.md` for data and evaluation design. Use `ml.md` only when the study actually employs machine learning. Ask whether a competent implementer could reconstruct consequential data transformations, quantities, model operations, parameters, protocols, comparison conditions, and selection rules without asking the author to guess.
 
-Specify the research problem, question, proposed contribution, assumptions, and what planned evidence could bear on consequential claims. State inputs, outputs, objectives, constraints, units of analysis, and scope to the extent required for the proposed study. Explain author-created concepts and the role of non-obvious equations so another researcher can understand and implement them. Do not infer that a missing item is mandatory simply because a template contains it.
+Check that each material claim or research question has a plausible planned source of evidence and that the experiment could distinguish relevant interpretations. An analysis may serve several questions, and a question may require several analyses. Identify missing controls or decisions that threaten validity, not omissions from an arbitrary question quota.
 
-## Explain the proposed method
+## Describe intended results without inventing them
 
-For substantive components, make their purpose, inputs, outputs, dependencies, and interactions recoverable. Motivate design choices that affect validity or implementation, without inventing a history of alternatives. Consider a conceptual overview or a diagram of inputs, transformations, and outputs when it materially reduces reader effort. Keep prose, equations, and diagrams complementary: necessary implementation meaning belongs in the explanation, not solely in a caption or variable list.
+When result presentation affects implementation planning, describe the *purpose* of a proposed table or figure, its relevant units, axes, categories, comparison conditions, and what interpretation it is intended to enable. Label it as planned. Do not fabricate measurements, distributions, qualitative examples, statistical significance, or diagram contents. For a missing but important display, use the evidence-grounded placeholder convention in `SKILL.md`.
 
-## Specify the planned evaluation at useful resolution
+## Report the gaps that matter
 
-Make clear which experiment, study, or analysis will inform each material research question or claim. A rigid one-to-one mapping of contributions to plots or experiments is unnecessary. As applicable, specify:
-
-- Data sources and versions, collection, cleaning, preprocessing, and spatial/temporal units.
-- Sampling, splits, baselines, comparison fairness, and leakage controls.
-- Metrics and operational definitions, thresholds and their selection, ablations, and uncertainty treatment.
-- Hyperparameters and their selection procedures, random seeds or repeated trials, and computational settings when consequential.
-- The intended analyses or comparisons, and what they can and cannot establish.
-
-Explain planned interpretations according to whether the study is hypothesis-driven, exploratory, descriptive, or qualitative. Do not force a binary accept/reject outcome when the evaluation does not support one.
-
-## Prepare results presentation without inventing results
-
-Describe planned tables and figures when their purpose affects the implementation: axes, columns, comparison groups, relationships, and the intended reader question. Do not create fabricated numbers, outcomes, or diagrams. Explain known limitations and threats to validity concretely, and distinguish open decisions from fixed conditions.
-
-## Apply completeness prompts proportionately
-
-For an explicit completeness or implementation review, report only material gaps that block implementation, scientific appraisal, or interpretation. Identify where information is missing, why it matters, and whether the author must supply it. Mark genuinely irrelevant prompts `N/A` with a short reason when reporting in checklist form is useful; do not manufacture compliance scores or scatter placeholders throughout a readable draft merely to fill a list.
+For a requested completeness audit, prioritize omissions that obstruct implementation, scientific appraisal, or interpretation. State what information is missing, why it matters, and whether an author decision, source verification, or design revision is needed. Some study types will not use classifiers, train/test splits, ablations, or numerical significance tests; their absence is not intrinsically a defect.

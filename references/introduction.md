@@ -16,11 +16,15 @@ A useful variant is a progressively narrowing gap: a broad scientific limitation
 
 Question-driven planning may help when an Introduction is difficult to construct: What phenomenon or task matters? What is established? What remains unknown or inadequate, and according to which sources? Why does that limitation matter? What does this study do about it, and why is that approach plausible? Customize or omit questions rather than building a paragraph for each one.
 
+Ground claims that the problem is difficult in identifiable constraints, representative failure cases, unresolved mechanisms, or evidence from relevant studies. A concrete use case may help readers understand why the task or gap matters, but illustrative cases do not demonstrate that all existing approaches fail. Distinguish a broad motivation from the precise target problem addressed by this study.
+
 ## Distinguish gap, question, approach, and contribution
 
 The gap should identify a meaningful limitation or unanswered question in the available literature, without inventing a claim that no prior work exists. Explain why resolving the gap matters. State the question or objective precisely enough for the reader to recognize what is studied and what is outside scope. Present the proposed approach or completed finding at a level appropriate for the Introduction, and express the contribution in terms of what the paper establishes or enables—not unsupported words such as “novel” or “first.”
 
 Claims of novelty, practical importance, or state-of-the-art performance need appropriate reference points or evidence. If the supplied material cannot establish them, use a bounded claim or flag the missing basis instead of supplying invented citations or comparisons. For pre-experiment manuscripts, distinguish hypotheses and proposed evaluations from demonstrated findings; for post-experiment manuscripts, match the contribution to actual results.
+
+Prioritize the most consequential distinction from the closest prior approaches, and explain the mechanism or reasoning by which that choice may address the gap. A proposed rationale is not evidence of successful performance. Present the paper's substantive contributions at the level the underlying work can support, rather than forcing one difference or a predetermined number of contribution bullets. An overview figure is useful when it clarifies the research setting, central idea, or comparison—not because a conference Introduction automatically requires one.
 
 ## Check the reader's route into the paper
 
