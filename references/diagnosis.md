@@ -3,6 +3,10 @@
 Diagnosis identifies **where an intended reader would struggle to understand the manuscript and why**. It evaluates the actual explanation, not compliance with a preferred phrase or template. Use the task boundary and intervention choices in `SKILL.md`.
 
 ## Trace the reader's path
+**Inspect from a reader's knowledge state, not the author's memory.** At each consequential transition, identify what the intended reader has already learned, which new concept or claim follows, and whether an unstated definition, assumption, or step blocks comprehension. Consider different entry points: Abstract, section headings, figure captions, and Conclusion. If a major claim appears in several places, trace its actual evidence and qualifications rather than treating repetition as proof.
+
+For a draft with structural concerns, optionally create a **reverse outline** from one-sentence summaries of what each paragraph actually does. Inspect missing dependencies, changes of subject, duplicated moves, and a promised contribution with no supporting evidence. This is a diagnostic aid, not an instruction to rewrite a passage that already works. When appropriate, ask a knowledgeable reader unfamiliar with the project to identify the main claim and evidence from a brief reading or from figures alone; use misunderstandings to locate gaps rather than treating feedback as authority to alter scientific meaning.
+
 
 A structural diagnosis starts by reconstructing the explanation the reader actually encounters. Read the relevant text, equations, figures, tables, and captions together, then make a compact map of claims, definitions, section roles, and evidence. When the organization is uncertain, use a **reverse outline**: describe what each existing paragraph accomplishes, then inspect missing links, redundancies, misplaced explanations, and dependencies. Do not create a reverse outline merely to satisfy a procedure.
 
@@ -53,10 +57,15 @@ The following are **diagnostic prompts, not banned expressions or automatic subs
 | Generic limitations and future work | Have actual scope boundaries, uncertainty, and weaknesses been explained? |
 | Terminology drift (region/area/zone; method/framework/pipeline; risk/hazard/score) | Are different terms describing one concept without reason? Use a defined term consistently. |
 | Bold mini-headings, em-dash chains, lists inside prose | Do these conflict with reader needs or venue style? Treat as low-priority if harmless. |
+| Figure or table message is unclear, its scale is misleading, or the caption asserts more than it shows | Identify the intended reader question, observed evidence, and the smallest correction; consult `figures.md` when that reference applies. |
+
+An optional, accurate two- or three-word bold takeaway in a **caption** is not the same as an unnecessary mini-heading in prose. Do not flag or require it solely because of typography; check evidential support and venue style.
 
 Known-to-new information flow can diagnose abrupt transitions: if a sentence introduces several unfamiliar entities before giving readers a usable anchor, move established context forward or add a bridge. But **do not impose a fixed given-before-new word order**; see `references/composition.md` for examples and exceptions when that file is also selected by `SKILL.md`.
 
 ## Report actionable findings
+For claim–evidence concerns, name the exact claim, where its support is found (or absent), the condition that bounds it, and the reader's likely mistaken inference. For quantitative work, consider whether the metric actually measures the claimed target, whether evaluation data are independent, and whether comparisons and uncertainty justify the stated conclusion. Use the applicable `problem.md`, `experiments.md`, `results.md`, or `ml.md` guidance rather than applying an ML audit to every prose-only task.
+
 
 An actionable diagnosis tells the author **where the reader is likely to struggle and what would improve the passage**. Prioritize consequential findings and report:
 
@@ -68,3 +77,8 @@ An actionable diagnosis tells the author **where the reader is likely to struggl
 When useful, include the anticipated `Local`, `Semantic`, and/or `Structural` change type(s) defined in `SKILL.md`. These are not risk levels. Group repeated symptoms of one underlying problem, and report separate scientific risks without suggesting that a proposed edit has already been made.
 
 Keep diagnosis separate from editing. An author may choose a local fix, section reorganization, or complete rewrite after understanding the diagnosis. Do not promise to fix a missing scientific definition, result, or citation without author input or verifiable evidence.
+
+## Sources and applicability
+
+- Gopen and Swan (1990), *The Science of Scientific Writing* — reader expectations and scientific clarity: https://www.cs.tufts.edu/comp/150FP/archive/george-gopen/sci.html
+- University of Wisconsin–Madison Writing Center, *Creating a Reverse Outline* — diagnosing paragraph order, duplication, and missing links: https://writing.wisc.edu/handbook/processandstructure/reverseoutlines/

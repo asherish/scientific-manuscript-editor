@@ -34,7 +34,7 @@ The workflow is **Context → Design / Diagnose → Write / Revise → Review / 
 
 The central idea is to decide **what the reader needs to understand** and then make the paper, sections, paragraphs, sentences, equations, figures, and tables work together to communicate it. A useful planning question is: *What should readers understand here, and which evidence or explanation lets them understand it?* The answer may need a paragraph, an equation, a figure, or a combination. **Question → Answer → Paragraph** is a flexible reasoning aid, not a prescribed questionnaire or paragraph count.
 
-Four principles guide the work: **Purpose, Coherence, Comprehensibility, and Scientific Accuracy**. Paragraph writing, claim–support reasoning, Context–Content–Conclusion (CCC), and moving from familiar context to new information are available as techniques, not rigid templates. Figures and tables complement the surrounding prose rather than replacing its explanation.
+Four principles guide the work: **Purpose, Coherence, Comprehensibility, and Scientific Accuracy**. Paragraph writing, claim–support reasoning, Context–Content–Conclusion (CCC), and moving from familiar context to new information are available as techniques, not rigid templates. Figures and tables complement the surrounding prose rather than replacing its explanation. The figure guidance includes an **optional** two- or three-word bold caption takeaway; the method guidance includes optional criteria for choosing a memorable, meaningful name.
 
 ## Scientific safeguards
 
@@ -45,7 +45,7 @@ For revisions, the original should remain available for comparison. A bundled [v
 ## Repository guide
 
 - [SKILL.md](SKILL.md) — Always-applicable purpose, principles, workflow, scientific safeguards, and rules for loading specialized guidance.
-- [composition.md](references/composition.md) and [notation.md](references/notation.md) — Shared principles for scientific argument, paragraphs, known-to-new information, complementary prose/visuals, and notation.
+- [composition.md](references/composition.md), [figures.md](references/figures.md), and [notation.md](references/notation.md) — Shared guidance for scientific argument, reader-oriented explanation, figures and tables, and notation.
 - **Sections:** [abstract.md](references/abstract.md), [introduction.md](references/introduction.md), [related-work.md](references/related-work.md), [problem.md](references/problem.md), [method.md](references/method.md), [experiments.md](references/experiments.md), [results.md](references/results.md), [discussion.md](references/discussion.md), and [conclusion.md](references/conclusion.md) — Guidance tailored to the part being written or reviewed.
 - [ml.md](references/ml.md) — Conditional, machine-learning-specific guidance, such as backbone descriptions, train/validation/test use, complexity reporting, and classification error analysis.
 - [pre-experiment.md](references/pre-experiment.md) and [submission.md](references/submission.md) — Stage-specific implementation readiness and venue requirements.
@@ -55,4 +55,4 @@ The assistant reads `SKILL.md` when the skill activates and loads relevant refer
 
 The section-specific guidance applies adaptable scientific-writing principles rather than a fixed questionnaire. Reader-question planning is supported by [MIT EECS Communication Lab's *Planning Your Paper*](https://mitcommlab.mit.edu/eecs/commkit/journal-or-conference-paper/) and [Mensh and Kording (2017)](https://doi.org/10.1371/journal.pcbi.1005619). Paragraph guidance also draws on [Purdue OWL's *On Paragraphs*](https://owl.purdue.edu/owl/general_writing/academic_writing/paragraphs_and_paragraphing/) and [Minto's *Pyramid Principle*](https://barbaraminto.com/). Introduction guidance draws on Swales's CARS model and [MIT EECS Communication Lab's *Paper: Introduction*](https://mitcommlab.mit.edu/eecs/commkit/journal-article-introduction/). Other section and ML references cite English sources matched to the principles they support, with discipline-specific qualifications.
 
-**Current version:** v0.8.2
+**Current version:** v0.9.0

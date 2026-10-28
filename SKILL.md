@@ -93,6 +93,7 @@ The definitions and workflow above always apply. **Reference files are not autom
 | Read when the task involves… | Reference |
 |---|---|
 | Substantial logical design, writing, restructuring, or reader-oriented review across paper, paragraph, equation, figure, or table | `references/composition.md` |
+| Designing, drafting, revising, or auditing scientific figures, tables, captions, visual encodings, or their evidential role | `references/figures.md` |
 | Writing, diagnosing, or substantially revising an Introduction | `references/introduction.md` |
 | Writing, diagnosing, or substantially revising an Abstract or summary paragraph | `references/abstract.md` |
 | Writing, diagnosing, or substantially revising Related Work or a literature-positioning passage | `references/related-work.md` |

@@ -20,9 +20,21 @@ A reader should be able to trace the defined inputs through intermediate quantit
 
 Choose the detail level according to the manuscript's purpose. Before experiments, identify unresolved decisions that would prevent implementation. After experiments, describe the procedure actually used. Equations, diagrams, pseudocode, and examples can carry precise detail, but surrounding prose must still explain how they advance the method.
 
+## Optionally choose a memorable method name
+
+When naming an author-proposed method would aid explanation, reference, or recall, **consider** the naming heuristics in Faloutsos's *MetaPaper*:
+
+1. Prefer a distinctive, English-like coined name rather than an ordinary dictionary word.
+2. Try saying it **three times in succession**: a good name should be easy to pronounce and remember.
+3. Convey the method's **principal insight, purpose, or benefit**. **Avoid names that merely describe implementation steps.** For instance, `FraudSpot` is a more meaningful name than `DeepLearnFraud`, which primarily lists a technique and task.
+4. Prefer positive connotations and avoid misleading implications.
+
+These are **optional selection criteria**, not a mandate to rename an existing method, invent an acronym, or give every component a brand-like name. Check for collisions or ambiguity when relevant, and obtain the author's choice before making a substantive naming change. Once chosen, define the name and use it consistently across the Abstract, Introduction, Method, figures, and Conclusion. A memorable name must not imply performance or novelty the evidence cannot support.
+
 ## Sources and applicability
 
 - MIT EECS Communication Lab, *Paper: Methods (CS)* — explaining algorithm or system components, justifying design choices, developing intuition, and providing consequential replication detail: https://mitcommlab.mit.edu/eecs/commkit/journal-article-methods-cs/
+- Faloutsos, *MetaPaper v14* — optional English-like, pronounceable, benefit-oriented, positive method naming: https://www.cs.cmu.edu/~christos/MetaPaper/faloutsos_MetaPaper_v14.pdf
 - Pineau et al. (2021), *Improving Reproducibility in Machine Learning Research* — reproducibility of learned methods and computational experiments where relevant: https://www.jmlr.org/papers/v22/20-303.html
 
-Use the second source when machine learning or experimental replication is applicable; not every method has a learned model, loss, or experimental training procedure.
+Use Pineau et al. when machine learning or experimental replication is applicable; not every method has a learned model, loss, or experimental training procedure. Faloutsos's method-naming advice is optional and should not override author terminology.

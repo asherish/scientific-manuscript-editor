@@ -8,6 +8,8 @@ Begin with the scientific content the author can substantiate. At paper scale, i
 
 Build an explanation that exposes dependencies. If a method depends on an assumption, introduce or point to that assumption before relying on it. If a result supports a claim only in a particular setting, keep the qualification near the inference. Use a brief outline or a map of claims and evidence when the connections are hard to hold in memory. Do not force one contribution per section, one experiment per research question, or a fixed IMRaD outline if the research calls for another organization.
 
+**Trace major claims across the whole manuscript.** For each substantive contribution or benefit asserted in the Abstract or Introduction, identify the supporting reasoning, experiment, figure, theorem, or other evidence, together with its assumptions and limits. Check that Results answer the relevant question and that the Conclusion claims no more than those findings warrant. Short, stable labels for main contributions can help readers follow the same thread across sections; neither impose a number of labels nor repeat words mechanically. For a pre-experiment manuscript, distinguish planned tests from evidence already obtained.
+
 ## Optionally outline by reader questions
 
 **Question → Answer → Paragraph** is a useful scaffold when a passage's purpose or content is not yet clear. Formulate the question an intended reader should be able to answer after reading it; identify an answer grounded in the author's material; gather the supporting definitions, reasoning, evidence, or qualifications; and then write a coherent paragraph or group of paragraphs. The question may remain only in the author's outline. It is not necessary to write an explicit Q&A for every paragraph, and some questions need several paragraphs or a figure and accompanying prose.
@@ -59,6 +61,8 @@ Do not mechanically put old information at the beginning of every sentence. Surp
 
 The progression from established research context toward an identifiable gap (Mensh & Kording; Swales) is another way to reason about reader expectations, especially in an Introduction. None of these patterns is a template to impose on every paragraph.
 
+**Use topic and stress positions as additional reader-expectation lenses.** Where helpful, put the subject that a sentence is about and the context linking backward near its opening, and place the important new contribution where the reader will notice the emphasis, often toward the end. Keep subjects and actions easy to identify. Gopen and Swan describe these as interpretive principles, not fixed rules: technical precision, contrast, or another rhetorical purpose may justify a different order.
+
 ## Integrate mathematical and visual elements with prose
 
 **Equations are part of an explanation, not detached objects.** Use surrounding sentences to establish the quantity or relationship being defined, explain non-obvious symbols and assumptions, and interpret what the expression means or why this form is useful. Avoid stopping after a mechanical “where x is…” list if readers still cannot understand the equation's role. Conversely, do not restate a self-evident expression at length.
@@ -71,7 +75,14 @@ An overview figure can orient readers before they encounter detailed explanation
 
 A processing diagram should show actual inputs, transformations, intermediate quantities, and outputs. **Boxes labeled only with section headings do not explain a scientific relationship.** Neither Figure 1 nor a pipeline diagram is automatically required; use an equation, table, or concise prose if it communicates better. If a needed figure cannot yet be grounded in available material, describe its purpose with `[FIGURE: ...]` rather than inventing contents.
 
+When the visual itself needs to be designed or evaluated, use `figures.md` for the detailed figure/table decision, caption, plot-encoding, and evidence checks. An optional figure-and-table outline can clarify the evidential structure before drafting long prose; it does not dictate a writing order.
+
+## Support multiple routes through the paper
+
+Readers may encounter the Abstract, headings, figures and captions, or Conclusion before reading every intervening paragraph. Check whether those entry points convey a consistent, bounded scientific takeaway and whether a reader seeking its evidence can locate the relevant analyses or definitions. A caption may need enough self-contained context even when the surrounding text already defines it. Do not turn useful signposting into repetitive marketing language.
+
 ## Check the result from the reader's position
+
 
 After composing or rearranging, follow the reader's path: What do they know at this point? What question does the next passage answer? Can they understand important terms, equations, evidence, and relations without excessive searching backward? Does a transition express cause, contrast, condition, inference, or mere addition accurately? Does each section deliver what its heading promises?
 
@@ -80,6 +91,8 @@ Repair the source of confusion at the smallest effective scale. That may mean de
 ## Further reading
 
 - Mensh and Kording (2017), *Ten simple rules for structuring papers*: https://doi.org/10.1371/journal.pcbi.1005619
+- Gopen and Swan (1990), *The Science of Scientific Writing* — reader expectations, topic/stress positions: https://www.cs.tufts.edu/comp/150FP/archive/george-gopen/sci.html
+- Peyton Jones, *How to Write a Great Research Paper* — explicit claims and evidence in the body: https://john.cs.olemiss.edu/~hcc/researchMethods/2016spr/notes/PeytonJones/Writing_paper_handout.pdf
 - Purdue Online Writing Lab, *On Paragraphs* (topic sentences, paragraph unity, support, and coherence): https://owl.purdue.edu/owl/general_writing/academic_writing/paragraphs_and_paragraphing/
 - Purdue Online Writing Lab, *Organizing Your Argument* (claims, evidence, and warrants in the Toulmin model): https://owl.purdue.edu/owl/general_writing/academic_writing/establishing_arguments/organizing_your_argument.html
 - Minto (1996), *The Minto Pyramid Principle: Logic in Writing, Thinking and Problem Solving* (hierarchical claim–support organization): https://barbaraminto.com/
