@@ -26,7 +26,11 @@ In the Introduction, orient the reader to what the figure demonstrates and how i
 
 Make the figure or table identifiable without forcing the reader to search the main text for its subject: describe the compared quantities or entities, meaningful conditions, units, encodings, and interpretation aids at the detail needed for correct reading. The text should develop the implication rather than mechanically repeat every plotted mark.
 
-**Optional two- or three-word bold takeaway tag:** When a concise, evidence-supported result is immediately useful to a reader scanning figures, consider starting the caption with a bold 2–3-word label, such as **Linear scaling.**, **Improved recall.**, or **Consistent performance gains.** Follow it with an informative description, for example: “**Linear scaling.** Runtime versus input size under the stated hardware and workload.” These examples are illustrative labels, not claims about a particular experiment. A tag is a communication aid, **not** a required element of every caption, and it must not turn uncertainty or correlation into a stronger claim. Omit it when a descriptive title is clearer, the message is not a supported result, the tag adds clutter, or the venue's caption conventions disallow it.
+**Optional two- or three-word bold takeaway tag:** When a concise, evidence-supported result would help a reader scanning the figures, consider starting the caption with a bold 2–3-word label. Examples include **Linear scaling.**, **Improved recall.**, and **Consistent performance gains.** These are illustrative labels, not claims about any particular experiment.
+
+Follow the label with an informative description. For example: “**Linear scaling.** Runtime versus input size under the stated hardware and workload.” The label must not turn uncertainty or correlation into a stronger claim.
+
+This is an **optional** communication aid, not an element to impose on every caption. Omit it when a descriptive title is clearer, the message is not a supported result, the label adds clutter, or venue conventions disallow it.
 
 ## Integrate figures with the argument and verify them
 

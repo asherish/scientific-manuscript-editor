@@ -3,12 +3,12 @@
 Diagnosis identifies **where an intended reader would struggle to understand the manuscript and why**. It evaluates the actual explanation, not compliance with a preferred phrase or template. Use the task boundary and intervention choices in `SKILL.md`.
 
 ## Trace the reader's path
-**Inspect from a reader's knowledge state, not the author's memory.** At each consequential transition, identify what the intended reader has already learned, which new concept or claim follows, and whether an unstated definition, assumption, or step blocks comprehension. Consider different entry points: Abstract, section headings, figure captions, and Conclusion. If a major claim appears in several places, trace its actual evidence and qualifications rather than treating repetition as proof.
 
-For a draft with structural concerns, optionally create a **reverse outline** from one-sentence summaries of what each paragraph actually does. Inspect missing dependencies, changes of subject, duplicated moves, and a promised contribution with no supporting evidence. This is a diagnostic aid, not an instruction to rewrite a passage that already works. When appropriate, ask a knowledgeable reader unfamiliar with the project to identify the main claim and evidence from a brief reading or from figures alone; use misunderstandings to locate gaps rather than treating feedback as authority to alter scientific meaning.
+**Inspect from a reader's knowledge state, not the author's memory.** Read the relevant text, equations, figures, tables, and captions together. At each consequential transition, identify what the intended reader already knows, which new concept or claim follows, and whether a missing definition, assumption, or step blocks comprehension. Consider independent entry points—the Abstract, headings, figure captions, and Conclusion—and trace major claims to their actual evidence and qualifications rather than treating repetition as support.
 
+For a draft with structural concerns, optionally make a compact map of claims, definitions, section roles, and evidence. A **reverse outline** records in one sentence what each existing paragraph actually accomplishes; inspect it for missing dependencies, changes of subject, duplicated moves, misplaced explanations, and contributions promised without supporting evidence. Use it only when it helps diagnose a real difficulty, not as an obligatory artifact or a reason to rewrite material that already works.
 
-A structural diagnosis starts by reconstructing the explanation the reader actually encounters. Read the relevant text, equations, figures, tables, and captions together, then make a compact map of claims, definitions, section roles, and evidence. When the organization is uncertain, use a **reverse outline**: describe what each existing paragraph accomplishes, then inspect missing links, redundancies, misplaced explanations, and dependencies. Do not create a reverse outline merely to satisfy a procedure.
+When appropriate, ask a knowledgeable reader unfamiliar with the project to identify the main claim and evidence from a brief reading or from figures alone. Use misunderstandings to locate gaps rather than treating feedback as authority to change scientific meaning.
 
 For each suspected obstacle, ask what the passage should enable the intended reader to understand, what knowledge is already available, where understanding breaks down, and which change would help. A likely difficulty is a prediction about readers, not observed user-study evidence; explain it as such.
 
@@ -65,7 +65,6 @@ Known-to-new information flow can diagnose abrupt transitions: if a sentence int
 
 ## Report actionable findings
 For claim–evidence concerns, name the exact claim, where its support is found (or absent), the condition that bounds it, and the reader's likely mistaken inference. For quantitative work, consider whether the metric actually measures the claimed target, whether evaluation data are independent, and whether comparisons and uncertainty justify the stated conclusion. Use the applicable `problem.md`, `experiments.md`, `results.md`, or `ml.md` guidance rather than applying an ML audit to every prose-only task.
-
 
 An actionable diagnosis tells the author **where the reader is likely to struggle and what would improve the passage**. Prioritize consequential findings and report:
 

@@ -55,4 +55,4 @@ The assistant reads `SKILL.md` when the skill activates and loads relevant refer
 
 The section-specific guidance applies adaptable scientific-writing principles rather than a fixed questionnaire. Reader-question planning is supported by [MIT EECS Communication Lab's *Planning Your Paper*](https://mitcommlab.mit.edu/eecs/commkit/journal-or-conference-paper/) and [Mensh and Kording (2017)](https://doi.org/10.1371/journal.pcbi.1005619). Paragraph guidance also draws on [Purdue OWL's *On Paragraphs*](https://owl.purdue.edu/owl/general_writing/academic_writing/paragraphs_and_paragraphing/) and [Minto's *Pyramid Principle*](https://barbaraminto.com/). Introduction guidance draws on Swales's CARS model and [MIT EECS Communication Lab's *Paper: Introduction*](https://mitcommlab.mit.edu/eecs/commkit/journal-article-introduction/). Other section and ML references cite English sources matched to the principles they support, with discipline-specific qualifications.
 
-**Current version:** v0.9.0
+**Current version:** v0.9.1

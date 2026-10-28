@@ -36,8 +36,13 @@ For completed research, consider an early **crown-jewel figure** when a legible,
 
 Read the Introduction as a connected explanation: Can the reader recover the path from the opening premise to the research gap, then from the gap to the question and contribution? Do transitions express real causal, contrastive, or evidential relationships rather than simply using “Furthermore” or “Therefore”? Is background detail sufficient but not distracting? Does the Introduction promise only what the rest of the manuscript can deliver?
 
-Use paragraph writing to give each part an intelligible role, but do not force a one-paragraph-per-function template. An overview figure or example can be useful if it clarifies the central problem or comparison; it is not obligatory.
+Use paragraph writing to give each part an intelligible role, but do not force a one-paragraph-per-function template. Any representative example or overview figure discussed above should support that progression rather than substitute for the explanation.
 
-For related discussion, see Swales (1990), *Genre Analysis: English in Academic and Research Settings*, for the original CARS model; Mensh and Kording (2017), especially the progression from broad context to a paper-specific gap (https://doi.org/10.1371/journal.pcbi.1005619); and MIT EECS Communication Lab's *Paper: Introduction* (https://mitcommlab.mit.edu/eecs/commkit/journal-article-introduction/) for problem, motivation, solution, and contribution as reader questions. The models are diagnostic aids; scientific grounding and the target venue remain decisive.
+## Sources and applicability
 
-Further reading for the optional early, representative evidence figure: Faloutsos, *MetaPaper v14*: https://www.cs.cmu.edu/~christos/MetaPaper/faloutsos_MetaPaper_v14.pdf. Adapt its attention-routing advice to the research and venue; a selective showcase is not a substitute for balanced Results.
+- Swales (1990), *Genre Analysis: English in Academic and Research Settings* — the original CARS model.
+- Mensh and Kording (2017), *Ten simple rules for structuring papers* — progression from broad context to a paper-specific gap: https://doi.org/10.1371/journal.pcbi.1005619
+- MIT EECS Communication Lab, *Paper: Introduction* — problem, motivation, solution, and contribution as reader questions: https://mitcommlab.mit.edu/eecs/commkit/journal-article-introduction/
+- Faloutsos, *MetaPaper v14* — optional early, representative evidence figure: https://www.cs.cmu.edu/~christos/MetaPaper/faloutsos_MetaPaper_v14.pdf
+
+These models are diagnostic aids; scientific grounding and the target venue remain decisive. Adapt attention-routing advice to the research and venue: a selective showcase is not a substitute for balanced Results.

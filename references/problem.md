@@ -16,7 +16,7 @@ Explicitly state material assumptions, restrictions, exclusions, and operating c
 
 ## Show a representative case when it clarifies the formulation
 
-A concrete example or schematic may make unfamiliar entities, available inputs, desired outputs, or a boundary case more intelligible. Choose a representative case that is consistent with the formal definition; an illustrative example is not evidence of empirical performance. Introduce the figure in prose and interpret its role. General principles for figures, equations, and their complementarity with text belong to `composition.md`.
+A concrete example or schematic may make unfamiliar entities, available inputs, desired outputs, or a boundary case more intelligible. Choose a representative case that is consistent with the formal definition; an illustrative example is not evidence of empirical performance. Introduce the figure in prose and interpret its role. General principles for integrating figures, equations, and prose belong to `composition.md`; use `figures.md` for detailed figure or table design and verification when the visual itself is the focus.
 
 ## Check the formulation against the rest of the paper
 

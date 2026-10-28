@@ -14,15 +14,15 @@ Compare findings with genuinely relevant literature, including important agreeme
 
 Distinguish the observation itself from a proposed mechanism or causal account. A performance difference, association, or example may suggest an explanation without confirming it. Explain which competing causes, confounders, or additional experiments would be needed to test the interpretation. If an insight emerged from exploratory inspection, identify it as such rather than portraying it as a pre-specified confirmation.
 
-## Give conditional guidance to future users
-
-Where a method has plausible practical users, consider a brief **practitioner's guide**: report evidence-grounded advice on suitable data, preprocessing, meaningful parameter choices, workload assumptions, and conditions where the approach may fail. When application to real data reveals substantive domain observations beyond aggregate scores, explain them with representative and countervailing evidence, not merely a collection of favorable success stories. Do not invent recommendations, observations, or an obligatory discussion subsection.
-
 ## Bound generalization and acknowledge limitations
 
 Limitations should tell readers **which conclusions remain justified under which conditions**. Consider relevant restrictions involving populations, tasks, data quality, model assumptions, uncertainty, or study design, and explain how each affects interpretation. For example, a measured association may support predictive usefulness without establishing that changing one factor would cause the outcome to change. Name the actual limitation and its consequence instead of listing generic weaknesses.
 
 Future work should arise from a real open question, a limitation that can plausibly be addressed, or a testable next step. A realistic practitioner recommendation should similarly state the conditions under which it is expected to hold. It need not occupy every paragraph. Use connected, purposeful paragraphs rather than a fixed sequence of strengths, weaknesses, and future directions.
+
+## Give conditional guidance to future users
+
+Where a method has plausible practical users, consider a brief **practitioner's guide**: report evidence-grounded advice on suitable data, preprocessing, meaningful parameter choices, workload assumptions, and conditions where the approach may fail. When application to real data reveals substantive domain observations beyond aggregate scores, explain them with representative and countervailing evidence, not merely a collection of favorable success stories. Do not invent recommendations, observations, or an obligatory discussion subsection.
 
 ## Sources and applicability
 

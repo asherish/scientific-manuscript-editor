@@ -34,9 +34,11 @@ Readers cannot judge a result without knowing what the evaluation measure means.
 
 **Check construct validity explicitly:** Does the observable outcome represent the phenomenon or capability named in the claim? Are task definitions, labels, thresholds, sample selection, and metrics aligned with that claim? State important proxy assumptions and avoid claiming success on a broader target merely because a related benchmark score improved. Connect this audit to the task definition in `problem.md`.
 
-Describe how repeated trials, variability, uncertainty, formal statistical inference, and sensitivity analyses will be handled when relevant. For an implementation-ready plan, settle or flag material choices such as thresholds, exclusions, sample sizes, and spatial or temporal resolution. There is no universal p-value threshold or standard set of tests suitable for every design. Define what error bars or intervals represent (for example, independent samples, random seeds, train/test splits, or bootstrap resamples), how they were computed, and what assumptions they require. Distinguish effect size, uncertainty, and practical meaning; never treat a fixed significance threshold as a substitute for interpreting evidence.
+Describe how repeated trials, variability, uncertainty, formal statistical inference, and sensitivity analyses will be handled when relevant. For an implementation-ready plan, settle or flag material choices such as thresholds, exclusions, sample sizes, and spatial or temporal resolution.
 
-## Report the settings needed to reproduce the work
+Define what error bars or intervals represent (for example, independent samples, random seeds, train/test splits, or bootstrap resamples), how they were computed, and what assumptions they require. Distinguish effect size, uncertainty, and practical meaning. There is no universal p-value threshold or standard set of tests suitable for every design; never treat a fixed significance threshold as a substitute for interpreting evidence.
+
+## Document reproducible procedures and analysis status
 
 Reproducibility depends on knowing which procedures and settings could change the outcome. Describe consequential algorithms, parameter-selection procedures, software, instruments, randomization, and computing resources. If the paper makes efficiency claims, report processing or training time, inference cost, or other meaningful measures with a defined workload and measurement environment; ML-specific complexity measures are covered in `ml.md`.
 

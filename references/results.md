@@ -10,6 +10,8 @@ An analysis becomes meaningful when readers know why it was performed. Introduce
 
 Before interpreting a table or plot, orient readers to the comparison it represents. Make axes, rows, columns, units, sample sizes, repetitions, and aggregation clear through the caption and nearby prose. Then identify the few observations that matter for the research question. Report actual values and absolute differences where informative; a relative improvement alone may conceal the practical size of a change.
 
+When a visual would benefit from a short bold takeaway tag or a more informative encoding, consult `figures.md`; avoid unsupported headlines and preserve the venue's caption rules.
+
 For an illustrative writing contrast, “Method A performs better (Table 2)” leaves the comparison and its meaning unclear. A more informative account would identify **the metric, evaluation condition, observed difference, and scope of the inference**. This is a writing example, not an assertion about any measured study.
 
 Report uncertainty, variability, repeatability, or statistical comparisons at the level the design supports. Distinguish an effect's estimated magnitude from statistical and practical significance. Use the measures and comparators defined in `experiments.md`, or explain a consequential change in the analysis. A claimed improvement should be evaluated in light of effect magnitude, the variation represented by its interval or error bar, the study design, and any meaningful difference in tuning or compute budget. Do not infer general superiority from a narrowly selected best run.
@@ -20,11 +22,11 @@ Qualitative examples are valuable when they reveal something an aggregate measur
 
 When error frequency or severity matters, specify the denominator and distinguish total observed failures from illustrative cases. Group failures into meaningful, reproducibly defined categories when the data permit. Select a breakdown appropriate to the task; classification-specific examples such as a confusion matrix appear in `ml.md`.
 
-## Explain what controlled comparisons do—and do not—establish
+## Bound what controlled and exploratory findings establish
 
 A controlled comparison is interpretable only relative to the factor that changed and the conditions that stayed fixed. For ablations or sensitivity analyses, name that contrast, report the observed outcome, and distinguish supported conclusions from possible confounding explanations. Discuss dominant bottlenecks using observed evidence; label a proposed remedy as a hypothesis until it has been evaluated.
 
-Separate analyses specified before examining outcomes from exploratory checks added after observing the data. Both can be informative, but exploratory observations should not be described as independent confirmation. When a visual would benefit from a short bold takeaway tag or a more informative encoding, consult `figures.md`; avoid unsupported headlines and preserve the venue's caption rules.
+Separate analyses specified before examining outcomes from exploratory checks added after observing the data. Both can be informative, but exploratory observations should not be described as independent confirmation.
 
 Results should explain **what the evidence establishes**. Broader implications, relationships to previous literature, and limits on generalization can be developed in Discussion. Figures and tables carry detail; prose selects and explains the observations that answer the question, without repeating every cell or bar.
 

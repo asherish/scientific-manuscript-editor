@@ -67,15 +67,9 @@ The progression from established research context toward an identifiable gap (Me
 
 **Equations are part of an explanation, not detached objects.** Use surrounding sentences to establish the quantity or relationship being defined, explain non-obvious symbols and assumptions, and interpret what the expression means or why this form is useful. Avoid stopping after a mechanical “where x is…” list if readers still cannot understand the equation's role. Conversely, do not restate a self-evident expression at length.
 
-**Figures and tables complement the narrative.** A figure can reveal geometry, dependencies, trends, or examples that would be cumbersome in prose; a table can make definitions, experimental conditions, or results comparable. Choose the representation for the relationship it helps readers see.
+**Figures and tables complement the narrative.** They can communicate structure, geometry, dependencies, comparisons, and empirical patterns more effectively than prose in the right context. At the paper or section scale, an overview figure can orient readers before detailed explanations; a pipeline diagram is helpful only if it shows actual scientific entities, transformations, and relationships, not section headings connected by arrows. Neither a Figure 1 nor a pipeline diagram is obligatory.
 
-Captions identify what is shown, including necessary units, conditions, and encodings. Surrounding paragraphs explain why the figure or table matters and what consequential observation or inference readers should take from it. Neither narrate every bar or cell nor leave the interpretation entirely to readers. Check that prose, caption, legend, labels, and values agree.
-
-An overview figure can orient readers before they encounter detailed explanations. At paper scale, it may establish the problem setting, central idea, or study design. At section scale, it may reveal entities or dependencies that later paragraphs develop.
-
-A processing diagram should show actual inputs, transformations, intermediate quantities, and outputs. **Boxes labeled only with section headings do not explain a scientific relationship.** Neither Figure 1 nor a pipeline diagram is automatically required; use an equation, table, or concise prose if it communicates better. If a needed figure cannot yet be grounded in available material, describe its purpose with `[FIGURE: ...]` rather than inventing contents.
-
-When the visual itself needs to be designed or evaluated, use `figures.md` for the detailed figure/table decision, caption, plot-encoding, and evidence checks. An optional figure-and-table outline can clarify the evidential structure before drafting long prose; it does not dictate a writing order.
+Use nearby prose to establish each figure or table's purpose and explain the consequential observation or inference, without mechanically repeating every bar or cell. Ensure that prose, caption, units, labels, and values agree. For decisions about representation, early evidence figures, axes, distributions, caption design, figure-first planning, and visual verification, read `figures.md` when that reference is selected through `SKILL.md`. If a necessary visual cannot be grounded in available material, use the `[FIGURE: ...]` placeholder rather than inventing contents.
 
 ## Support multiple routes through the paper
 
@@ -83,12 +77,11 @@ Readers may encounter the Abstract, headings, figures and captions, or Conclusio
 
 ## Check the result from the reader's position
 
-
 After composing or rearranging, follow the reader's path: What do they know at this point? What question does the next passage answer? Can they understand important terms, equations, evidence, and relations without excessive searching backward? Does a transition express cause, contrast, condition, inference, or mere addition accurately? Does each section deliver what its heading promises?
 
 Repair the source of confusion at the smallest effective scale. That may mean defining a term, changing a sentence, moving a paragraph, adding a conceptual overview, or redesigning a whole argument. An unchanged passage is acceptable when it already serves its readers.
 
-## Further reading
+## Sources and applicability
 
 - Mensh and Kording (2017), *Ten simple rules for structuring papers*: https://doi.org/10.1371/journal.pcbi.1005619
 - Gopen and Swan (1990), *The Science of Scientific Writing* — reader expectations, topic/stress positions: https://www.cs.tufts.edu/comp/150FP/archive/george-gopen/sci.html

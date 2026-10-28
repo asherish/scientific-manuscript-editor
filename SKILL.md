@@ -98,7 +98,7 @@ The definitions and workflow above always apply. **Reference files are not autom
 | Writing, diagnosing, or substantially revising an Abstract or summary paragraph | `references/abstract.md` |
 | Writing, diagnosing, or substantially revising Related Work or a literature-positioning passage | `references/related-work.md` |
 | Defining or auditing a research task, formal problem, assumptions, inputs, or outputs | `references/problem.md` |
-| Writing, diagnosing, or substantially revising a Method, Model, or Approach section | `references/method.md` |
+| Writing, diagnosing, or substantially revising a Method, Model, or Approach section; **or proposing or evaluating a name for a method** | `references/method.md` |
 | Planning, writing, or auditing an empirical study, experimental setup, metrics, data handling, or evaluation protocol | `references/experiments.md` |
 | Writing, diagnosing, or interpreting an empirical Results or Findings section | `references/results.md` |
 | Writing, diagnosing, or substantially revising a Discussion or interpretation-of-findings passage | `references/discussion.md` |
