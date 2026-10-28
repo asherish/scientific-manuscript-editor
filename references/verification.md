@@ -1,12 +1,26 @@
-# Verify scientific content across manuscript changes
+# Verify that revisions preserve intended meaning
 
-Use this reference when making substantive revisions to an existing manuscript, running protected-element checks, or comparing original and revised versions. Verification protects scientific meaning; matching surface tokens is neither necessary nor sufficient proof of semantic equivalence. The workflow and `Local`/`Semantic`/`Structural` change types are defined in `SKILL.md`.
+Verification answers two different questions: **Which protected elements changed?** and **Did any change alter the intended meaning?** The bundled script helps answer the first; comparison with the source manuscript and author-supplied material is still needed for the second. Use the workflow and `Local` / `Semantic` / `Structural` change types defined in `SKILL.md`.
 
-## Preserve the original and record intent
+## Preserve the original and explain substantive edits
 
-Produce a revised copy; do not overwrite the only original. Record changes by finding ID or clear location, before/after excerpts, anticipated reader benefit, change type(s), and any distinct scientific risk. Prioritize `Semantic` and `Structural` changes in the change log, then summarize `Local` expression edits. A change can have multiple types.
+Keep the original available alongside the revision. A reviewer cannot reliably evaluate a rewrite if the source of comparison has been lost.
 
-**When running the bundled verifier, write `approved_changes.txt`**, empty if no protected additions or removals are intended. For other revisions without suitable source files or a verifier run, document intentional substantive changes in the change log instead; a separate whitelist file is not required. List identifiers for intentionally changed protected elements, one per line, e.g. `cite:smith2020`, `label:fig:overview`, `math:<symbol or expression>`. Prefer `math:` for mathematics: it permits whitespace and expands to the verifier's `math-symbol` and `math-expr` keys. Explicit `math-symbol:` and `math-expr:` are also accepted; the verifier normalizes whitespace in `math-expr:`. Document both original and revised forms for an intentional equation change. The filename is historical: its entries represent **editor intent, not author approval**, and do not prove correctness. Do not add entries merely to silence errors.
+Record substantive edits by finding ID or location. For each, explain what changed, show before/after excerpts where helpful, and state the expected reader benefit, change type(s), and any separate risk to the meaning. Document `Semantic` and `Structural` changes individually; routine `Local` expression edits can be summarized. One edit may have several change types.
+
+## Declare intentional protected-element changes for the script
+
+When running the bundled verifier, create `approved_changes.txt` even if no changes are intended (an empty file is valid). Add **one identifier per line** for each intentionally added or removed protected element. For example:
+
+```text
+cite:smith2020
+label:fig:overview
+math:<symbol or expression>
+```
+
+The `math:` form accepts whitespace and expands to the verifier's `math-symbol` and `math-expr` keys. The explicit `math-symbol:` and `math-expr:` forms are also valid; whitespace within `math-expr:` is normalized by the verifier. For an intentional equation change, document both original and revised forms in the change record so the meaning can be reviewed.
+
+Despite its historical filename, this file records **editor intent, not author approval**. An entry does not prove that a change is correct. Do not add one merely to make a failed check disappear. If you are not running the script or lack suitable original/revised source files, record intended substantive changes in the ordinary change log; no separate allowlist is required.
 
 ## Run the deterministic protected-element check
 
@@ -16,15 +30,15 @@ When the script and suitable original/revised LaTeX or text sources are availabl
 python3 scripts/verify_protected.py ORIGINAL REVISED --approved approved_changes.txt --out verify_report.md --strict
 ```
 
-Inspect changes in numbers and units, citation keys, references, labels, mathematics, and other protected elements. Compare surrounding contexts because an element-level whitelist does not approve each occurrence. `--strict` detects certain unapproved additions/removals, but **does not catch all contextual or semantic errors**, and extraction is imperfect with complex LaTeX, compound units, and unit macros. Treat the report as a diagnostic aid, not a success certificate.
+Use the report to locate additions or removals involving numbers, units, citations, cross-references, labels, or mathematics. Compare the surrounding text as well: an allowed token change does not validate every occurrence of that token. `--strict` detects some unexpected additions and removals, but extraction is imperfect with complex LaTeX, compound units, and unit macros. A clean report is therefore not a certificate of correctness.
 
 ## Check scientific meaning independently
 
-Semantically inspect **every `Semantic` and `Structural` edit** for changed claims, evidence links, symbol identities, definitions, assumptions, scope qualifiers, causal direction, conditions, results, or information silently lost or misplaced. Spot-check `Local` edits. For a wholesale rewrite, compare the scientific argument and every substantive element to the original or author-supplied research material; matching paragraphs one-to-one is not expected, but preserving or explicitly accounting for meaning is.
+Inspect **every `Semantic` and `Structural` edit** against the source. Follow the relationships among claims, evidence, definitions, assumptions, conditions, results, and qualifications; look for changed causal direction or omitted information, not just different wording. Spot-check `Local` edits. For a wholesale rewrite, trace substantive meaning across the entire new organization rather than expecting paragraphs to match one-to-one.
 
-When an equation symbol must change, identify its semantic role and all corresponding equations, definitions, figure labels, prose mentions, and cross-references **before** editing. Never make an unscoped global replacement. Read `references/notation.md` for the scope and consistency of a symbol-identity change; do not impose optional typography conventions unless notation itself is a reader-facing problem.
+If a mathematical symbol changes, first identify the object it represents and all its uses in equations, definitions, figures, prose, and cross-references. Rename that semantic role rather than globally replacing matching characters. Consult `notation.md` when the change involves symbol identity; optional typography conventions are not a reason to rewrite otherwise understandable mathematics.
 
 ## Report limitations and unresolved issues
 
-Report intended protected changes, unexpected discrepancies, unresolved author decisions, and materials not available for comparison. A clean script result **does not prove scientific equivalence**. Do not claim full verification if figures, source files, or other necessary information were unavailable.
+Report intended protected changes, unexpected discrepancies, unresolved author decisions, and any material that could not be compared. State what was checked and what remains uncertain; an automated check cannot establish semantic equivalence by itself.
 

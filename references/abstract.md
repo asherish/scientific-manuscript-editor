@@ -1,6 +1,6 @@
 # Abstract and summary-paragraph writing
 
-Use this reference when composing, diagnosing, or substantially revising an Abstract or summary paragraph. An Abstract has to stand on its own for readers who may not read the paper, while staying faithful to what the manuscript actually proposes or demonstrates. Its structure and length must also respect **verified current requirements of the target venue and article type**.
+An Abstract may be the only part of a paper that a reader sees. It therefore needs to communicate the research problem and defensible contribution without relying on the full manuscript for context. Its length and structure must also fit verified requirements of the target venue and article type.
 
 ## Plan the information before writing sentences
 
@@ -16,9 +16,11 @@ For a **pre-experiment specification**, state the intended question, proposed me
 
 For **post-experiment submission preparation**, state the actual key finding and the evidence level appropriate for the venue. Favor specific, supported results over promotional adjectives. Explain their meaning without extrapolating beyond evaluated scenarios, assumptions, or uncertainty. The Abstract, Results, and Conclusion should all convey the same defensible contribution.
 
-## Nature summary paragraph as a conditional example
+## Use the Nature summary structure as an optional model
 
-Nature's published guide illustrates a progression from broad introduction and focused background to a research problem, main result, comparison with previous understanding, and wider meaning. It sometimes includes an additional broad perspective. This offers a **useful example of information roles**; the guide's sentence counts, phrases such as “Here we show,” and allowance for extended perspective are **Nature-specific examples**, not universal requirements. Check the current author instructions for the actual target journal or conference rather than copying a historical word count or style rule.
+Nature's published guide provides one example of how to sequence information: a broad introduction and focused background prepare readers for the problem; the main result and comparison with earlier understanding address it; the closing interpretation explains wider meaning. An additional broad perspective may be appropriate in some articles.
+
+Use this model to identify what each part of an Abstract contributes, not to copy a fixed sentence count or formulaic phrase such as “Here we show.” The guide describes Nature's summary-paragraph conventions; other venues may require different structures. Confirm the current instructions for the actual destination.
 
 ## Verify the reader's takeaway
 

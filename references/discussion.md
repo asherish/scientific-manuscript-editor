@@ -1,6 +1,6 @@
 # Discussion: interpret the findings within their limits
 
-Use this reference when writing, diagnosing, or substantially revising a Discussion or another substantial interpretation-of-findings passage. Its purpose is to explain **what the results mean for the research question and existing knowledge, how far they can be trusted, and why they matter**. Do not demand a separately titled Discussion when the article type legitimately integrates discussion with results.
+Discussion explains **what the findings mean, how they relate to existing knowledge, and where their implications stop**. It advances the interpretation beyond the direct observations reported in Results. Some article types integrate these functions into a combined Results and Discussion section.
 
 ## Answer the research question from the evidence
 
@@ -12,6 +12,6 @@ Compare findings with genuinely relevant literature, including important agreeme
 
 ## Bound generalization and acknowledge limitations
 
-Discuss restrictions that materially affect interpretation: populations, tasks, observation conditions, model assumptions, data quality, uncertainty, benchmark selection, study design, and possible confounders as relevant. Explain the likely direction or consequence of a limitation when evidence allows it; avoid generic lists of weaknesses detached from the research. Do not infer a causal effect from an observational contrast without a supporting design.
+Limitations should tell readers **which conclusions remain justified under which conditions**. Consider relevant restrictions involving populations, tasks, data quality, model assumptions, uncertainty, or study design, and explain how each affects interpretation. For example, a measured association may support predictive usefulness without establishing that changing one factor would cause the outcome to change. Name the actual limitation and its consequence instead of listing generic weaknesses.
 
 Future work should arise from a real open question, a limitation that can plausibly be addressed, or a testable next step. It need not occupy every paragraph. Use connected, purposeful paragraphs rather than a fixed sequence of strengths, weaknesses, and future directions.

@@ -1,21 +1,27 @@
-# Machine-learning-specific manuscript guidance
+# Machine learning: explain training and evaluation choices
 
-Use this reference **only** when a manuscript's research question, approach, or evaluation actually involves machine learning. Read the relevant general section reference as well under the `SKILL.md` routing rules; the guidance here supplies ML-specific detail rather than redefining section structure or scientific safeguards. For classification without an ML model, use only the relevant error-analysis guidance rather than assuming a training pipeline.
+Machine-learning manuscripts need additional detail to make learned components, data usage, and comparisons interpretable. Use the relevant sections below **when an ML model or training process is part of the work**. The classification-error guidance can also help with non-ML classifiers; in that case, skip the training-specific sections. The corresponding general section reference, selected through `SKILL.md`, remains responsible for the broader writing purpose.
 
-## Explain the model and training criterion
+## Explain what is learned and how it produces an output
 
-When the method uses a learned representation or backbone, identify the architecture and any pretrained weights or provenance needed to understand and reproduce it. Explain the feature representation, relevant tensor dimensions, stage interfaces, fine-tuning or freezing decisions, and how the final prediction is assembled. State the loss terms, objectives, weights, constraints, and optimization process if training is part of the method. These are conditional descriptions: a deterministic, probabilistic, or optimization-based method may have no backbone or trainable loss.
+Readers need to distinguish the learned parts of a system from the fixed transformations around them. Identify the architecture and relevant pretrained weights, then explain what each learned component receives and produces. State consequential feature representations, tensor dimensions, and how the final output is assembled.
 
-## Make data usage and tuning auditable
+Explain which parameters are trained, frozen, or fine-tuned. For example, if an image encoder is frozen and only a classifier is trained, say so before presenting the training objective. Define actual loss terms, weights, constraints, and optimization procedures where relevant; a non-learning method need not have any of them.
 
-For supervised or self-supervised evaluation, report the roles of training, validation, test, and any other partitions actually used. Explain splitting units, class or group stratification, temporal or spatial separation, preprocessing fit, hyperparameter search, checkpoint or threshold selection, and any risk of information leakage as relevant. Distinguish a validation set used to choose models from an untouched test set used for final assessment. Do not impose one splitting convention across all research designs.
+## Explain how data are separated and used
 
-Provide consequential optimization choices such as optimizer, learning rate and schedule, batch size, epochs or stopping criterion, augmentation, initialization, regularization, seeds, repetitions, and selected hyperparameters when they affect reproducibility. A compact table is often helpful; avoid filling it with irrelevant defaults.
+Readers must know which observations influenced model development and which were reserved for final evaluation. State the role of each partition actually used, its construction unit, and any grouping, temporal, spatial, or class constraints. Explain where preprocessing parameters, hyperparameters, checkpoints, and decision thresholds were fitted or selected so leakage can be assessed. For example, selecting a threshold on the test set changes what that test result can establish; disclose such reuse rather than describing the test set as untouched.
 
-## Report computational burden and task-specific behavior
+Report training settings that materially affect reproducibility. Depending on the system, these may include optimizer, learning-rate schedule, batch size, stopping criterion, augmentation, initialization, regularization, seeds, and repetitions. A compact table makes comparable configurations easier to inspect than a long prose inventory. Do not require a particular split or training recipe when the study uses another design.
 
-When efficiency or complexity matters to the paper, report trainable and total parameter counts, FLOPs or another computational measure, training compute/time, memory, and inference latency or throughput under specified input sizes, batch sizes, hardware, precision, and measurement conditions. Distinguish theoretical operations from measured runtime. Parameter count and FLOPs are not mandatory for every ML study, and are not interchangeable with speed or energy use.
+## Compare computational costs under stated conditions
 
-For classification tasks, a confusion matrix or per-class error breakdown can expose failures hidden by aggregate metrics. Explain the class definitions, denominators, normalization, class imbalance, and whether outputs are single-label or multilabel. For regression, retrieval, segmentation, generation, or other tasks, choose the error breakdown that actually addresses the scientific question instead; no fixed diagnostic plot is universal.
+Computational comparisons are interpretable only when the workload and measurement conditions are known. Where efficiency matters, report relevant parameter counts, operations (such as FLOPs), memory, training cost, or inference time together with the input size, batch size, hardware, precision, and measurement procedure. Parameter count, theoretical operations, measured speed, and energy use represent different properties; do not treat them as interchangeable or report them when irrelevant to the claim.
 
-In ablation studies, make variants and changed factors unmistakable while keeping other important conditions controlled. Explain which component or training decision each variation tests and which inferences the evidence supports. Do not require a particular variant-labeling scheme or interpret a correlated performance difference as isolated causation without an adequate design.
+## Choose error analyses that expose important behavior
+
+An aggregate score may conceal which types of cases a system gets wrong. In classification, a confusion matrix or per-class breakdown can reveal these differences if class definitions, denominators, normalization, and single-label or multilabel behavior are clear. For regression, retrieval, segmentation, or generation, select a breakdown suited to that output rather than automatically adding a confusion matrix. This guidance also applies to a non-ML classifier.
+
+## Make ablation comparisons interpretable
+
+An ablation should help readers understand which design choice is under examination. Identify the variant, the changed component or training condition, the other conditions held fixed, and the outcome used for comparison. Explain what inference follows from the design and observed results. A particular variant-labeling convention is optional; a performance difference alone does not isolate causation when other conditions changed too.

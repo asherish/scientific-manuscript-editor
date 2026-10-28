@@ -1,6 +1,6 @@
 # Scientific composition
 
-Use this reference when designing a new manuscript or substantial passage, diagnosing a difficult explanation, reorganizing sections or paragraphs, or deciding how prose should work with mathematical and visual elements. These are **tools for reader understanding**, not mandatory rhetorical templates.
+Scientific writing becomes easier to follow when the author plans **what readers should understand, in what order, and with which explanation or evidence**. The techniques below help build and review that path at multiple scales. They are tools for judgment, not mandatory rhetorical templates.
 
 ## Design what the reader needs to understand
 
@@ -12,7 +12,9 @@ Build an explanation that exposes dependencies. If a method depends on an assump
 
 **Question → Answer → Paragraph** is a useful scaffold when a passage's purpose or content is not yet clear. Formulate the question an intended reader should be able to answer after reading it; identify an answer grounded in the author's material; gather the supporting definitions, reasoning, evidence, or qualifications; and then write a coherent paragraph or group of paragraphs. The question may remain only in the author's outline. It is not necessary to write an explicit Q&A for every paragraph, and some questions need several paragraphs or a figure and accompanying prose.
 
-This approach can turn a difficult paper-scale writing task into manageable modules. For example, a problem-formulation section may need to establish the target task, available inputs, desired output, assumptions, and success criteria; a method section may need to explain why a component is introduced and how its inputs produce its output. **These are purposes to adapt, not a universal questionnaire.** Select the relevant section reference through `SKILL.md` for detailed writing guidance, and add questions specific to the research. This question-first planning approach is informed by Komei Sugiura's *60 Questions & Answers (60QA)*, but its question count, section order, and machine-learning-specific prompts are not rules for manuscripts.
+Question-first planning can divide a difficult writing task into manageable explanatory modules. For example, a problem-formulation section may need to establish the target task, available inputs, desired output, assumptions, and success criteria. A method section may instead need to explain why each component is needed and how its output advances the overall approach. These are purposes to adapt, not slots in a universal questionnaire.
+
+Use the relevant section reference selected through `SKILL.md` for more detailed guidance. The question-first approach is informed by Komei Sugiura's *60 Questions & Answers (60QA)*, but its question count, section order, and method-specific prompts are not manuscript requirements.
 
 Outlining the answer before prose can reveal missing information and invalid inferences early. Do not fill a gap by inventing a design decision, result, or citation. In an existing well-structured passage, simply use the four core principles and leave it alone when no substantive obstacle exists.
 
@@ -61,9 +63,13 @@ The progression from established research context toward an identifiable gap (Me
 
 **Equations are part of an explanation, not detached objects.** Use surrounding sentences to establish the quantity or relationship being defined, explain non-obvious symbols and assumptions, and interpret what the expression means or why this form is useful. Avoid stopping after a mechanical “where x is…” list if readers still cannot understand the equation's role. Conversely, do not restate a self-evident expression at length.
 
-**Figures and tables complement the narrative.** A figure can reveal geometry, dependencies, trends, comparisons, or examples that would be cumbersome in prose. A table can make definitions, experimental conditions, or results comparable. Captions should identify what is shown, including necessary units, conditions, and encodings; prose should introduce the relevant element and explain its consequential features or implications. Do not narrate every bar, cell, arrow, or axis value, and do not leave the reader to guess why the element matters. Check that text, caption, legend, label, and quantitative values agree.
+**Figures and tables complement the narrative.** A figure can reveal geometry, dependencies, trends, or examples that would be cumbersome in prose; a table can make definitions, experimental conditions, or results comparable. Choose the representation for the relationship it helps readers see.
 
-At paper scale, an overview figure may establish the problem setting, central scientific idea, approach relative to existing work, or study design. At section scale, it may orient readers to the entities or dependencies developed in later paragraphs. In a processing pipeline, it may show inputs, transformations, intermediate representations, and outputs. **A chain of boxes labeled only with section headings does not itself explain a scientific relationship.** Neither Figure 1 nor a pipeline diagram is mandatory. Use a table, equation, or concise prose instead when it communicates better. If a needed figure cannot be grounded in the available material, specify what it should convey or use `[FIGURE: ...]`; never fabricate results.
+Captions identify what is shown, including necessary units, conditions, and encodings. Surrounding paragraphs explain why the figure or table matters and what consequential observation or inference readers should take from it. Neither narrate every bar or cell nor leave the interpretation entirely to readers. Check that prose, caption, legend, labels, and values agree.
+
+An overview figure can orient readers before they encounter detailed explanations. At paper scale, it may establish the problem setting, central idea, or study design. At section scale, it may reveal entities or dependencies that later paragraphs develop.
+
+A processing diagram should show actual inputs, transformations, intermediate quantities, and outputs. **Boxes labeled only with section headings do not explain a scientific relationship.** Neither Figure 1 nor a pipeline diagram is automatically required; use an equation, table, or concise prose if it communicates better. If a needed figure cannot yet be grounded in available material, describe its purpose with `[FIGURE: ...]` rather than inventing contents.
 
 ## Check the result from the reader's position
 

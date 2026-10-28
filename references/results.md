@@ -1,25 +1,27 @@
-# Results: show evidence and what it supports
+# Results: connect observations to warranted answers
 
-Use this reference when writing, diagnosing, or substantially revising a Results, Findings, or Evaluation Results section. A reader should recover **the question behind an analysis, the observation that answers it, and the strength and limits of the inference**. Report observed data rather than the author's expectations; for a pre-experiment manuscript, only design proposed displays and analyses without supplying fabricated values.
+Readers should be able to trace each important result from **the question motivating an analysis to the observation and the answer it supports**. Completed studies report actual findings; pre-experiment manuscripts can only describe planned displays and analyses.
 
-## Organize findings as connected answers
+## Lead each substantial result with its purpose
 
-Begin with an overview of the evaluated setting or approach when readers need it to interpret the findings. Then organize substantial passages by the questions, comparisons, or propositions they establish, rather than a chronology of every experiment conducted. A useful, optional progression is motivation or question → relevant observation → warranted answer. Check that each later claim uses prior findings consistently and that the section's headings reflect what is actually demonstrated.
+An analysis becomes meaningful when readers know why it was performed. Introduce the evaluated setting when necessary, then organize findings by the questions or propositions they address rather than merely recounting the order of experiments. A useful pattern is **question or motivation → observation → warranted answer**. Later results can build on the answers established earlier; headings should match what the evidence actually shows.
 
-## Make quantitative comparisons interpretable
+## Explain what each numerical comparison shows
 
-Introduce each consequential table or plot with the comparison it answers. State how to read axes, row and column meanings, units, sample sizes, repetitions, aggregation, uncertainty summaries, and relevant conditions when they are not already clear from the caption. Present observed absolute values and differences where those matter; a relative improvement alone can obscure practical magnitude or poor baseline performance.
+Before interpreting a table or plot, orient readers to the comparison it represents. Make axes, rows, columns, units, sample sizes, repetitions, and aggregation clear through the caption and nearby prose. Then identify the few observations that matter for the research question. Report actual values and absolute differences where informative; a relative improvement alone may conceal the practical size of a change.
 
-Report variability, repeatability, confidence or uncertainty intervals, and formal statistical evidence when appropriate to the design. Distinguish statistical significance, effect size, practical relevance, and descriptive variation. Do not attach a significance claim to an unspecified test or use a universal p-value cutoff. Use the measures and comparators justified in `experiments.md`; if an analysis differs, explain why.
+For an illustrative writing contrast, “Method A performs better (Table 2)” leaves the comparison and its meaning unclear. A more informative account would identify **the metric, evaluation condition, observed difference, and scope of the inference**. This is a writing example, not an assertion about any measured study.
 
-## Explain examples and failure behavior
+Report uncertainty, variability, repeatability, or statistical comparisons at the level the design supports. Distinguish an effect's estimated magnitude from statistical and practical significance. Use the measures and comparators defined in `experiments.md`, or explain a consequential change in the analysis.
 
-Select informative qualitative successes, counterexamples, or failures to illuminate behavior that aggregate metrics conceal. Explain **what the example shows and which observation supports that interpretation** rather than asking the reader to interpret a figure without guidance. Examples should not be presented as representative of a population without a defensible sampling rationale.
+## Use examples and failures to explain behavior
 
-When failures matter, define their denominator and frequency, distinguish observed cases from selected illustrations, and group them into meaningful failure modes using explicit, repeatable definitions where the data permit. An error breakdown such as a confusion matrix is useful for some classification tasks, not a requirement for other studies; see `ml.md` for classification-specific practice.
+Qualitative examples are valuable when they reveal something an aggregate measure hides. Introduce why a success, counterexample, or failure was selected, then point to the feature that supports the interpretation. Avoid captions or paragraphs that merely announce an image and expect readers to infer the result for themselves. Selected examples do not establish population-wide prevalence without a defensible sampling procedure.
 
-## Interpret controlled comparisons without overstating them
+When error frequency or severity matters, specify the denominator and distinguish total observed failures from illustrative cases. Group failures into meaningful, reproducibly defined categories when the data permit. Select a breakdown appropriate to the task; classification-specific examples such as a confusion matrix appear in `ml.md`.
 
-For ablations, sensitivity studies, or other controlled comparisons, identify the factor varied and report the observed change under the conditions set out in the evaluation protocol. Explain what the comparison supports and what remains confounded or uncertain. Discuss dominant bottlenecks or plausible failure mechanisms with evidence, and label proposed remedies as hypotheses unless they have actually been tested.
+## Explain what controlled comparisons do—and do not—establish
 
-The main Results narrative should remain distinct from broader implications and literature-level interpretation, which may belong in Discussion. Figures and tables contain evidence; prose identifies salient observations, makes defensible inferences, and connects them to the research questions without reciting every cell or bar.
+A controlled comparison is interpretable only relative to the factor that changed and the conditions that stayed fixed. For ablations or sensitivity analyses, name that contrast, report the observed outcome, and distinguish supported conclusions from possible confounding explanations. Discuss dominant bottlenecks using observed evidence; label a proposed remedy as a hypothesis until it has been evaluated.
+
+Results should explain **what the evidence establishes**. Broader implications, relationships to previous literature, and limits on generalization can be developed in Discussion. Figures and tables carry detail; prose selects and explains the observations that answer the question, without repeating every cell or bar.

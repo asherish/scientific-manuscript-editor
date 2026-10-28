@@ -1,10 +1,10 @@
 # Diagnose obstacles to scientific understanding
 
-Use this reference for substantive readability or structure diagnosis. Diagnose problems because they affect the reader, **not** because text violates a preferred phrasing rule. Follow the task boundary and intervention choices in `SKILL.md`.
+Diagnosis identifies **where an intended reader would struggle to understand the manuscript and why**. It evaluates the actual explanation, not compliance with a preferred phrase or template. Use the task boundary and intervention choices in `SKILL.md`.
 
 ## Trace the reader's path
 
-Read all available relevant text, equations, figures, tables, and captions before reporting a structural finding. Make a compact manuscript map of the claims, section roles, definitions, and evidence. When the organization is hard to follow, use a **reverse outline**: write one short description of what each paragraph accomplishes, then inspect redundancy, missing links, misplaced explanations, and dependencies. Do this only where it clarifies an actual structural doubt.
+A structural diagnosis starts by reconstructing the explanation the reader actually encounters. Read the relevant text, equations, figures, tables, and captions together, then make a compact map of claims, definitions, section roles, and evidence. When the organization is uncertain, use a **reverse outline**: describe what each existing paragraph accomplishes, then inspect missing links, redundancies, misplaced explanations, and dependencies. Do not create a reverse outline merely to satisfy a procedure.
 
 For each suspected obstacle, ask what the passage should enable the intended reader to understand, what knowledge is already available, where understanding breaks down, and which change would help. A likely difficulty is a prediction about readers, not observed user-study evidence; explain it as such.
 
@@ -58,6 +58,13 @@ Known-to-new information flow can diagnose abrupt transitions: if a sentence int
 
 ## Report actionable findings
 
-Prioritize by expected impact on understanding. For each material finding, provide an **ID and location**, the likely reader difficulty and its textual basis, a proposed intervention and expected benefit, and **feasibility** (`Yes`, `Partial`, or `No`). When the likely intervention is clear, indicate its anticipated **change type(s)** from `SKILL.md` (`Local`, `Semantic`, and/or `Structural`); do not present them as risk levels or pretend an edit has already occurred. Report consequential scientific risks separately and group repeated manifestations of one cause.
+An actionable diagnosis tells the author **where the reader is likely to struggle and what would improve the passage**. Prioritize consequential findings and report:
+
+- **Location and ID:** Where the issue occurs.
+- **Reader difficulty and basis:** What may be misunderstood, and which text supports that prediction.
+- **Intervention and benefit:** What change could help and why.
+- **Feasibility:** `Yes`, `Partial`, or `No`, with a reason when the author must supply information.
+
+When useful, include the anticipated `Local`, `Semantic`, and/or `Structural` change type(s) defined in `SKILL.md`. These are not risk levels. Group repeated symptoms of one underlying problem, and report separate scientific risks without suggesting that a proposed edit has already been made.
 
 Keep diagnosis separate from editing. An author may choose a local fix, section reorganization, or complete rewrite after understanding the diagnosis. Do not promise to fix a missing scientific definition, result, or citation without author input or verifiable evidence.

@@ -1,14 +1,14 @@
 # Post-experiment manuscripts: submission preparation
 
-Use this reference when research results are available and a manuscript is being prepared for a specific journal, conference, or article type. The aim is to make the scientific contribution and actual evidence understandable **within verified venue requirements**, not to reduce word count at any scientific cost.
+Submission preparation aligns **a completed study, its claims, and the target venue's actual requirements**. The task is to help reviewers understand the contribution within those constraints while preserving the information needed to evaluate it.
 
 ## Establish the applicable venue rules
 
-Identify the exact venue, article type, submission stage, current official author instructions, and template. Verify page or word limits, structure, allowed supplements, anonymization, citation style, figure placement, required disclosures, person or voice conventions, and other binding requirements **before** enforcing them. Distinguish the venue's stated rules from field conventions and personal stylistic preferences. Do not invent requirements if the official policy cannot be confirmed.
+Venue policies determine which presentation choices are mandatory. Identify the exact venue, article type, submission stage, current official instructions, and template before imposing requirements. Check the applicable length, structure, supplementary-material, anonymity, reference, figure, disclosure, and writing-style rules. Keep venue requirements separate from common field conventions or editorial preferences; if a rule cannot be verified, report that uncertainty.
 
 ## Reconcile the manuscript with the completed research
 
-Check that the text describes procedures, data, settings, deviations, analyses, and results as actually performed. Planned methods must not quietly become completed methods, and initial hypotheses must not be presented as empirical findings. Ensure that the main contribution advertised by the title, Abstract, Introduction, and Conclusion matches the verified results. Keep consequential qualifications, uncertainty, and failure conditions near the corresponding claims.
+The submitted manuscript must describe the completed work, not merely the original plan. Reconcile procedures, data, settings, deviations, analyses, and findings with the research record. Then check that the title, Abstract, Introduction, and Conclusion communicate the same contribution supported by the Results. Place important uncertainty and scope limitations near the claims they qualify.
 
 Use the relevant section references from `SKILL.md` when substantive exposition needs work. In particular, `results.md` contains the guidance for evidence-linked findings, and `discussion.md` covers scientific interpretation and limitations. This file governs the submission-stage reconciliation, not the detailed construction of those sections.
 

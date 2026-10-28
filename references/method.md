@@ -1,21 +1,21 @@
-# Method: make the approach understandable and implementable
+# Method: explain the approach from purpose to output
 
-Use this reference when writing, diagnosing, or substantially revising a Method, Methodology, Model, or Approach section. Readers should understand **what the method does, why its design is plausible, and how its substantive parts produce the required output**.
+The Method should let readers understand **what the approach does, why its design is plausible, and how its parts produce the required output**. For an implementation-ready manuscript, that explanation must also be detailed enough to reconstruct consequential operations.
 
-## Orient the reader before component details
+## Establish the central idea before implementation details
 
-Identify the method's objective and relationship to the problem definition and relevant prior approaches. Explain its central design idea and consequential differences from alternatives without assuming that every contribution extends a named baseline. A method overview can establish its stages, dependencies, and data flow before the details. Include a diagram only when it materially reduces the effort of understanding these relationships; surrounding prose must still explain its purpose.
+Readers need a mental model of the approach before they can interpret its individual components. Begin with the objective established in the Problem Statement, the central design idea, and the consequential difference from relevant alternatives. A short overview of the stages and their relationships can prepare readers for the details that follow. Use a diagram if it makes dependencies or data flow easier to grasp; explain its significance in prose.
 
-Where general applicability matters to the claim, distinguish components that could transfer to other settings from those tied to a particular implementation, dataset, or assumption. Generality is a claim to support, not a mandatory virtue of every method.
+Describe the method's relationship to prior work accurately. A contribution need not extend a named baseline. Where general applicability is part of the claim, distinguish transferable ideas from choices tied to a specific implementation, dataset, or assumption.
 
-## Explain each substantive component
+## Explain why each component is needed before how it works
 
-For each meaningful component or processing stage, explain its motivation and role, what enters it, what comes out, what transformation it performs, and how it depends on or supports other components. Sequence explanations according to conceptual dependencies, not merely the chronology of development. Do not invent modules or repeat nearly identical headings to achieve a symmetrical outline.
+Readers can follow a component's implementation more easily once they understand its role. Introduce the problem or dependency motivating the component, then explain its inputs, outputs, and transformation. Connect its output to the next step or final objective. For example, if a calibration stage corrects an estimate using an observed condition, explain the condition and purpose of calibration before presenting its formula. The example illustrates explanation order, not a requirement to add calibration to a method.
 
-Describe the representations or intermediate quantities required to understand the algorithm. Explain feature extraction, transformation, aggregation, inference, or other substantive operations at the level needed for the manuscript's purpose. Learned backbones are one possible mechanism, not a presumed component; use `ml.md` for machine-learning-specific details when applicable.
+Use the same sequence for feature extraction, transformations, aggregation, inference, or any other substantive operations actually present. Define intermediate representations where readers need them. Arrange components according to conceptual dependencies rather than the order in which the author developed them; do not invent modules to make the section symmetrical. For learned components, consult the additional guidance in `ml.md` when that reference is applicable.
 
-## Close the mathematical and procedural chain
+## Connect inputs, equations, and the final output
 
-Define important inputs, outputs, variables, dimensionality, and units consistently with the Problem Statement. Where equations are useful, explain what relationship each expresses and how its variables connect to earlier definitions. Derive or describe how the final estimate, decision, or output is assembled from intermediate quantities. Define an objective function, optimization procedure, decision rule, or other governing criterion when the method actually has one; do not invent a training loss for an untrained procedure.
+A reader should be able to trace the defined inputs through intermediate quantities to the final estimate, decision, or output. State important dimensions and units, and keep variable meanings consistent with the Problem Statement. Introduce each consequential equation by its purpose, explain non-obvious terms and assumptions, and interpret what the result means. Include the actual objective function, optimization criterion, or decision rule when it governs the method; not every approach has a trainable loss.
 
-For an implementation-ready pre-experiment manuscript, provide sufficient detail to implement consequential choices and identify unsettled parameters explicitly. For a completed study, ensure the description corresponds to the method that was actually run. Algorithmic examples, pseudocode, diagrams, and mathematical expressions should complement the prose rather than substituting for missing explanations.
+Choose the detail level according to the manuscript's purpose. Before experiments, identify unresolved decisions that would prevent implementation. After experiments, describe the procedure actually used. Equations, diagrams, pseudocode, and examples can carry precise detail, but surrounding prose must still explain how they advance the method.

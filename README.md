@@ -55,4 +55,4 @@ The assistant reads `SKILL.md` when the skill activates and loads relevant refer
 
 The section-specific advice incorporates generalized writing lessons informed by [Komei Sugiura's *60 Questions & Answers (60QA)*](https://komeisugiura.jp/software/software_jp.html); the repository does not reproduce a numbered 60-question checklist. Paragraph-structure guidance is also informed by [Mensh and Kording (2017)](https://doi.org/10.1371/journal.pcbi.1005619) and [Seitaro Iwama's academic-writing lecture](https://speakerdeck.com/neuroiwm/paragurafu-kara-hajimeru-akademikku).
 
-**Current version:** v0.7.0
+**Current version:** v0.8.0

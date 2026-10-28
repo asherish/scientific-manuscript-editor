@@ -1,6 +1,6 @@
-# Notation conventions — optional reference
+# Notation: keep mathematical objects identifiable
 
-Use this only when the manuscript has a reader-facing notation problem or the author needs to establish a consistent notation scheme. **This is not a checklist for flagging every departure from conventional typography.** A coherent local convention that readers can follow may be preferable to a broad rewrite.
+Notation helps readers recognize **which mathematical object a symbol denotes and when two expressions refer to the same thing**. The goal is consistency and intelligibility, not enforcement of a universal font style. A coherent convention already used in the manuscript may be better than an extensive typographic rewrite.
 
 ## Choosing a convention
 

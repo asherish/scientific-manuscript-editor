@@ -1,6 +1,6 @@
 # Introduction: establish the problem and contribution
 
-Use this reference when writing, diagnosing, or substantially revising an Introduction. Its job is to make the research problem and the paper's reason for existing intelligible to the intended audience. It is not required to follow a fixed number of paragraphs or a universal funnel structure.
+The Introduction explains **why the research problem matters and why this paper is needed**. By the end, readers should understand the route from established knowledge to the unresolved question, the proposed approach, and the contribution the paper can support. The number of paragraphs and shape of that route depend on the study and venue.
 
 ## Move from shared context to the research gap
 
@@ -14,7 +14,7 @@ Swales's **Create a Research Space (CARS)** model distinguishes three communicat
 
 A useful variant is a progressively narrowing gap: a broad scientific limitation, a more specific unresolved aspect, and the particular question addressed here. The final passage then explains how the paper approaches that question and, when results exist, what it found. This is a possible reader path, **not** an obligation to create a nested hierarchy of gaps when the research has only one clear problem.
 
-Question-driven planning may help when an Introduction is difficult to construct: What phenomenon or task matters? What is established? What remains unknown or inadequate, and according to which sources? Why does that limitation matter? What does this study do about it, and why is that approach plausible? Customize or omit questions rather than building a paragraph for each one.
+When designing the progression, make each move prepare the next: establish the relevant phenomenon, narrow to what is known, identify the specific unresolved issue, explain why it matters, and show how the present study addresses it. Use reader questions to test for missing links without turning the Introduction into a literal questionnaire.
 
 Ground claims that the problem is difficult in identifiable constraints, representative failure cases, unresolved mechanisms, or evidence from relevant studies. A concrete use case may help readers understand why the task or gap matters, but illustrative cases do not demonstrate that all existing approaches fail. Distinguish a broad motivation from the precise target problem addressed by this study.
 

@@ -1,27 +1,33 @@
-# Experiments: make the evaluation credible and reproducible
+# Experiments: connect research questions to reproducible evidence
 
-Use this reference when planning, writing, diagnosing, or substantially revising an Experimental Setup, Evaluation Protocol, Study Design, or related methods-of-evaluation passage. Its purpose is to establish **what evidence the study can produce, why it is informative, and how the procedures can be reproduced or critically assessed**. Apply only the parts relevant to empirical, simulation, human-subject, observational, or computational work.
+An Experimental Setup explains **what evidence a study can produce, why its comparisons are informative, and how its procedures can be reproduced or critically assessed**. Select the parts relevant to the actual research design; computational, observational, simulation, and human-participant studies do not share one fixed protocol.
 
-## Explain data selection and construction
+## Explain why the data can answer the question
 
-Identify each data source or dataset and explain its suitability for the scientific question. When collecting or creating new data, justify why available resources are insufficient and describe the required coverage, sampling, measurement, or quality properties. Explain collection, annotation protocols, instructions, validation, disagreement handling, and provenance to the degree that they affect interpretation and reproducibility. When using established data, give the relevant versions and selection criteria rather than treating name recognition as a rationale.
+Data are useful only insofar as they represent the phenomenon the study aims to examine. Identify each source and explain its fit with the target population, task, measurement, or setting. If new data were needed, explain which requirements existing resources could not meet. If established data were selected, state the consequential versions and selection criteria rather than relying on the dataset name alone.
 
-Specify material preprocessing, filtering, transformations, aggregation, and augmentation, including their order and effects. Report the statistics readers need to judge size, representativeness, completeness, and granularity: the relevant counts, distributions, observation periods, measurement units, annotators, or study conditions depend on the field. Do not reproduce an irrelevant fixed inventory of dataset statistics.
+Describe how the data were collected or constructed. Where applicable, include sampling, annotation instructions, quality checks, disagreement handling, and provenance. Then explain preprocessing, filtering, aggregation, transformations, and augmentation in an order that reveals how raw observations become analysis-ready cases.
 
-## Define partitions, controls, and comparisons
+Report the statistics needed to judge the resulting dataset's scope and limitations. These might be counts, distributions, observation periods, units, annotator characteristics, or study conditions; select them according to the actual design. A long table of irrelevant dataset attributes does not improve reproducibility.
 
-Explain how training, development, validation, testing, calibration, or other data partitions are formed **when the study uses them**, along with their sizes or allocation rules and permitted uses. Describe measures that prevent leakage, dependent reuse, selection bias, or incomparable sampling. Not all studies use train/validation/test splits; specialized ML guidance is in `ml.md`.
+## Make data allocation and leakage controls visible
 
-Choose reference conditions, baselines, and comparator methods to test the study's material claims. Explain what each comparison is meant to establish and why it is fair under differences in data, assumptions, tuning, or computational budget. An ablation or controlled variation should name the design factor being changed, the claim it probes, the held-constant conditions, and the inference the contrast permits. Do not prescribe ablations when they cannot isolate a meaningful question.
+When observations are divided for fitting, selection, calibration, or final evaluation, explain **how the partitions were made and what each was used for**. Give meaningful sizes or allocation rules and describe steps that prevent leakage or dependent reuse. For example, a time-dependent evaluation may need a chronological split so later observations do not influence an earlier forecast. This is a conditional illustration, not a required split for every study. ML-specific data-use decisions are covered in `ml.md`.
 
-## Define measures and interpretation limits
+## Choose comparisons that test specific claims
 
-Identify primary and secondary evaluation measures, their operational or mathematical definitions, direction, units, aggregation, and relevant denominators. Explain why they address the central objective and which important properties they cannot capture. In a pre-experiment specification, fix or flag consequential choices such as thresholds, confidence procedures, exclusions, sample sizes, spatial or temporal resolution, and statistical analysis methods. Do not add arbitrary metrics just to appear thorough.
+Each baseline or reference condition should serve a scientific purpose. Explain what claim a comparison tests, why the alternatives are relevant, and whether they have comparable inputs, assumptions, tuning, or computational budgets. If important conditions differ, make that limitation clear before interpreting the results.
 
-Specify how repeated trials, uncertainty, variability, statistical comparisons, and sensitivity analyses will be handled where meaningful. A universal `p < 0.05` rule is not appropriate across research designs; the uncertainty method must match the data and inferential claims.
+An ablation or controlled variation asks whether changing a specified factor alters an outcome under comparable conditions. State the factor, what remains fixed, and the inference the contrast is designed to support. Include such analyses when they can answer a meaningful question, rather than adding them by convention.
 
-## Report resources and execution conditions
+## Explain what the metrics measure and what they miss
 
-Describe parameter selection, algorithms, software, seeds, instruments, hardware, and resource requirements that materially affect replication or a claim about efficiency. Report computational complexity, processing time, training time, or per-sample inference cost when meaningful, with a defined workload, measurement environment, and denominator. Model parameter counts and FLOPs are machine-learning-specific examples, not required outputs for every paper; detailed cases belong in `ml.md`.
+Readers cannot judge a result without knowing what the evaluation measure means. Identify primary and secondary metrics, define how they are computed, and explain their units, direction, aggregation, and relevant denominators. Connect the choice of measure to the original research question. Also state consequential behavior that a metric might conceal or fail to assess.
 
-For planned experiments, state protocols and intended comparisons without manufacturing results. For completed experiments, use the actual conditions and disclose material deviations from the proposed plan. The Results section should report what happened under these conditions rather than redefining the evaluation after observing outcomes.
+Describe how repeated trials, variability, uncertainty, formal statistical inference, and sensitivity analyses will be handled when relevant. For an implementation-ready plan, settle or flag material choices such as thresholds, exclusions, sample sizes, and spatial or temporal resolution. There is no universal p-value threshold or standard set of tests suitable for every design.
+
+## Report the settings needed to reproduce the work
+
+Reproducibility depends on knowing which procedures and settings could change the outcome. Describe consequential algorithms, parameter-selection procedures, software, instruments, randomization, and computing resources. If the paper makes efficiency claims, report processing or training time, inference cost, or other meaningful measures with a defined workload and measurement environment; ML-specific complexity measures are covered in `ml.md`.
+
+Keep the protocol's status clear: before experiments, describe intended conditions and unresolved decisions; after experiments, document the conditions actually used and material deviations. The Results section reports what occurred under the protocol and identifies any analyses that were added later.

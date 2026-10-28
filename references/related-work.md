@@ -1,10 +1,10 @@
 # Related work: establish an accurate comparison
 
-Use this reference when writing, diagnosing, or substantially revising a Related Work section or a substantial literature-positioning passage. Its purpose is to let readers judge **what prior research established, what remains unresolved, and how this study relates to the most relevant work**. Do not create a separate Related Work section when the venue or argument is better served by integrating the literature elsewhere.
+Related Work helps readers judge **what prior research established, what remains unresolved, and how the present study relates to the closest alternatives**. It may appear in a separate section or be integrated into an Introduction or Discussion, depending on the paper's structure.
 
 ## Organize around scientific relationships
 
-Group studies by the problem they investigate, underlying assumptions, methodological ideas, evidence, or limitations relevant to this paper. Introduce why each line of work matters to the research question, summarize what representative studies actually demonstrate, and explain its relationship to the present study. Add or combine groups as needed; do not manufacture subfields to fill a predetermined outline.
+Organize the literature around relationships that matter to the present argument. Group studies by their research problems, assumptions, methodological ideas, or evidence, and explain why each group is relevant before describing representative findings. This lets readers compare approaches without memorizing an unstructured sequence of citations. A group is useful because it clarifies a relationship, not because a template requires a fixed number of subfields.
 
 Use multiple relevant sources when making claims about a research direction. One convenient paper rarely establishes the limits of an entire literature. Conversely, an extensive citation list is not evidence of a complete review: prioritize sources that allow readers to evaluate the actual scientific comparison. Verify descriptions against the cited works, including the conditions under which their findings hold.
 
@@ -14,6 +14,6 @@ Where the field has standard datasets, benchmarks, tasks, reference implementati
 
 ## Compare fairly with the closest alternatives
 
-Give particular attention to methods or findings that a knowledgeable reviewer could reasonably consider the closest alternatives. Identify **both similarities and differences**, including whether the methods solve the same task under comparable assumptions. Explain the substantive distinction and its proposed or demonstrated consequence; the fact that two methods have different architectures does not itself establish scientific novelty.
+The closest alternatives deserve the most precise comparisons. First establish whether they address the same task under comparable inputs and assumptions. Then explain both similarities and the differences that matter to the research question. For example, two methods may share an evaluation dataset but receive different observations at prediction time; that difference matters before comparing their scores. Different architectures alone do not establish a new scientific contribution.
 
 Do not claim that conventional methods uniformly fail, that no previous work exists, or that the present study is first without adequate evidence. When a literature gap is uncertain, state the limitation of the search or flag it for verification. In an Introduction, communicate only the comparison needed to motivate the research question; use this reference for a deeper positioning when appropriate.

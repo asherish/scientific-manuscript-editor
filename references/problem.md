@@ -1,12 +1,12 @@
 # Problem statement: specify what the research asks
 
-Use this reference when writing, diagnosing, or substantially revising a formal Problem Statement, task definition, or research formulation. The reader should be able to identify **the target problem independently of the particular method proposed to solve it**.
+The Problem Statement defines **what must be solved or investigated**, independently of the particular approach proposed by the paper. Readers should leave it knowing the target outcome, available information, and boundaries of the task.
 
 ## Define the objective and a valid solution
 
 State the target task, phenomenon, or research question precisely. Explain what would count as a valid, desirable, or useful outcome and why; distinguish the objective of the task from properties that the proposed method happens to produce. If the study makes predictions, estimates, classifications, decisions, or explanations, specify the intended meaning and relevant granularity of each output.
 
-State what observations and inputs are available to a solution **before** introducing method-specific intermediate features. Identify units, domains, time horizons, spatial scales, populations, and other dimensions when their omission would change the task. Define author-created quantities and scientific terms at first consequential use. For symbol consistency and conventions, read `notation.md` under the selection rule in `SKILL.md`.
+Separate information provided by the task from quantities produced inside a particular method. For example, an observed image can be an input to the task, whereas features extracted from it belong to the proposed method. Specify units, domains, time horizons, spatial scales, populations, and other dimensions when they affect interpretation. Define unfamiliar terms and author-created quantities where readers first need them; use `notation.md` for symbol conventions when applicable.
 
 ## Make scope and assumptions testable
 
