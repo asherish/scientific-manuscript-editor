@@ -17,3 +17,10 @@ Where the field has standard datasets, benchmarks, tasks, reference implementati
 The closest alternatives deserve the most precise comparisons. First establish whether they address the same task under comparable inputs and assumptions. Then explain both similarities and the differences that matter to the research question. For example, two methods may share an evaluation dataset but receive different observations at prediction time; that difference matters before comparing their scores. Different architectures alone do not establish a new scientific contribution.
 
 Do not claim that conventional methods uniformly fail, that no previous work exists, or that the present study is first without adequate evidence. When a literature gap is uncertain, state the limitation of the search or flag it for verification. In an Introduction, communicate only the comparison needed to motivate the research question; use this reference for a deeper positioning when appropriate.
+
+## Sources and applicability
+
+- Webster and Watson (2002), *Analyzing the Past to Prepare for the Future: Writing a Literature Review* — synthesizing literature around concepts rather than a sequence of authors: https://aisel.aisnet.org/misq/vol26/iss2/3/
+- Ulmer et al. (2022), *Experimental Standards for Deep Learning in Natural Language Processing Research* — experimental comparisons and reporting standards relevant to benchmarks and prior systems: https://aclanthology.org/2022.findings-emnlp.196/
+
+The second source focuses on deep-learning NLP; benchmark practices should be adapted to the actual field and research question, not imposed as a universal list.

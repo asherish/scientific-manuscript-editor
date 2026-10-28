@@ -19,3 +19,10 @@ Use the same sequence for feature extraction, transformations, aggregation, infe
 A reader should be able to trace the defined inputs through intermediate quantities to the final estimate, decision, or output. State important dimensions and units, and keep variable meanings consistent with the Problem Statement. Introduce each consequential equation by its purpose, explain non-obvious terms and assumptions, and interpret what the result means. Include the actual objective function, optimization criterion, or decision rule when it governs the method; not every approach has a trainable loss.
 
 Choose the detail level according to the manuscript's purpose. Before experiments, identify unresolved decisions that would prevent implementation. After experiments, describe the procedure actually used. Equations, diagrams, pseudocode, and examples can carry precise detail, but surrounding prose must still explain how they advance the method.
+
+## Sources and applicability
+
+- MIT EECS Communication Lab, *Paper: Methods (CS)* — explaining algorithm or system components, justifying design choices, developing intuition, and providing consequential replication detail: https://mitcommlab.mit.edu/eecs/commkit/journal-article-methods-cs/
+- Pineau et al. (2021), *Improving Reproducibility in Machine Learning Research* — reproducibility of learned methods and computational experiments where relevant: https://www.jmlr.org/papers/v22/20-303.html
+
+Use the second source when machine learning or experimental replication is applicable; not every method has a learned model, loss, or experimental training procedure.

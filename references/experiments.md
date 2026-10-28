@@ -31,3 +31,12 @@ Describe how repeated trials, variability, uncertainty, formal statistical infer
 Reproducibility depends on knowing which procedures and settings could change the outcome. Describe consequential algorithms, parameter-selection procedures, software, instruments, randomization, and computing resources. If the paper makes efficiency claims, report processing or training time, inference cost, or other meaningful measures with a defined workload and measurement environment; ML-specific complexity measures are covered in `ml.md`.
 
 Keep the protocol's status clear: before experiments, describe intended conditions and unresolved decisions; after experiments, document the conditions actually used and material deviations. The Results section reports what occurred under the protocol and identifies any analyses that were added later.
+
+## Sources and applicability
+
+- Gebru et al. (2021), *Datasheets for Datasets* — data motivation, composition, collection, and documentation: https://doi.org/10.1145/3458723
+- Pineau et al. (2021), *Improving Reproducibility in Machine Learning Research* — reproducible ML experiments and reporting: https://www.jmlr.org/papers/v22/20-303.html
+- Ulmer et al. (2022), *Experimental Standards for Deep Learning in Natural Language Processing Research* — comparison and experimental-analysis practices in deep-learning NLP: https://aclanthology.org/2022.findings-emnlp.196/
+- NeurIPS, *Paper Checklist Guidelines* — examples of transparent reporting for datasets, splits, hyperparameters, uncertainty, and computing resources: https://neurips.cc/public/guides/PaperChecklist
+
+The latter three sources are primarily ML-oriented, and NeurIPS requirements apply to its own submissions. Use their relevant reporting principles, not their venue-specific checkboxes, for other kinds of empirical research.

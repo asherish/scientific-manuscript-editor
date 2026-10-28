@@ -25,3 +25,13 @@ An aggregate score may conceal which types of cases a system gets wrong. In clas
 ## Make ablation comparisons interpretable
 
 An ablation should help readers understand which design choice is under examination. Identify the variant, the changed component or training condition, the other conditions held fixed, and the outcome used for comparison. Explain what inference follows from the design and observed results. A particular variant-labeling convention is optional; a performance difference alone does not isolate causation when other conditions changed too.
+
+## Sources and applicability
+
+- Pineau et al. (2021), *Improving Reproducibility in Machine Learning Research* — reporting ML training and evaluation procedures for reproducibility: https://www.jmlr.org/papers/v22/20-303.html
+- NeurIPS, *Paper Checklist Guidelines* — experimental splits, hyperparameters, statistical variability, and computational resources as transparency examples: https://neurips.cc/public/guides/PaperChecklist
+- Ulmer et al. (2022), *Experimental Standards for Deep Learning in Natural Language Processing Research* — ML experimental design and analysis (NLP-specific): https://aclanthology.org/2022.findings-emnlp.196/
+- Sokolova and Lapalme (2009), *A Systematic Analysis of Performance Measures for Classification Tasks* — confusion matrices and classification metrics: https://doi.org/10.1016/j.ipm.2009.03.002
+- Nityasya et al. (2023), *On "Scientific Debt" in NLP: A Case for More Rigour in Language Model Pre-Training Research* — ablations and principled comparisons under matched conditions (language-model-specific): https://aclanthology.org/2023.acl-long.477/
+
+Apply classification-specific and language-model-specific analyses only where the output and design warrant them; do not treat conference checklist policies as universal writing requirements.

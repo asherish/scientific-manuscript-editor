@@ -14,7 +14,7 @@ Build an explanation that exposes dependencies. If a method depends on an assump
 
 Question-first planning can divide a difficult writing task into manageable explanatory modules. For example, a problem-formulation section may need to establish the target task, available inputs, desired output, assumptions, and success criteria. A method section may instead need to explain why each component is needed and how its output advances the overall approach. These are purposes to adapt, not slots in a universal questionnaire.
 
-Use the relevant section reference selected through `SKILL.md` for more detailed guidance. The question-first approach is informed by Komei Sugiura's *60 Questions & Answers (60QA)*, but its question count, section order, and method-specific prompts are not manuscript requirements.
+Use the relevant section reference selected through `SKILL.md` for more detailed guidance. Reader-question planning is consistent with MIT EECS Communication Lab's *Planning Your Paper*, which suggests organizing an outline around questions and answers, and Mensh and Kording (2017, Rules 7 and 9), which describe question-driven results and planning each paragraph's role. These are adaptable writing practices, not requirements for a fixed questionnaire, section order, or paragraph count.
 
 Outlining the answer before prose can reveal missing information and invalid inferences early. Do not fill a gap by inventing a design decision, result, or citation. In an existing well-structured passage, simply use the four core principles and leave it alone when no substantive obstacle exists.
 
@@ -84,4 +84,4 @@ Repair the source of confusion at the smallest effective scale. That may mean de
 - Purdue Online Writing Lab, *Organizing Your Argument* (claims, evidence, and warrants in the Toulmin model): https://owl.purdue.edu/owl/general_writing/academic_writing/establishing_arguments/organizing_your_argument.html
 - Minto (1996), *The Minto Pyramid Principle: Logic in Writing, Thinking and Problem Solving* (hierarchical claim–support organization): https://barbaraminto.com/
 - Heffernan and Teufel (2018), *Identifying problems and solutions in scientific text* (problem–response–evaluation discourse patterns): https://doi.org/10.1007/s11192-018-2718-6
-- Komei Sugiura, *60 Questions & Answers (60QA)*: https://komeisugiura.jp/software/software_jp.html
+- MIT EECS Communication Lab, *Journal or Conference Paper: Planning Your Paper* (reader questions, answer-first planning, flexible section tasks): https://mitcommlab.mit.edu/eecs/commkit/journal-or-conference-paper/

@@ -19,3 +19,11 @@ A concrete example or schematic may make unfamiliar entities, available inputs, 
 ## Check the formulation against the rest of the paper
 
 Verify that the Method actually operates on the declared inputs, that the Experiments assess the stated output or objective, and that the Results and Conclusions do not silently change the target task. If these disagree, resolve the scientific definition before polishing prose. Do not fill unresolved definitions with invented author decisions.
+
+## Sources and applicability
+
+- MIT EECS Communication Lab, *Paper: Introduction* — stating the research problem, motivation, and intended contribution: https://mitcommlab.mit.edu/eecs/commkit/journal-article-introduction/
+- MIT EECS Communication Lab, *Paper: Methods (CS)* — explaining a technical approach at the level needed for appraisal and replication: https://mitcommlab.mit.edu/eecs/commkit/journal-article-methods-cs/
+- NeurIPS, *Paper Checklist Guidelines* — communicating claims, assumptions, limitations, and evaluation conditions: https://neurips.cc/public/guides/PaperChecklist
+
+These sources collectively support clear task and scope definitions; none mandates an independent Problem Statement section or one universal list of inputs, outputs, and metrics. NeurIPS checklist items are venue-specific reporting guidance.

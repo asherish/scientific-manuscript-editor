@@ -25,3 +25,12 @@ When error frequency or severity matters, specify the denominator and distinguis
 A controlled comparison is interpretable only relative to the factor that changed and the conditions that stayed fixed. For ablations or sensitivity analyses, name that contrast, report the observed outcome, and distinguish supported conclusions from possible confounding explanations. Discuss dominant bottlenecks using observed evidence; label a proposed remedy as a hypothesis until it has been evaluated.
 
 Results should explain **what the evidence establishes**. Broader implications, relationships to previous literature, and limits on generalization can be developed in Discussion. Figures and tables carry detail; prose selects and explains the observations that answer the question, without repeating every cell or bar.
+
+## Sources and applicability
+
+- MIT EECS Communication Lab, *Paper: Results* — connecting the motivating question, analysis, figures or tables, and observed finding: https://mitcommlab.mit.edu/eecs/commkit/journal-article-results/
+- Mensh and Kording (2017), *Ten Simple Rules for Structuring Papers*, Rule 7 — a logical progression of results supported by evidence and figures: https://doi.org/10.1371/journal.pcbi.1005619
+- Ulmer et al. (2022), *Experimental Standards for Deep Learning in Natural Language Processing Research* — experimental analysis and fair comparison in NLP: https://aclanthology.org/2022.findings-emnlp.196/
+- van Miltenburg et al. (2021), *Underreporting of Errors in NLG Output, and What to Do About It* — identifying, categorizing, and reporting error behavior beyond aggregate metrics: https://aclanthology.org/2021.inlg-1.14/
+
+Error-category examples in the last source are specific to natural-language generation. Generalize the need for systematic failure analysis, not those particular categories or a required number of examples.
