@@ -26,7 +26,7 @@ Do not replace substantive headings with generic process labels merely to make a
 
 ## Use paragraph writing to convey an explanatory move
 
-A paragraph should have a recognizable central idea or role and enough support for the intended reader to understand it. The support may be a definition, mechanism, example, comparison, derivation, caveat, or evidence. Arrange sentences so that the relation among them is recoverable. Split a paragraph if it is performing unrelated moves that readers cannot comfortably integrate; combine fragments if their separation hides one continuous explanation.
+A paragraph should have a recognizable central idea or role and enough support for the intended reader to understand it. The support may be a definition, mechanism, example, comparison, derivation, caveat, or evidence. Arrange sentences so that the relation among them is recoverable. Split a paragraph if it is performing unrelated moves that readers cannot comfortably integrate; combine fragments if their separation hides one continuous explanation. Purdue OWL's *On Paragraphs* discusses paragraph unity, topic sentences, supporting evidence, and coherence without prescribing a single position for every topic sentence.
 
 A topic sentence can help, but it need not be the first sentence in every paragraph. A concluding sentence can help when the paragraph needs an inference or transition, but a formulaic summary often adds no value. Paragraph unity does not mean every sentence repeats the same claim; a well-placed qualification or contrast may be essential. Prefer purpose and reader comprehension to a rigid topic–support–conclusion template.
 
@@ -41,7 +41,7 @@ Several established patterns can make a paragraph or larger explanation easier t
 | **Context–Content–Conclusion (CCC)** | What context is needed, what advances the explanation, and what follows? | Organizing paragraphs, sections, Abstracts, or an argument as a whole when context-first exposition helps. |
 | **Problem–Solution** | What difficulty motivates the approach, and how is it addressed? | Explaining a research problem, intervention, or methodological choice. |
 
-In a claim–support paragraph, ask whether the cited results actually entail or substantiate the stated conclusion. A convenient or flexible method is not automatically effective, reliable, or generalizable. An optional concluding sentence should communicate a warranted inference, not inflate the opening claim. A CCC sequence should orient readers without burying the central contribution in background. A Problem–Solution passage should distinguish the proposed solution from demonstrated success. These patterns help diagnose meaning, not merely rearrange labels.
+In a claim–support paragraph, ask whether the cited results actually entail or substantiate the stated conclusion. A convenient or flexible method is not automatically effective, reliable, or generalizable. An optional concluding sentence should communicate a warranted inference, not inflate the opening claim. A CCC sequence should orient readers without burying the central contribution in background. A Problem–Solution passage should distinguish the proposed solution from demonstrated success; scientific discourse research distinguishes the problem, the response, and its evaluation. These patterns help diagnose meaning, not merely rearrange labels.
 
 Use the same ideas across scales cautiously. A whole paper can establish context in the Introduction, develop evidence in Methods and Results, and interpret it in Discussion, but disciplinary structures vary. Section-level CCC can be useful; requiring every section and paragraph to follow identical three-part shapes creates repetition. Paragraphs can be designed as modules without forcing a fixed count or length.
 
@@ -79,7 +79,9 @@ Repair the source of confusion at the smallest effective scale. That may mean de
 
 ## Further reading
 
-- Seitaro Iwama, *パラグラフから始めるアカデミック・ライティング* (2026): https://speakerdeck.com/neuroiwm/paragurafu-kara-hajimeru-akademikku
 - Mensh and Kording (2017), *Ten simple rules for structuring papers*: https://doi.org/10.1371/journal.pcbi.1005619
-- Minto (1996), *The Pyramid Principle: Logic in Writing and Thinking*.
+- Purdue Online Writing Lab, *On Paragraphs* (topic sentences, paragraph unity, support, and coherence): https://owl.purdue.edu/owl/general_writing/academic_writing/paragraphs_and_paragraphing/
+- Purdue Online Writing Lab, *Organizing Your Argument* (claims, evidence, and warrants in the Toulmin model): https://owl.purdue.edu/owl/general_writing/academic_writing/establishing_arguments/organizing_your_argument.html
+- Minto (1996), *The Minto Pyramid Principle: Logic in Writing, Thinking and Problem Solving* (hierarchical claim–support organization): https://barbaraminto.com/
+- Heffernan and Teufel (2018), *Identifying problems and solutions in scientific text* (problem–response–evaluation discourse patterns): https://doi.org/10.1007/s11192-018-2718-6
 - Komei Sugiura, *60 Questions & Answers (60QA)*: https://komeisugiura.jp/software/software_jp.html
