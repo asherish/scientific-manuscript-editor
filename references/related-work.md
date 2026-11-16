@@ -4,7 +4,7 @@ Related Work helps readers judge **what prior research established, what remains
 
 ## Organize around scientific relationships
 
-Organize the literature around relationships that matter to the present argument. Group studies by their research problems, assumptions, methodological ideas, or evidence, and explain why each group is relevant before describing representative findings. This lets readers compare approaches without memorizing an unstructured sequence of citations. A group is useful because it clarifies a relationship, not because a template requires a fixed number of subfields.
+Organize the literature around relationships that matter to the present argument. Group studies by their research problems, assumptions, methodological ideas, or evidence, and explain why each group is relevant before describing representative findings. This lets readers compare approaches without memorizing an unstructured sequence of citations. Grouping should clarify scientific relationships.
 
 Use multiple relevant sources when making claims about a research direction. One convenient paper rarely establishes the limits of an entire literature. Conversely, an extensive citation list is not evidence of a complete review: prioritize sources that allow readers to evaluate the actual scientific comparison. Verify descriptions against the cited works, including the conditions under which their findings hold.
 
@@ -20,9 +20,9 @@ Do not claim that conventional methods uniformly fail, that no previous work exi
 
 ## Use an evidence-based comparison matrix when useful
 
-For several closely related approaches, an optional matrix can help readers compare **methods as columns** against clearly defined properties, task assumptions, or desiderata as rows. Choose features because they matter scientifically, not to make the proposed method look superior. Verify each entry against the underlying paper; represent unknown or incomparable properties honestly and include important disadvantages of the proposed approach.
+When several closely related approaches need systematic comparison, **consider** a matrix with **methods as columns** and scientifically relevant properties, task assumptions, or desiderata as rows. Choose features because they matter scientifically, not to make the proposed method look superior. Verify each entry against the underlying paper; represent unknown or incomparable properties honestly and include important disadvantages of the proposed approach.
 
-Placing the present method in the final column can aid scanning, as suggested by Faloutsos's *salesman matrix*, but neither that order nor a favorable scorecard is required. Continue to cite relevant sources **wherever their ideas or methods are used**, including in the Method and Discussion; do not adopt MetaPaper's advice to avoid citations outside the survey.
+When it aids scanning, **consider** placing the present method in the final column, as suggested by Faloutsos's *salesman matrix*; do not bias the comparison toward a favorable scorecard. Continue to cite relevant sources **wherever their ideas or methods are used**, including in the Method and Discussion; do not adopt MetaPaper's advice to avoid citations outside the survey.
 
 ## Sources and applicability
 
