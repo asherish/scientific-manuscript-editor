@@ -4,11 +4,11 @@ Readers should be able to trace each important result from **the question motiva
 
 ## Lead each substantial result with its purpose
 
-An analysis becomes meaningful when readers know why it was performed. Introduce the evaluated setting when necessary, then organize findings by the questions or propositions they address rather than merely recounting the order of experiments. A useful pattern is **question or motivation → observation → warranted answer**. Later results can build on the answers established earlier; headings should match what the evidence actually shows. Where the Introduction uses short contribution labels, let readers recognize the corresponding evidence and question in Results. Preserve the distinction between a demonstrated finding and a planned goal or hypothesis.
+An analysis becomes meaningful when readers know why it was performed. Introduce the evaluated setting when necessary, then organize findings by the questions or propositions they address rather than merely recounting the order of experiments. A substantial result **should** follow a **question or motivation → observation → warranted answer** progression. Later results can build on the answers established earlier; headings should match what the evidence actually shows. Where the Introduction uses short contribution labels, let readers recognize the corresponding evidence and question in Results. Preserve the distinction between a demonstrated finding and a planned goal or hypothesis.
 
 ## Explain what each numerical comparison shows
 
-Before interpreting a table or plot, orient readers to the comparison it represents. Make axes, rows, columns, units, sample sizes, repetitions, and aggregation clear through the caption and nearby prose. Then identify the few observations that matter for the research question. Report actual values and absolute differences where informative; a relative improvement alone may conceal the practical size of a change.
+The interpretation of a table or plot **should** begin by orienting readers to its comparison. Make axes, rows, columns, units, sample sizes, repetitions, and aggregation clear through the caption and nearby prose. Then identify the few observations that matter for the research question. Report actual values and absolute differences where informative; a relative improvement alone may conceal the practical size of a change.
 
 When a visual would benefit from a short bold takeaway tag or a more informative encoding, consult `figures.md`; avoid unsupported headlines and preserve the venue's caption rules.
 
@@ -18,9 +18,9 @@ Report uncertainty, variability, repeatability, or statistical comparisons at th
 
 ## Use examples and failures to explain behavior
 
-Qualitative examples are valuable when they reveal something an aggregate measure hides. Introduce why a success, counterexample, or failure was selected, then point to the feature that supports the interpretation. Avoid captions or paragraphs that merely announce an image and expect readers to infer the result for themselves. Selected examples do not establish population-wide prevalence without a defensible sampling procedure. When patterns of failure suggest a mechanism, state a **testable explanation** and what additional stratification, control, or measurement could distinguish it from alternatives. A vivid example alone does not demonstrate its cause.
+When an aggregate measure hides consequential behavior, **consider** qualitative examples that reveal it. Introduce why a success, counterexample, or failure was selected, then point to the feature that supports the interpretation. Avoid captions or paragraphs that merely announce an image and expect readers to infer the result for themselves. Selected examples do not establish population-wide prevalence without a defensible sampling procedure. When patterns of failure suggest a mechanism, state a **testable explanation** and what additional stratification, control, or measurement could distinguish it from alternatives. A vivid example alone does not demonstrate its cause.
 
-When error frequency or severity matters, specify the denominator and distinguish total observed failures from illustrative cases. Group failures into meaningful, reproducibly defined categories when the data permit. Select a breakdown appropriate to the task; classification-specific examples such as a confusion matrix appear in `ml.md`.
+When error frequency or severity matters, the denominator and distinction between total observed failures and illustrative cases **must** be reported. Group failures into meaningful, reproducibly defined categories when the data permit. Select a breakdown appropriate to the task; classification-specific examples such as a confusion matrix appear in `ml.md`.
 
 ## Bound what controlled and exploratory findings establish
 
