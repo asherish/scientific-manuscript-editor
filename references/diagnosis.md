@@ -14,7 +14,7 @@ For each suspected obstacle, ask what the passage should enable the intended rea
 
 When a paragraph seems directionless, **consider** reconstructing its implicit reader question and the answer it offers. Check that the supporting explanations or evidence actually establish that answer, and that the conclusion does not go beyond them.  For complex sections, a question-to-paragraph map can reveal redundant answers, missing links, or unanswered reader needs. This is a diagnostic scaffold, not another mandatory output artifact.
 
-## Optional diagnostic lenses
+## Diagnose using lenses matched to the observed problem
 
 Use the lenses that match material problems; report only findings grounded in the manuscript.
 
