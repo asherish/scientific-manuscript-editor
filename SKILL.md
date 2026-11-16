@@ -36,8 +36,10 @@ First establish **the task, reader, research, and manuscript's purpose** from th
 
 Distinguish two primary manuscript purposes:
 
-- **Pre-experiment specification:** Experiments have yet to be implemented, and the paper-form manuscript also guides their implementation. Specify inputs, definitions, mathematical meaning, methods, and evaluation plans at the detail needed to implement and appraise the research. Necessary explanation takes priority over page count. Clearly distinguish a proposed experiment from a completed one; do not fabricate results or unresolved design decisions.
+- **Pre-experiment specification:** Experiments have yet to be implemented, and the paper-form manuscript also guides their implementation. Specify inputs, definitions, mathematical meaning, methods, and evaluation plans at the detail needed to implement and appraise the research. The main-paper draft should target the intended venue's verified page budget, with implementation-level detail preserved in appropriate supporting material as specified below. Clearly distinguish a proposed experiment from a completed one; do not fabricate results or unresolved design decisions.
 - **Post-experiment submission preparation:** Research results are available and the manuscript is being prepared for a target venue. Communicate contributions and evidence efficiently under verified venue requirements; do not sacrifice scientific validity, reproducibility, or essential qualifications for brevity. Check official requirements during Design / Diagnose when relevant.
+
+**Length and supporting detail across both phases:** Drafts and revisions **should** fit the intended venue's verified main-paper page budget while retaining enough definitions, assumptions, methodological reasoning, and evaluation detail for readers to assess the research. Check the venue's rules for what counts toward the limit, permitted appendix or supplementary formats and lengths, and reviewer access. Supporting material **should** hold details that need not appear in the main paper; when submission limits leave further consequential technical detail, the editor **should preserve it in clearly labeled non-submitted technical notes or an internal appendix** for the author. Material not submitted **must not** be presented as reviewer-accessible evidence or as part of the submission. If the venue or its limits are unknown, use an author-specified or explicitly provisional budget and report the uncertainty instead of inventing requirements. Verify the actual page count when the manuscript can be typeset.
 
 The phase and the requested action are **independent dimensions**: either phase can involve new writing, diagnosis, local revision, restructuring, extensive rewriting, or verification. For partly completed research, identify which obligations apply. If a missing detail would substantially change the output, ask the author; otherwise proceed with bounded, explicit assumptions. Never invent venue policies.
 
@@ -112,7 +114,7 @@ The definitions, directive semantics, and workflow above apply throughout. **Ref
 | A learning model, ML training, ML-specific experiment, or task-specific classification evaluation | `references/ml.md` (in addition to the relevant section reference) |
 | Systematic diagnosis, reverse outlining, or a structured reader-difficulty report | `references/diagnosis.md` |
 | Writing or substantially revising an implementation-ready pre-experiment manuscript, or explicitly auditing design completeness | `references/pre-experiment.md` |
-| Checking a target venue's submission requirements or refining a post-experiment manuscript for that venue | `references/submission.md` |
+| Planning draft page budgets and supporting material for a target venue, checking its submission requirements, or refining a completed manuscript | `references/submission.md` |
 | Establishing notation conventions, resolving symbol ambiguity, or changing symbol identities | `references/notation.md` |
 | Substantive scientific revisions, protected-element checks, or comparing original and revised versions | `references/verification.md` |
 
