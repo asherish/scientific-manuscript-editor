@@ -1,8 +1,8 @@
 # Experiments: connect research questions to reproducible evidence
 
-An Experimental Setup explains **what evidence a study can produce, why its comparisons are informative, and how its procedures can be reproduced or critically assessed**. Select the parts relevant to the actual research design; computational, observational, simulation, and human-participant studies do not share one fixed protocol.
+An Experimental Setup explains **what evidence a study can produce, why its comparisons are informative, and how its procedures can be reproduced or critically assessed**. The Experimental Setup **should** cover the procedures and evidence relevant to its actual computational, observational, simulation, or human-participant design.
 
-**Map the main claims to answerable experimental questions.** For each consequential contribution, identify the experimental question, the evidence needed to answer it, the conditions under which the answer would hold, and where the result will be reported. Concise, stable contribution labels can connect the Introduction, experiment headings, Results, and Conclusion without imposing a one-question–one-experiment rule. A pre-experiment manuscript describes planned evidence rather than findings.
+**Map the main claims to answerable experimental questions.** For each consequential contribution, identify the experimental question, the evidence needed to answer it, the conditions under which the answer would hold, and where the result will be reported. When several contributions need to be tracked across the manuscript, **consider** concise, stable labels linking the Introduction, experiments, Results, and Conclusion. A pre-experiment manuscript describes planned evidence rather than findings.
 
 ## Explain why the data can answer the question
 
@@ -16,7 +16,7 @@ Where relevant, document intended use, licensing or access restrictions, privacy
 
 ## Make data allocation and leakage controls visible
 
-When observations are divided for fitting, selection, calibration, or final evaluation, explain **how the partitions were made and what each was used for**. Give meaningful sizes or allocation rules and describe steps that prevent leakage or dependent reuse. For example, a time-dependent evaluation may need a chronological split so later observations do not influence an earlier forecast. This is a conditional illustration, not a required split for every study. ML-specific data-use decisions are covered in `ml.md`.
+When observations are divided for fitting, selection, calibration, or final evaluation, explain **how the partitions were made and what each was used for**. Give meaningful sizes or allocation rules and describe steps that prevent leakage or dependent reuse. For example, a time-dependent evaluation may need a chronological split so later observations do not influence an earlier forecast.  ML-specific data-use decisions are covered in `ml.md`.
 
 Audit **independence at the unit required by the scientific claim**: records can be disjoint yet share a person, location, encounter, recording session, time period, or near-duplicate content. Consider whether feature engineering, preprocessing, normalization, hyperparameter selection, or pretraining exposed test information. If such dependence cannot be ruled out, qualify what the test can establish rather than calling it independent.
 
@@ -26,11 +26,11 @@ Each baseline or reference condition should serve a scientific purpose. Explain 
 
 For trained or tuned models, consider whether search effort, validation access, data availability, and compute budgets are comparable. A single best test-set score may conflate model quality with hyperparameter-search effort; report meaningful development or validation information where available and relevant. Do not manufacture a controlled comparison when the study lacks one.
 
-An ablation or controlled variation asks whether changing a specified factor alters an outcome under comparable conditions. State the factor, what remains fixed, and the inference the contrast is designed to support. Include such analyses when they can answer a meaningful question, rather than adding them by convention.
+An ablation or controlled variation asks whether changing a specified factor alters an outcome under comparable conditions. State the factor, what remains fixed, and the inference the contrast is designed to support. When a controlled variation can answer a meaningful question, **consider** including it.
 
 ## Explain what the metrics measure and what they miss
 
-Readers cannot judge a result without knowing what the evaluation measure means. Identify primary and secondary metrics, define how they are computed, and explain their units, direction, aggregation, and relevant denominators. Connect the choice of measure to the original research question. Also state consequential behavior that a metric might conceal or fail to assess.
+Readers cannot judge a result without knowing what the evaluation measure means. The Experimental Setup **should** identify primary and secondary metrics, define how they are computed, and explain their units, direction, aggregation, and relevant denominators. Connect the choice of measure to the original research question. Also state consequential behavior that a metric might conceal or fail to assess.
 
 **Check construct validity explicitly:** Does the observable outcome represent the phenomenon or capability named in the claim? Are task definitions, labels, thresholds, sample selection, and metrics aligned with that claim? State important proxy assumptions and avoid claiming success on a broader target merely because a related benchmark score improved. Connect this audit to the task definition in `problem.md`.
 
@@ -56,4 +56,4 @@ Keep the protocol's status clear: before experiments, describe intended conditio
 - ACL, *Responsible Research Checklist* — limits, data licensing, privacy, and experiment documentation where relevant: https://ethics.aclweb.org/roles/researchers/
 - Wagenmakers et al. (2012), *An Agenda for Purely Confirmatory Research* — differentiating planned tests from exploratory analyses: https://doi.org/10.1177/1745691612463078
 
-These sources span ML, NLP, biological ML, LLM benchmarks, and psychology. Adapt their transferable design and reporting principles to the actual study; do not impose a venue's checklist, a biology-specific protocol, or psychology preregistration practices as universal requirements.
+These sources span ML, NLP, biological ML, LLM benchmarks, and psychology. Transfer their principles only where they fit the actual study.
