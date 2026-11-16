@@ -4,11 +4,11 @@ The Conclusion leaves readers with **the research question addressed, the contri
 
 ## Synthesize rather than repeat
 
-Return to the paper's research question and state how the work addresses it. Summarize principal contributions or findings at the level supported by the actual study; do not convert a proposed method into a demonstrated benefit, extrapolate beyond evaluated settings, or introduce a new result at the end. Align wording with the Introduction, Abstract, Problem Statement, Results, and Discussion. Where the paper uses concise contribution labels for reader navigation, reuse the same conceptual labels and refer to the supporting figures, analyses, or theorems when helpful. Do not mechanically repeat identical bullet lists or claim an intended benefit as demonstrated.
+The Conclusion **should** return to the paper's research question and state how the work addresses it. Summarize principal contributions or findings at the level supported by the actual study; do not convert a proposed method into a demonstrated benefit, extrapolate beyond evaluated settings, or introduce a new result at the end. Align wording with the Introduction, Abstract, Problem Statement, Results, and Discussion. Where the paper uses concise contribution labels for reader navigation, reuse the same conceptual labels and refer to the supporting figures, analyses, or theorems when helpful. Do not claim an intended benefit as demonstrated.
 
-For pre-experiment writing, state the intended contribution and what evidence the planned evaluation is meant to produce, without writing expected findings as though they were observed. For completed research, emphasize supported findings and their bounded significance. Choose tense, voice, length, and any required closing structure according to the manuscript's stage and verified target-venue instructions, not a universal rule.
+For pre-experiment writing, state the intended contribution and what evidence the planned evaluation is meant to produce, without writing expected findings as though they were observed. For completed research, emphasize supported findings and their bounded significance. The manuscript's stage and verified target-venue instructions **should** determine tense, voice, length, and any required closing structure.
 
-End with the most defensible takeaway. When a limitation or future direction is important to that takeaway, connect it to the work rather than appending generic future work. Do not introduce a new claim or rely on promotional language to make the ending seem significant.
+The Conclusion **should** end with the most defensible takeaway. When a limitation or future direction is important to that takeaway, connect it to the work rather than appending generic future work. Do not introduce a new claim or rely on promotional language to make the ending seem significant.
 
 ## Sources and applicability
 
