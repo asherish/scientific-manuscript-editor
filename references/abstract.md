@@ -22,7 +22,7 @@ At summary level, emphasize the problem, what the approach enables or the study 
 
 If the author uses a distinctive name for a proposed method, keep it consistent with the Introduction, Method, and figures, and explain its meaning rather than expecting the name itself to establish a benefit. See `method.md` when that reference applies.
 
-## Use the Nature summary structure as an optional model
+## Consider the Nature summary structure when applicable
 
 Nature's published guide provides one example of how to sequence information: a broad introduction and focused background prepare readers for the problem; the main result and comparison with earlier understanding address it; the closing interpretation explains wider meaning. An additional broad perspective may be appropriate in some articles.
 
