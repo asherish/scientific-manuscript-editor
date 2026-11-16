@@ -8,7 +8,7 @@ Scientific Manuscript Editor helps researchers turn scientific material into a c
 
 Use the skill to:
 
-- **Write before experiments:** Produce a paper-form specification detailed enough to implement the proposed methods and evaluations. Necessary explanations may take more pages than a submission allows.
+- **Write before experiments:** Draft the main paper within the intended venue's page budget while retaining implementation-ready details in permitted appendices or, when space or policy prevents submission, in clearly labeled non-submitted technical notes.
 - **Write after experiments:** Turn completed research and actual evidence into a manuscript suitable for a target venue.
 - **Diagnose without editing:** Identify unclear reasoning, missing explanations, unsupported claims, or problems in the manuscript's structure.
 - **Revise at the right scale:** Improve a passage, reorganize sections, or rewrite an argument when smaller edits cannot solve the problem.
@@ -38,7 +38,7 @@ Four principles guide the work: **Purpose, Coherence, Comprehensibility, and Sci
 
 ## Scientific safeguards
 
-The skill does **not invent** results, data, citations, mechanisms, or research decisions. It distinguishes proposed experiments from completed work and flags consequential missing information for the author. For submissions, it checks current official venue requirements rather than assuming a universal page limit or writing style.
+The skill does **not invent** results, data, citations, mechanisms, or research decisions. It distinguishes proposed experiments from completed work and flags consequential missing information for the author. For drafts and submissions, it checks current official venue page limits and appendix policies rather than assuming universal requirements. If the venue is unknown, any working page budget is explicitly provisional; private technical notes are not described as submitted evidence.
 
 For revisions, the original should remain available for comparison. A bundled [verification script](scripts/verify_protected.py) can help detect changed citations, numbers, labels, and mathematical elements when suitable text or LaTeX sources are available. Its output is not proof of semantic equivalence; scientific review remains necessary.
 
