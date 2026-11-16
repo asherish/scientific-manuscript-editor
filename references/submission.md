@@ -4,7 +4,7 @@ Submission preparation aligns **a completed study, its claims, and the target ve
 
 ## Establish the applicable venue rules
 
-Venue policies determine which presentation choices are mandatory. Identify the exact venue, article type, submission stage, current official instructions, and template before imposing requirements. Check the applicable length, structure, supplementary-material, anonymity, reference, figure, disclosure, and writing-style rules. Keep venue requirements separate from common field conventions or editorial preferences; if a rule cannot be verified, report that uncertainty.
+Venue policies determine which presentation choices are mandatory. Before applying submission rules, the editor **must** identify the exact venue, article type, submission stage, current official instructions, and template. Check the applicable length, structure, supplementary-material, anonymity, reference, figure, disclosure, and writing-style rules. Keep venue requirements separate from common field conventions or editorial preferences; if a rule cannot be verified, report that uncertainty.
 
 ## Reconcile the manuscript with the completed research
 
@@ -14,8 +14,8 @@ Use the relevant section references from `SKILL.md` when substantive exposition 
 
 ## Revise under space constraints without losing meaning
 
-Resolve unsupported claims, broken logic, inconsistent definitions, and missing scientific explanation before shortening passages. Then reduce unnecessary repetition and detail that does not help the intended reader, preserving necessary methods, evidence, and qualifications. If the venue's main-text limit conflicts with information needed for validity or reproducibility, identify the trade-off and use permitted supplements where appropriate.
+Submission revisions **should** resolve unsupported claims, broken logic, inconsistent definitions, and missing scientific explanation before shortening passages. Then reduce unnecessary repetition and detail that does not help the intended reader, preserving necessary methods, evidence, and qualifications. If the venue's main-text limit conflicts with information needed for validity or reproducibility, identify the trade-off and use permitted supplements where appropriate.
 
 ## Verify the assembled submission
 
-Read the assembled manuscript, including figures, tables, captions, equations, references, and required supplementary material. Check consistency of terminology, quantities, sample sizes, labels, claims, and the paper's central takeaway. Use `verification.md` for the original-to-revised scientific comparison when an existing manuscript has been edited, and report unresolved policy or author decisions explicitly.
+The assembled submission **should** be reviewed with its figures, tables, captions, equations, references, and required supplementary material. Check consistency of terminology, quantities, sample sizes, labels, claims, and the paper's central takeaway. Use `verification.md` for the original-to-revised scientific comparison when an existing manuscript has been edited, and report unresolved policy or author decisions explicitly.
