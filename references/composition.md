@@ -10,7 +10,7 @@ Build an explanation that exposes dependencies. If a method depends on an assump
 
 **Trace major claims across the whole manuscript.** For each substantive contribution or benefit asserted in the Abstract or Introduction, identify the supporting reasoning, experiment, figure, theorem, or other evidence, together with its assumptions and limits. Check that Results answer the relevant question and that the Conclusion claims no more than those findings warrant. Short, stable labels for main contributions can help readers follow the same thread across sections; neither impose a number of labels nor repeat words mechanically. For a pre-experiment manuscript, distinguish planned tests from evidence already obtained.
 
-## Optionally outline by reader questions
+## Consider reader-question outlining when a passage is unclear
 
 When a passage's explanatory purpose or content is unclear, **consider** **Question → Answer → Paragraph** as a planning scaffold. Formulate the question an intended reader should be able to answer after reading it; identify an answer grounded in the author's material; gather the supporting definitions, reasoning, evidence, or qualifications; and then write a coherent paragraph or group of paragraphs. The question may remain only in the author's outline. Some reader questions are best answered by several paragraphs or a figure and accompanying prose.
 
@@ -30,7 +30,7 @@ Do not replace substantive headings with generic process labels merely to make a
 
 A paragraph should have a recognizable central idea or role and enough support for the intended reader to understand it. The support may be a definition, mechanism, example, comparison, derivation, caveat, or evidence. Arrange sentences so that the relation among them is recoverable. Split a paragraph if it is performing unrelated moves that readers cannot comfortably integrate; combine fragments if their separation hides one continuous explanation. Purdue OWL's *On Paragraphs* discusses paragraph unity, topic sentences, supporting evidence, and coherence without prescribing a single position for every topic sentence.
 
-A topic or concluding sentence should be used when it clarifies the paragraph's purpose or warranted inference. Paragraph unity does not mean every sentence repeats the same claim; a well-placed qualification or contrast may be essential. Prefer purpose and reader comprehension to a rigid topic–support–conclusion template.
+A topic or concluding sentence should be used when it clarifies the paragraph's purpose or warranted inference. Paragraph unity does not mean every sentence repeats the same claim; a well-placed qualification or contrast may be essential. 
 
 ## Choose a rhetorical pattern for the purpose
 
