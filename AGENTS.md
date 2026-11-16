@@ -4,7 +4,7 @@ These instructions govern maintenance of `SKILL.md` and `references/*.md`, not t
 
 ## Directive language
 
-- **must / must not**: Binding requirements, including scientific accuracy, research integrity, verified venue obligations, and authorized task scope. Use only when the requirement is genuinely non-negotiable in its stated context.
+- **must / must not / do not**: Binding requirements, including scientific accuracy, research integrity, verified venue obligations, and authorized task scope. Use only when the requirement is genuinely non-negotiable in its stated context.
 - **should / should not**: Default editorial strategies. Apply when relevant; a concrete reason based on the research, intended reader, supplied manuscript, user request, or verified venue rules can justify departing from them.
 - **consider**: Evaluate a technique when its **explicit, observable trigger** applies. Adoption is optional; consideration is not.
 - **may**: Permission or a possible alternative. It does not require consideration or adoption.
