@@ -20,7 +20,7 @@ A reader should be able to trace the defined inputs through intermediate quantit
 
 Choose the detail level according to the manuscript's purpose. Before experiments, identify unresolved decisions that would prevent implementation. After experiments, describe the procedure actually used. Equations, diagrams, pseudocode, and examples can carry precise detail, but surrounding prose must still explain how they advance the method.
 
-## Optionally choose a memorable method name
+## Consider a memorable method name when useful
 
 When naming an author-proposed method would aid explanation, reference, or recall, **consider** the naming heuristics in Faloutsos's *MetaPaper*:
 
