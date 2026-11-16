@@ -46,4 +46,4 @@ Review the graphic at its likely display size and as a standalone entry point: W
 - Weissgerber et al. (2015), *Beyond Bar and Line Graphs* — how aggregate plots can conceal very different data distributions: https://doi.org/10.1371/journal.pbio.1002128
 - Whitesides (2004), *Whitesides' Group: Writing a Paper* — organizing and revising the argument around data, tables, and figures: https://doi.org/10.1002/adma.200400767
 
-Faloutsos offers field-oriented writing heuristics; the value of a particular placement depends on the manuscript. Prefer truthful, reviewable graphics over persuasive showmanship.
+Faloutsos offers field-oriented writing heuristics, not mandatory publication rules or evidence that a particular figure placement will always succeed. Prefer truthful, reviewable graphics over persuasive showmanship.
