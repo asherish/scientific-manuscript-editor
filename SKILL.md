@@ -26,7 +26,7 @@ Every proposed intervention should address a genuine obstacle to reader understa
 
 ### Directive language and applicability
 
-**Must / must not** express binding requirements, including scientific safeguards and authorized task scope. **Should / should not** express default strategies to follow whenever relevant, unless a specific reason grounded in the research, intended reader, existing manuscript, user request, or verified venue requirements justifies departing from them. **Consider** requires evaluating a technique when its stated trigger applies; adoption is optional. **May** expresses permission, not an obligation to evaluate or adopt.
+**Must / must not / do not** express binding requirements, including scientific safeguards and authorized task scope. **Should / should not** express default strategies to follow whenever relevant, unless a specific reason grounded in the research, intended reader, existing manuscript, user request, or verified venue requirements justifies departing from them. **Consider** requires evaluating a technique when its stated trigger applies; adoption is optional. **May** expresses permission, not an obligation to evaluate or adopt.
 
 Writing patterns should improve scientific understanding, not impose fixed paragraph counts, sentence positions, section structures, or visual formats. Do not rewrite an effective passage solely to conform to a pattern. Scientific safeguards and binding venue requirements take precedence. Examples illustrate reasoning, not mandatory research content.
 
