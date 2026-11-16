@@ -10,7 +10,7 @@ An opening that could introduce dozens of unrelated papers may be too generic if
 
 ### Use CARS as a planning lens
 
-Swales's **Create a Research Space (CARS)** model distinguishes three communicative moves: establish the research territory, identify a niche or unresolved problem, and occupy that niche by stating what this study addresses or establishes. It helps test whether the Introduction connects established knowledge, the remaining gap, and this paper's contribution. 
+Swales's **Create a Research Space (CARS)** model distinguishes three communicative moves: establish the research territory, identify a niche or unresolved problem, and occupy that niche by stating what this study addresses or establishes. When drafting or substantially restructuring an Introduction, it **should** connect established research territory, the unresolved niche, and the present study's contribution through these moves. 
 
 A useful variant is a progressively narrowing gap: a broad scientific limitation, a more specific unresolved aspect, and the particular question addressed here. The final passage then explains how the paper approaches that question and, when results exist, what it found. **Consider** this narrower progression when the research genuinely has several levels of unresolved questions.
 
