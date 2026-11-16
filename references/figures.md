@@ -26,7 +26,7 @@ In the Introduction, orient the reader to what the figure demonstrates and how i
 
 Make the figure or table identifiable without forcing the reader to search the main text for its subject: describe the compared quantities or entities, meaningful conditions, units, encodings, and interpretation aids at the detail needed for correct reading. The text should develop the implication rather than mechanically repeat every plotted mark.
 
-**Optional two- or three-word bold takeaway tag:** When a concise, evidence-supported result would help a reader scanning the figures, consider starting the caption with a bold 2–3-word label. Examples include **Linear scaling.**, **Improved recall.**, and **Consistent performance gains.** These are illustrative labels, not claims about any particular experiment.
+**Two- or three-word bold takeaway tag:** When a concise, evidence-supported result would help a reader scanning the figures, consider starting the caption with a bold 2–3-word label. Examples include **Linear scaling.**, **Improved recall.**, and **Consistent performance gains.** These are illustrative labels, not claims about any particular experiment.
 
 Follow the label with an informative description. For example: “**Linear scaling.** Runtime versus input size under the stated hardware and workload.” The label must not turn uncertainty or correlation into a stronger claim.
 
