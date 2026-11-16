@@ -1,20 +1,20 @@
 # Notation: keep mathematical objects identifiable
 
-Notation helps readers recognize **which mathematical object a symbol denotes and when two expressions refer to the same thing**. The goal is consistency and intelligibility, not enforcement of a universal font style. A coherent convention already used in the manuscript may be better than an extensive typographic rewrite.
+Notation helps readers recognize **which mathematical object a symbol denotes and when two expressions refer to the same thing**. The goal is consistency and intelligibility. A coherent convention already used in the manuscript may be better than an extensive typographic rewrite.
 
 ## Prioritize semantic coherence
 
 - Distinguish genuinely different objects when their notation would cause confusion. Avoid reusing one symbol for different meanings within an overlapping scope; some reuse across clearly separated contexts may be harmless.
 - Keep a defined object's representation consistent enough to be identifiable (for example, do not alternate between $x$ and $\mathbf{x}$ for one vector without explanation).
-- A notation table can be useful when the formalism has many interdependent symbols, but is not mandatory for a short, simple derivation.
+- When many interdependent symbols are difficult to track, **consider** a notation table.
 - If a symbol is overloaded, identify which equations, definitions, figure labels, prose descriptions, and cross-references belong to **each semantic role**. Rename only the relevant role. Do not run a global string replacement.
 - Treat a consequential renaming as a **Semantic** change under `SKILL.md`. Document the reason and all affected scientific elements, and verify every occurrence semantically. Follow `references/verification.md` for the authoritative `approved_changes.txt` syntax and verification procedure.
 
 ## Choose a convention only when needed
 
-First consider established usage in the target venue, field, and central prior work; then the manuscript's existing consistent practice; use the table below as a tie-breaker when a choice is unresolved. Record any adopted or changed notation convention in the edit change log, not as a typographic-convention statement in the paper. Explain the **meaning** of notation in the manuscript when readers need that explanation; do not insert prose merely to justify font choices. Individual fields differ; for instance, upright vs. italic differentials and symbol choices have no universal one-size-fits-all solution.
+Notation conventions **should** follow established usage in the target venue, field, and central prior work, then the manuscript's existing consistent practice; use the table below as a tie-breaker when a choice remains unresolved. Record any adopted or changed notation convention in the edit change log, not as a typographic-convention statement in the paper. Explain the **meaning** of notation in the manuscript when readers need that explanation; do not insert prose merely to justify font choices. 
 
-| Notation | Typical use (not a requirement) | Examples |
+| Notation | Typical use | Examples |
 |---|---|---|
 | Lowercase Greek | Parameters, hyperparameters, coefficients, some standard functions | $\theta$, $\lambda$, $\alpha$, $\epsilon$, $\sigma(\cdot)$ |
 | Calligraphic | Sets, spaces, collections, loss functions, distributions, complexity classes | $\mathcal{V}$, $\mathcal{D}$, $\mathcal{X}$, $\mathcal{L}$, $\mathcal{O}(\cdot)$ |

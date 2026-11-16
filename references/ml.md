@@ -4,9 +4,9 @@ Machine-learning manuscripts need additional detail to make learned components, 
 
 ## Explain what is learned and how it produces an output
 
-Readers need to distinguish the learned parts of a system from the fixed transformations around them. Identify the architecture and relevant pretrained weights, then explain what each learned component receives and produces. State consequential feature representations, tensor dimensions, and how the final output is assembled.
+Readers need to distinguish the learned parts of a system from the fixed transformations around them. The Method **should** identify the architecture and relevant pretrained weights, then explain what each learned component receives and produces. State consequential feature representations, tensor dimensions, and how the final output is assembled.
 
-Explain which parameters are trained, frozen, or fine-tuned. For example, if an image encoder is frozen and only a classifier is trained, say so before presenting the training objective. Define actual loss terms, weights, constraints, and optimization procedures where relevant; a non-learning method need not have any of them.
+The description **should** explain which parameters are trained, frozen, or fine-tuned. For example, if an image encoder is frozen and only a classifier is trained, say so before presenting the training objective. Define actual loss terms, weights, constraints, and optimization procedures where relevant; a non-learning method need not have any of them.
 
 ## Explain how data are separated and used
 
@@ -14,9 +14,9 @@ Readers must know which observations influenced model development and which were
 
 Check whether overlapping sources in pretraining or model selection contaminate the intended evaluation. Grouped or temporal evaluation is useful when the scientific deployment claim demands it, not as an automatic requirement. For example, selecting a threshold on the test set changes what that test result can establish; disclose such reuse rather than describing the test set as untouched.
 
-Report training settings that materially affect reproducibility. Depending on the system, these may include optimizer, learning-rate schedule, batch size, stopping criterion, augmentation, initialization, regularization, seeds, and repetitions. A compact table makes comparable configurations easier to inspect than a long prose inventory. Do not require a particular split or training recipe when the study uses another design.
+Report training settings that materially affect reproducibility. Depending on the system, these may include optimizer, learning-rate schedule, batch size, stopping criterion, augmentation, initialization, regularization, seeds, and repetitions. When training configurations are numerous or need direct comparison, **consider** a compact table instead of a prose inventory.
 
-Consider a compact **Data–Optimization–Model–Evaluation (DOME)** description when it helps reveal missing details: dataset provenance and partitions; search/selection protocol; trained and frozen components; evaluation populations, metrics, and uncertainty. Explain any restrictions on sharing data or model artifacts and meaningful model or dataset-use limitations.
+When the description of data use, optimization, model, and evaluation is difficult to audit, **consider** a compact **Data–Optimization–Model–Evaluation (DOME)** summary: dataset provenance and partitions; search/selection protocol; trained and frozen components; evaluation populations, metrics, and uncertainty. Explain any restrictions on sharing data or model artifacts and meaningful model or dataset-use limitations.
 
 ## Compare computational costs under stated conditions
 
@@ -26,11 +26,11 @@ When comparing tuned models, disclose how much validation search and training co
 
 ## Choose error analyses that expose important behavior
 
-An aggregate score may conceal which types of cases a system gets wrong. In classification, a confusion matrix or per-class breakdown can reveal these differences if class definitions, denominators, normalization, and single-label or multilabel behavior are clear. For regression, retrieval, segmentation, or generation, select a breakdown suited to that output rather than automatically adding a confusion matrix. This guidance also applies to a non-ML classifier.
+An aggregate score may conceal which types of cases a system gets wrong. In classification, a confusion matrix or per-class breakdown can reveal these differences if class definitions, denominators, normalization, and single-label or multilabel behavior are clear. For regression, retrieval, segmentation, or generation, the breakdown **should** fit the output type. This guidance also applies to a non-ML classifier.
 
 ## Make ablation comparisons interpretable
 
-An ablation should help readers understand which design choice is under examination. Identify the variant, the changed component or training condition, the other conditions held fixed, and the outcome used for comparison. Explain what inference follows from the design and observed results. A particular variant-labeling convention is optional; a performance difference alone does not isolate causation when other conditions changed too.
+An ablation should help readers understand which design choice is under examination. Identify the variant, the changed component or training condition, the other conditions held fixed, and the outcome used for comparison. Explain what inference follows from the design and observed results. A performance difference alone does not isolate causation when other conditions changed too.
 
 ## Sources and applicability
 

@@ -4,9 +4,9 @@ Verification answers two different questions: **Which protected elements changed
 
 ## Preserve the original and explain substantive edits
 
-Keep the original available alongside the revision. A reviewer cannot reliably evaluate a rewrite if the source of comparison has been lost.
+The original **must** remain available alongside the revision. A reviewer cannot reliably evaluate a rewrite if the source of comparison has been lost.
 
-Record substantive edits by finding ID or location. For each, explain what changed, show before/after excerpts where helpful, and state the expected reader benefit, change type(s), and any separate risk to the meaning. Document `Semantic` and `Structural` changes individually; routine `Local` expression edits can be summarized. One edit may have several change types.
+Substantive edits **should** be recorded by finding ID or location. For each, explain what changed, show before/after excerpts where helpful, and state the expected reader benefit, change type(s), and any separate risk to the meaning. Document `Semantic` and `Structural` changes individually; routine `Local` expression edits can be summarized. One edit may have several change types.
 
 ## Declare intentional protected-element changes for the script
 
@@ -34,11 +34,11 @@ Use the report to locate additions or removals involving numbers, units, citatio
 
 ## Check scientific meaning independently
 
-Inspect **every `Semantic` and `Structural` edit** against the source. Follow the relationships among claims, evidence, definitions, assumptions, conditions, results, and qualifications; look for changed causal direction or omitted information, not just different wording. Spot-check `Local` edits. For a wholesale rewrite, trace substantive meaning across the entire new organization rather than expecting paragraphs to match one-to-one.
+**Every `Semantic` and `Structural` edit must** be inspected against the source. Follow the relationships among claims, evidence, definitions, assumptions, conditions, results, and qualifications; look for changed causal direction or omitted information, not just different wording. Spot-check `Local` edits. For a wholesale rewrite, trace substantive meaning across the entire new organization rather than expecting paragraphs to match one-to-one.
 
-If a mathematical symbol changes, first identify the object it represents and all its uses in equations, definitions, figures, prose, and cross-references. Rename that semantic role rather than globally replacing matching characters. Consult `notation.md` when the change involves symbol identity; optional typography conventions are not a reason to rewrite otherwise understandable mathematics.
+If a mathematical symbol changes, first identify the object it represents and all its uses in equations, definitions, figures, prose, and cross-references. Rename that semantic role rather than globally replacing matching characters. Consult `notation.md` when the change involves symbol identity.
 
 ## Report limitations and unresolved issues
 
-Report intended protected changes, unexpected discrepancies, unresolved author decisions, and any material that could not be compared. State what was checked and what remains uncertain; an automated check cannot establish semantic equivalence by itself.
+The verification report **must** identify intended protected changes, unexpected discrepancies, unresolved author decisions, and any material that could not be compared. State what was checked and what remains uncertain; an automated check cannot establish semantic equivalence by itself.
 

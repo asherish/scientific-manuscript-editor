@@ -1,22 +1,22 @@
 # Diagnose obstacles to scientific understanding
 
-Diagnosis identifies **where an intended reader would struggle to understand the manuscript and why**. It evaluates the actual explanation, not compliance with a preferred phrase or template. Use the task boundary and intervention choices in `SKILL.md`.
+Diagnosis identifies **where an intended reader would struggle to understand the manuscript and why**.  Use the task boundary and intervention choices in `SKILL.md`.
 
 ## Trace the reader's path
 
 **Inspect from a reader's knowledge state, not the author's memory.** Read the relevant text, equations, figures, tables, and captions together. At each consequential transition, identify what the intended reader already knows, which new concept or claim follows, and whether a missing definition, assumption, or step blocks comprehension. Consider independent entry points—the Abstract, headings, figure captions, and Conclusion—and trace major claims to their actual evidence and qualifications rather than treating repetition as support.
 
-For a draft with structural concerns, optionally make a compact map of claims, definitions, section roles, and evidence. A **reverse outline** records in one sentence what each existing paragraph actually accomplishes; inspect it for missing dependencies, changes of subject, duplicated moves, misplaced explanations, and contributions promised without supporting evidence. Use it only when it helps diagnose a real difficulty, not as an obligatory artifact or a reason to rewrite material that already works.
+When a draft shows structural problems, **consider** a compact map of claims, definitions, section roles, and evidence. A **reverse outline** records in one sentence what each existing paragraph actually accomplishes; inspect it for missing dependencies, changes of subject, duplicated moves, misplaced explanations, and contributions promised without supporting evidence. Use it to locate a concrete difficulty before proposing structural changes.
 
-When appropriate, ask a knowledgeable reader unfamiliar with the project to identify the main claim and evidence from a brief reading or from figures alone. Use misunderstandings to locate gaps rather than treating feedback as authority to change scientific meaning.
+When feedback from a knowledgeable reader unfamiliar with the project could test a suspected comprehension gap, **consider** asking them to identify the main claim and evidence from a brief reading or from figures alone. Use misunderstandings to locate gaps rather than treating feedback as authority to change scientific meaning.
 
 For each suspected obstacle, ask what the passage should enable the intended reader to understand, what knowledge is already available, where understanding breaks down, and which change would help. A likely difficulty is a prediction about readers, not observed user-study evidence; explain it as such.
 
-When a paragraph seems directionless, **optionally reconstruct its implicit reader question and the answer it offers**. Check that the supporting explanations or evidence actually establish that answer, and that the conclusion does not go beyond them. A missing literal question, a topic sentence that is not first, or an absent concluding sentence is not a defect by itself. For complex sections, a question-to-paragraph map can reveal redundant answers, missing links, or unanswered reader needs. This is a diagnostic scaffold, not another mandatory output artifact.
+When a paragraph seems directionless, **consider** reconstructing its implicit reader question and the answer it offers. Check that the supporting explanations or evidence actually establish that answer, and that the conclusion does not go beyond them.  For complex sections, a question-to-paragraph map can reveal redundant answers, missing links, or unanswered reader needs. This is a diagnostic scaffold, not another mandatory output artifact.
 
-## Optional diagnostic lenses
+## Diagnose using lenses matched to the observed problem
 
-Use the lens or lenses that explain a material problem. **Do not produce findings merely to fill every category.**
+Use the lenses that match material problems; report only findings grounded in the manuscript.
 
 | Lens | Possible difficulty |
 |---|---|
@@ -61,7 +61,7 @@ The following are **diagnostic prompts, not banned expressions or automatic subs
 
 An optional, accurate two- or three-word bold takeaway in a **caption** is not the same as an unnecessary mini-heading in prose. Do not flag or require it solely because of typography; check evidential support and venue style.
 
-Known-to-new information flow can diagnose abrupt transitions: if a sentence introduces several unfamiliar entities before giving readers a usable anchor, move established context forward or add a bridge. But **do not impose a fixed given-before-new word order**; see `references/composition.md` for examples and exceptions when that file is also selected by `SKILL.md`.
+Known-to-new information flow can diagnose abrupt transitions: if a sentence introduces several unfamiliar entities before giving readers a usable anchor, move established context forward or add a bridge. See `references/composition.md` for examples and context-dependent ordering when that file is also selected by `SKILL.md`.
 
 ## Report actionable findings
 For claim–evidence concerns, name the exact claim, where its support is found (or absent), the condition that bounds it, and the reader's likely mistaken inference. For quantitative work, consider whether the metric actually measures the claimed target, whether evaluation data are independent, and whether comparisons and uncertainty justify the stated conclusion. Use the applicable `problem.md`, `experiments.md`, `results.md`, or `ml.md` guidance rather than applying an ML audit to every prose-only task.

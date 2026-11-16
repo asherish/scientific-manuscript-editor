@@ -1,18 +1,18 @@
 # Scientific figure and table design
 
-Figures and tables should help the intended reader understand or evaluate a scientific idea, comparison, or body of evidence. Design them from a **reader question and an evidence-supported message**, not from a required figure count or a preference for decoration. Use these principles when a visual would materially reduce understanding effort; concise prose or an equation may be more effective.
+Figures and tables should help the intended reader understand or evaluate a scientific idea, comparison, or body of evidence. Figures and tables **should** be designed from a **reader question and an evidence-supported message**. Use these principles when a visual would materially reduce understanding effort; concise prose or an equation may be more effective.
 
 ## Decide what the visual must communicate
 
 State the question the reader should answer from the visual and what the available data or definitions actually establish. Identify whether its main role is to **orient** (a task example, conceptual relationship, or method overview), **define** (a data or notation table), **compare** (methods or conditions), or **substantiate** (a finding with measured evidence). A visual can serve more than one role, but its message and labels must not imply unsupported conclusions.
 
-When planning a manuscript, an outline of potential figures and tables can expose missing evidence before prose is drafted. This is an **optional figure-first workflow**, not a rule to draw figures before every section. In pre-experiment writing, describe intended axes, variables, comparisons, and conditions without inventing measured values; use a grounded `[FIGURE: ...]` placeholder if necessary.
+When figure planning would help expose missing evidence before prose is drafted, **consider** a figure-first outline of potential figures and tables. In pre-experiment writing, describe intended axes, variables, comparisons, and conditions without inventing measured values; use a grounded `[FIGURE: ...]` placeholder if necessary.
 
 ## Choose a representation that exposes the relationship
 
 Use a diagram for meaningful entities, dependencies, mechanisms, or data flow; a table for precise repeated comparisons or definitions; and a plot for patterns in empirical values. A pipeline diagram should communicate actual inputs, transformations, intermediate quantities, and outputs, not merely section names connected by arrows.
 
-Choose plot encodings according to data type, sample size, uncertainty, and the intended comparison. Check that scales, baselines, axis limits, units, denominators, grouping, aggregation, and any normalization do not distort interpretation. When a mean would conceal important spread or unusual observations, show suitable distributional information (for example, individual points for manageable samples, a box plot, or a distribution plot). Do not impose one plot type on every experiment.
+Choose plot encodings according to data type, sample size, uncertainty, and the intended comparison. Check that scales, baselines, axis limits, units, denominators, grouping, aggregation, and any normalization do not distort interpretation. When a mean would conceal important spread or unusual observations, show suitable distributional information (for example, individual points for manageable samples, a box plot, or a distribution plot). 
 
 Use legible text, meaningful labels, and distinguishable visual encodings. Do not rely on color alone to express a critical distinction. Avoid needless visual decoration and verify that the plot remains understandable at the target venue's display or print size.
 
@@ -26,15 +26,15 @@ In the Introduction, orient the reader to what the figure demonstrates and how i
 
 Make the figure or table identifiable without forcing the reader to search the main text for its subject: describe the compared quantities or entities, meaningful conditions, units, encodings, and interpretation aids at the detail needed for correct reading. The text should develop the implication rather than mechanically repeat every plotted mark.
 
-**Optional two- or three-word bold takeaway tag:** When a concise, evidence-supported result would help a reader scanning the figures, consider starting the caption with a bold 2–3-word label. Examples include **Linear scaling.**, **Improved recall.**, and **Consistent performance gains.** These are illustrative labels, not claims about any particular experiment.
+**Two- or three-word bold takeaway tag:** When a concise, evidence-supported result would help a reader scanning the figures, consider starting the caption with a bold 2–3-word label. Examples include **Linear scaling.**, **Improved recall.**, and **Consistent performance gains.** These are illustrative labels, not claims about any particular experiment.
 
 Follow the label with an informative description. For example: “**Linear scaling.** Runtime versus input size under the stated hardware and workload.” The label must not turn uncertainty or correlation into a stronger claim.
 
-This is an **optional** communication aid, not an element to impose on every caption. Omit it when a descriptive title is clearer, the message is not a supported result, the label adds clutter, or venue conventions disallow it.
+Omit a takeaway tag when a descriptive title is clearer, the message is not a supported result, the label adds clutter, or venue conventions disallow it.
 
 ## Integrate figures with the argument and verify them
 
-Introduce each visual near the relevant question or claim, refer to it accurately, and explain the consequential observation or conceptual relationship it contributes. Align the prose, caption, legend, symbols, data values, and units. Distinguish a demonstration or cherry-picked example from an estimate of population-wide performance. Explain relevant uncertainty, experimental conditions, and caveats.
+Each visual **should** be introduced near the relevant question or claim, referenced accurately, and accompanied by an explanation of its consequential observation or conceptual relationship. Align the prose, caption, legend, symbols, data values, and units. Distinguish a demonstration or cherry-picked example from an estimate of population-wide performance. Explain relevant uncertainty, experimental conditions, and caveats.
 
 Review the graphic at its likely display size and as a standalone entry point: What will the reader think it shows? Does that takeaway match the evidence and the text? Can its axes, comparisons, and uncertainty be interpreted? If a reader's likely inference is stronger than warranted, repair the encoding, caption, or prose. Respect applicable venue instructions.
 
