@@ -1,8 +1,14 @@
 # Pre-experiment manuscripts: implementation readiness
 
-An implementation-ready pre-experiment manuscript has two readers in mind: someone assessing the scientific idea and someone who may implement its proposed procedures. Both should understand the definitions, assumptions, methods, and evaluation choices without guessing at consequential details. Necessary explanations take priority over a submission page limit; the manuscript should remain a coherent scientific explanation.
+An implementation-ready pre-experiment manuscript serves two readers: someone assessing the scientific idea and someone implementing its proposed procedures. The **main-paper draft should target the intended venue's verified page budget** while remaining understandable and scientifically assessable. Preserve additional technical detail in an appendix or supplement permitted by the venue and, when that cannot accommodate everything, in separate **non-submitted technical notes**. Together, these materials should make definitions, assumptions, methods, and evaluation choices sufficiently explicit for implementation without turning the main paper into a software manual.
 
 A comprehensive implementation audit is appropriate when the author asks for one, but not automatically when the request is only to improve the readability of an early manuscript.
+
+## Allocate scientific explanation and implementation detail
+
+At drafting time, **identify the intended venue's main-paper page limit, what counts toward it, and whether an appendix or supplement is allowed and subject to its own limit**; consult `submission.md`. The main paper **should** retain the problem, essential definitions and assumptions, central method, evaluation rationale, and information needed to judge the claims. Supporting material **should** hold extended derivations, step-by-step procedures, parameter-selection details, additional evaluation conditions, and other implementation information that would make the main paper exceed its budget.
+
+When the venue restricts or prohibits appended material, the editor **should preserve further useful details in a clearly marked non-submitted technical appendix or implementation notes** for the author. These notes are not part of the submission and **must not** be cited as if reviewers can inspect them. If information essential to scientific appraisal will not fit in the actual submission, flag the trade-off rather than silently moving it to private notes. Where no venue is specified, use an explicitly provisional or author-specified main-paper budget, not an invented venue rule.
 
 ## Distinguish commitments from open decisions
 
