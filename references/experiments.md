@@ -56,4 +56,4 @@ Keep the protocol's status clear: before experiments, describe intended conditio
 - ACL, *Responsible Research Checklist* — limits, data licensing, privacy, and experiment documentation where relevant: https://ethics.aclweb.org/roles/researchers/
 - Wagenmakers et al. (2012), *An Agenda for Purely Confirmatory Research* — differentiating planned tests from exploratory analyses: https://doi.org/10.1177/1745691612463078
 
-These sources span ML, NLP, biological ML, LLM benchmarks, and psychology. Transfer their principles only where they fit the actual study.
+These sources span ML, NLP, biological ML, LLM benchmarks, and psychology. Adapt their transferable design and reporting principles to the actual study; do not impose a venue's checklist, a biology-specific protocol, or psychology preregistration practices as universal requirements.
