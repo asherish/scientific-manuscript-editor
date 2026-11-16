@@ -24,13 +24,13 @@ Scientific reasoning and its presentation must work together. Apply these four p
 
 Every proposed intervention should address a genuine obstacle to reader understanding, rather than enforce stylistic conformity.
 
-## 2. Directive language and applicability
+### Directive language and applicability
 
 **Must / must not** express binding requirements, including scientific safeguards and authorized task scope. **Should / should not** express default strategies to follow whenever relevant, unless a specific reason grounded in the research, intended reader, existing manuscript, user request, or verified venue requirements justifies departing from them. **Consider** requires evaluating a technique when its stated trigger applies; adoption is optional. **May** expresses permission, not an obligation to evaluate or adopt.
 
 Writing patterns should improve scientific understanding, not impose fixed paragraph counts, sentence positions, section structures, or visual formats. Do not rewrite an effective passage solely to conform to a pattern. Scientific safeguards and binding venue requirements take precedence. Examples illustrate reasoning, not mandatory research content.
 
-## 3. Context
+## 2. Context
 
 First establish **the task, reader, research, and manuscript's purpose** from the user's request and supplied research material. Determine whether the user wants new writing, diagnosis only, revision, or independent verification; honor the requested scope. Identify research questions, proposed or completed contributions, claims, methods, assumptions, and available or planned evidence. Label questions or contributions `[INFERRED]` when inferred rather than author-supplied; an inference does not authorize removing scientific content. Do not load bundled reference files merely to complete this initial context-gathering step.
 
@@ -41,9 +41,9 @@ Distinguish two primary manuscript purposes:
 
 The phase and the requested action are **independent dimensions**: either phase can involve new writing, diagnosis, local revision, restructuring, extensive rewriting, or verification. For partly completed research, identify which obligations apply. If a missing detail would substantially change the output, ask the author; otherwise proceed with bounded, explicit assumptions. Never invent venue policies.
 
-## 4. Workflow
+## 3. Workflow
 
-Follow the task-relevant parts of **Context → Design / Diagnose → Write / Revise → Review / Verify → Deliver**. This is an iterative process, not five mandatory steps for every request. Apply the common construction principles in Section 4 throughout; select conditional guidance through the routing rules in Section 7.
+Follow the task-relevant parts of **Context → Design / Diagnose → Write / Revise → Review / Verify → Deliver**. This is an iterative process, not five mandatory steps for every request. Apply the common construction principles in Section 4 throughout; select conditional guidance through the routing rules in Section 6.
 
 ### Design / Diagnose
 
@@ -67,7 +67,7 @@ Perform two distinct checks. **Reader-oriented review:** reconstruct the reader 
 
 Provide the requested manuscript, diagnosis, revision, or verification report. Explain consequential edits, uncertainties, limits of verification, and unresolved author decisions as applicable. An unchanged passage can be the right outcome.
 
-## 5. Logical construction across scales
+## 4. Logical construction across scales
 
 At every scale, identify **what the reader should understand, how the material answers that need, and how it connects to its neighbors**. The question may be about research, a definition, a method, an argument, or an interpretation; it need not be written as a literal question in the manuscript.
 
@@ -82,7 +82,7 @@ Use **Question → Answer** across paper, section, and paragraph scales to expos
 
 **Integrate equations, figures, and tables with the surrounding prose.** Equations express relationships precisely; nearby sentences establish their purpose, define unfamiliar symbols or assumptions, and interpret the meaning. Figures and tables present structure, comparisons, or evidence; captions identify what is shown, while paragraphs discuss consequential observations or implications. Neither duplicate them line by line nor leave readers to infer their role. Check text, mathematics, visuals, and captions for consistency. They complement prose rather than forming a separate writing hierarchy.
 
-## 6. Scientific safeguards
+## 5. Scientific safeguards
 
 **Do not fabricate** data, results, numbers, citations, sources, experimental conditions, mechanisms, definitions of author-created concepts, or design decisions. Treat claims, datasets, assumptions, results, scope qualifiers, numbers and units, citations, mathematical expressions and symbol meanings, and labels and references as protected scientific content. Any substantive change requires a reason and semantic verification, even if it improves the prose.
 
@@ -92,7 +92,7 @@ Classify interventions by the **type of change**, not its severity: **Local** ch
 
 For revisions with suitable original and revised sources, follow `references/verification.md` for the comparison procedure, the `approved_changes.txt` specification, and the bundled verifier. If complete verification is impossible, report the limit rather than claiming success.
 
-## 7. Reference selection and deliverables
+## 6. Reference selection and deliverables
 
 The definitions, directive semantics, and workflow above apply throughout. **Reference files are not automatically in context.** Read each file whose condition is met; never assume that loading one reference also loads another. These references are organized by writing principle, manuscript section, research method, and task. Apply the guidance according to its directive strength and specific applicability conditions.
 
@@ -116,6 +116,6 @@ The definitions, directive semantics, and workflow above apply throughout. **Ref
 | Establishing notation conventions, resolving symbol ambiguity, or changing symbol identities | `references/notation.md` |
 | Substantive scientific revisions, protected-element checks, or comparing original and revised versions | `references/verification.md` |
 
-When designing or revising a complete manuscript, read relevant section references as that work reaches each section, rather than loading every reference by default. The **Question → Answer → Paragraph** scaffold in Section 5 remains available for planning and review. Pre-experiment status alone does **not** authorize a full research-design audit when the user requested only readability feedback; writing an implementation-ready specification does require sufficient implementation detail.
+When designing or revising a complete manuscript, read relevant section references as that work reaches each section, rather than loading every reference by default. The **Question → Answer → Paragraph** scaffold in Section 4 remains available for planning and review. Pre-experiment status alone does **not** authorize a full research-design audit when the user requested only readability feedback; writing an implementation-ready specification does require sufficient implementation detail.
 
 Report in the **user's language**, while quoting manuscript excerpts in their source language. For a diagnosis, prioritize actionable findings with locations and expected reader benefits. For a revision, provide the revised copy, major decisions, relevant scientific checks, and unresolved questions. For new writing, provide the manuscript and material assumptions or gaps. Keep the report proportionate to the request.
