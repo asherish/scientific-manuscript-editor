@@ -43,4 +43,4 @@ An ablation should help readers understand which design choice is under examinat
 - Sokolova and Lapalme (2009), *A Systematic Analysis of Performance Measures for Classification Tasks* — confusion matrices and classification metrics: https://doi.org/10.1016/j.ipm.2009.03.002
 - Nityasya et al. (2023), *On "Scientific Debt" in NLP: A Case for More Rigour in Language Model Pre-Training Research* — ablations and principled comparisons under matched conditions (language-model-specific): https://aclanthology.org/2023.acl-long.477/
 
-Classification-specific and language-model-specific analyses **should** match the output and design; verified venue requirements govern submission.
+Apply classification-specific and language-model-specific analyses only where the output and design warrant them; do not treat conference checklist policies as universal writing requirements.
