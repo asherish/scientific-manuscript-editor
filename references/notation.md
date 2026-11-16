@@ -14,7 +14,7 @@ Notation helps readers recognize **which mathematical object a symbol denotes an
 
 Notation conventions **should** follow established usage in the target venue, field, and central prior work, then the manuscript's existing consistent practice; use the table below as a tie-breaker when a choice remains unresolved. Record any adopted or changed notation convention in the edit change log, not as a typographic-convention statement in the paper. Explain the **meaning** of notation in the manuscript when readers need that explanation; do not insert prose merely to justify font choices. 
 
-| Notation | Typical use (not a requirement) | Examples |
+| Notation | Typical use | Examples |
 |---|---|---|
 | Lowercase Greek | Parameters, hyperparameters, coefficients, some standard functions | $\theta$, $\lambda$, $\alpha$, $\epsilon$, $\sigma(\cdot)$ |
 | Calligraphic | Sets, spaces, collections, loss functions, distributions, complexity classes | $\mathcal{V}$, $\mathcal{D}$, $\mathcal{X}$, $\mathcal{L}$, $\mathcal{O}(\cdot)$ |
