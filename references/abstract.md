@@ -4,9 +4,9 @@ An Abstract may be the only part of a paper that a reader sees. It therefore nee
 
 ## Plan the information before writing sentences
 
-Select a small set of questions the Abstract should resolve: What scientific context is necessary? What is the specific unresolved problem or objective? What approach was taken or is proposed? What main evidence or findings are available? What conclusion is warranted, and why does it matter? The answer to each question supplies content; it does **not** mandate one sentence per question.
+Select a small set of questions the Abstract should resolve: What scientific context is necessary? What is the specific unresolved problem or objective? What approach was taken or is proposed? What main evidence or findings are available? What conclusion is warranted, and why does it matter? The answers should determine the content and emphasis.
 
-A useful progression moves from a relevant shared premise through the research problem to the approach and findings, then to a bounded interpretation. It can be viewed as background → gap/question → approach → results → significance. Use the information order that best supports intended readers, without forcing a complete paper outline into miniature form.
+An Abstract **should** progress from a relevant shared premise through the research problem to the approach and findings, then to a bounded interpretation when those elements are available. It can be viewed as background → gap/question → approach → results → significance. The information order should serve the intended readers.
 
 Avoid giving an unfamiliar result before the reader has enough context to know why it matters. Conversely, do not consume most of the Abstract on generic background. The familiar-to-new heuristic and the paper's central contribution should determine the information order.
 
@@ -20,13 +20,13 @@ For **post-experiment submission preparation**, state the actual key finding and
 
 At summary level, emphasize the problem, what the approach enables or the study establishes, and the main evidence **before** procedural minutiae that are unnecessary for evaluating the contribution. A supported performance number can be more informative than a vague superlative; do not invent a number or compress away uncertainty and scope.
 
-If the author uses a distinctive name for a proposed method, keep it consistent with the Introduction, Method, and figures, and explain its meaning rather than expecting the name itself to establish a benefit. Naming is optional; see `method.md` when that reference applies.
+If the author uses a distinctive name for a proposed method, keep it consistent with the Introduction, Method, and figures, and explain its meaning rather than expecting the name itself to establish a benefit. See `method.md` when that reference applies.
 
 ## Use the Nature summary structure as an optional model
 
 Nature's published guide provides one example of how to sequence information: a broad introduction and focused background prepare readers for the problem; the main result and comparison with earlier understanding address it; the closing interpretation explains wider meaning. An additional broad perspective may be appropriate in some articles.
 
-Use this model to identify what each part of an Abstract contributes, not to copy a fixed sentence count or formulaic phrase such as “Here we show.” The guide describes Nature's summary-paragraph conventions; other venues may require different structures. Confirm the current instructions for the actual destination.
+When the target venue or audience makes the Nature model useful, **consider** its information sequence to clarify what each part of the Abstract contributes. Other venues may require different structures. Confirm the current instructions for the actual destination.
 
 ## Verify the reader's takeaway
 
