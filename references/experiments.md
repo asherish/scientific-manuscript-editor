@@ -4,6 +4,23 @@ An Experimental Setup explains **what evidence a study can produce, why its comp
 
 **Map the main claims to answerable experimental questions.** For each consequential contribution, identify the experimental question, the evidence needed to answer it, the conditions under which the answer would hold, and where the result will be reported. When several contributions need to be tracked across the manuscript, **consider** concise, stable labels linking the Introduction, experiments, Results, and Conclusion. A pre-experiment manuscript describes planned evidence rather than findings.
 
+## Organize the setup around questions and design choices
+
+The opening **should** orient readers to the main evaluation objectives and the role of each experiment. When experiments share data, partitions, metrics, or conditions, explain the shared setup together and identify experiment-specific differences where they are used. Group subsections around related questions or experiments, making the corresponding Results easy to locate.
+
+Each paragraph or paragraph group **should** establish the purpose of a design choice or procedure before details become difficult to interpret. State consequential choices and their rationale early, then develop the procedure and conditions needed to assess or reproduce them. Use context already established rather than repeating a motivation readers can readily recover.
+
+When a setup passage reads as an unexplained inventory or its relation to the research question is unclear, **consider** one of these explanatory progressions:
+
+| Explanatory role | Possible progression |
+|---|---|
+| Data selection | Required evaluation properties → selected data and reasons for their fit → scope represented |
+| Data construction or preprocessing | Purpose → operations and conditions → resulting analysis cases |
+| Comparative experiment | Question → comparators and controlled conditions → evaluation procedure → scope of the inference the design permits |
+| Evaluation measure | Property to assess → metric and calculation → interpretation and consequential omissions |
+
+The final element of an experiment's explanation identifies what the design can distinguish; it does not announce an unobserved result. Describe data construction and execution steps in the order needed to trace how observations are processed or transformed. Distinguish that operational sequence from the author's history of trial and error. Keep one continuous explanation together; use a table or schematic when prose would only enumerate settings. Apply the general paragraph guidance in `composition.md`.
+
 ## Explain why the data can answer the question
 
 Data are useful only insofar as they represent the phenomenon the study aims to examine. Identify each source and explain its fit with the target population, task, measurement, or setting. If new data were needed, explain which requirements existing resources could not meet. If established data were selected, state the consequential versions and selection criteria rather than relying on the dataset name alone.
@@ -46,6 +63,9 @@ Keep the protocol's status clear: before experiments, describe intended conditio
 
 ## Sources and applicability
 
+- Nature Scitable, *Scientific Papers*, “Materials and methods” — early paragraph orientation, explanations of procedural choices, and alternatives to prose inventories: https://www.nature.com/scitable/topicpage/scientific-papers-13815490/
+- MIT EECS Communication Lab, *Paper: Methods (CS)* — methodological rationale, replication detail, grouping related content, and correspondence with Results: https://mitcommlab.mit.edu/eecs/commkit/journal-article-methods-cs/
+
 - Gebru et al. (2021), *Datasheets for Datasets* — data motivation, composition, collection, and documentation: https://doi.org/10.1145/3458723
 - Pineau et al. (2021), *Improving Reproducibility in Machine Learning Research* — reproducible ML experiments and reporting: https://www.jmlr.org/papers/v22/20-303.html
 - Ulmer et al. (2022), *Experimental Standards for Deep Learning in Natural Language Processing Research* — comparison and experimental-analysis practices in deep-learning NLP: https://aclanthology.org/2022.findings-emnlp.196/
@@ -57,3 +77,5 @@ Keep the protocol's status clear: before experiments, describe intended conditio
 - Wagenmakers et al. (2012), *An Agenda for Purely Confirmatory Research* — differentiating planned tests from exploratory analyses: https://doi.org/10.1177/1745691612463078
 
 These sources span ML, NLP, biological ML, LLM benchmarks, and psychology. Adapt their transferable design and reporting principles to the actual study; do not impose a venue's checklist, a biology-specific protocol, or psychology preregistration practices as universal requirements.
+
+The Nature and MIT resources provide writing guidance for Methods. Apply their organizational principles here to experimental setup, keeping the proposed approach itself in the Method where appropriate. The role-specific progressions above are editorial applications of that guidance, not exact sequences prescribed or experimentally validated by those sources.
