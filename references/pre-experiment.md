@@ -18,7 +18,7 @@ If definitions or evaluation objectives are unsettled, resolve or flag these ups
 
 ## Audit whether the plan can be implemented and tested
 
-Implementation readiness requires more than a plausible conceptual overview. Use the relevant section references selected in `SKILL.md`: `problem.md` for the task and assumptions, `method.md` for the algorithm, and `experiments.md` for data and evaluation design. Apply `ml.md` only for its relevant method-specific or classification guidance. Ask whether an implementer could reproduce the consequential transformations, quantities, parameters, comparison conditions, and selection rules.
+Implementation readiness requires more than a plausible conceptual overview. Use the relevant section references selected in `SKILL.md`: `problem.md` for the task and assumptions, `method.md` for the algorithm, and `experiments.md` for data and evaluation design. For learned components, use the conditional guidance in `method.md` and `experiments.md`; use `results.md` for planned output-specific error analyses. Ask whether an implementer could reproduce the consequential transformations, quantities, parameters, comparison conditions, and selection rules.
 
 For example, a method may define a threshold mathematically but never explain how its value is chosen. That omission can prevent implementation and can also change the meaning of the evaluation. Flag the missing selection rule instead of choosing a convenient value.
 

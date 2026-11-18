@@ -34,7 +34,7 @@ Distinguish the observation itself from a proposed mechanism or causal account. 
 
 ## Bound generalization and acknowledge limitations
 
-Limitations should tell readers **which conclusions remain justified under which conditions**. Consider relevant restrictions involving populations, tasks, data quality, model assumptions, uncertainty, or study design, and explain how each affects interpretation. For example, a measured association may support predictive usefulness without establishing that changing one factor would cause the outcome to change. Name the actual limitation and its consequence instead of listing generic weaknesses.
+Limitations should tell readers **which conclusions remain justified under which conditions**. Consider relevant restrictions involving populations, tasks, data quality, model assumptions, uncertainty, or study design, and explain how each affects interpretation. For example, a measured association may support predictive usefulness without establishing that changing one factor would cause the outcome to change. Name the actual limitation and its consequence instead of listing generic weaknesses. For learned models, explain meaningful model or dataset-use limitations when they affect interpretation or application; distinguish these from artifact-access restrictions reported with the experimental procedures.
 
 Future work should arise from a real open question, a limitation that can plausibly be addressed, or a testable next step. A realistic practitioner recommendation should similarly state the conditions under which it is expected to hold. Paragraphs should follow the substantive logic of interpretation, limitations, and realistic next steps.
 

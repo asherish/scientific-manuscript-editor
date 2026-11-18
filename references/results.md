@@ -20,7 +20,9 @@ Report uncertainty, variability, repeatability, or statistical comparisons at th
 
 When an aggregate measure hides consequential behavior, **consider** qualitative examples that reveal it. Introduce why a success, counterexample, or failure was selected, then point to the feature that supports the interpretation. Avoid captions or paragraphs that merely announce an image and expect readers to infer the result for themselves. Selected examples do not establish population-wide prevalence without a defensible sampling procedure. When patterns of failure suggest a mechanism, state a **testable explanation** and what additional stratification, control, or measurement could distinguish it from alternatives. A vivid example alone does not demonstrate its cause.
 
-When error frequency or severity matters, the denominator and distinction between total observed failures and illustrative cases **must** be reported. Group failures into meaningful, reproducibly defined categories when the data permit. Select a breakdown appropriate to the task; classification-specific examples such as a confusion matrix appear in `ml.md`.
+When error frequency or severity matters, the denominator and distinction between total observed failures and illustrative cases **must** be reported. Group failures into meaningful, reproducibly defined categories when the data permit. The breakdown **should** fit the output type, including classification, regression, retrieval, segmentation, or generation; this applies to learned and non-learning systems alike.
+
+For classification, a confusion matrix or per-class breakdown can expose behavior hidden by an aggregate score. Make class definitions, denominators, normalization, and single-label or multilabel behavior clear so readers can interpret the errors.
 
 ## Bound what controlled and exploratory findings establish
 
@@ -37,6 +39,8 @@ Results should explain **what the evidence establishes**. Broader implications, 
 - Weissgerber et al. (2015), *Beyond Bar and Line Graphs* — the limitations of plots that conceal empirical distributions: https://doi.org/10.1371/journal.pbio.1002128
 - Mensh and Kording (2017), *Ten Simple Rules for Structuring Papers*, Rule 7 — a logical progression of results supported by evidence and figures: https://doi.org/10.1371/journal.pcbi.1005619
 - Ulmer et al. (2022), *Experimental Standards for Deep Learning in Natural Language Processing Research* — experimental analysis and fair comparison in NLP: https://aclanthology.org/2022.findings-emnlp.196/
+- Sokolova and Lapalme (2009), *A Systematic Analysis of Performance Measures for Classification Tasks* — confusion matrices and classification metrics: https://doi.org/10.1016/j.ipm.2009.03.002
+- Nityasya et al. (2023), *On "Scientific Debt" in NLP: A Case for More Rigour in Language Model Pre-Training Research* — ablation interpretation under matched conditions (language-model-specific): https://aclanthology.org/2023.acl-long.477/
 - van Miltenburg et al. (2021), *Underreporting of Errors in NLG Output, and What to Do About It* — identifying, categorizing, and reporting error behavior beyond aggregate metrics: https://aclanthology.org/2021.inlg-1.14/
 
-Error-category examples in the last source are specific to natural-language generation. Generalize the need for systematic failure analysis, not those particular categories or a required number of examples.
+Apply classification-specific guidance only to classification outputs, including non-ML classifiers. The language-model-specific source supports scrutiny of controlled comparisons, not a universal language-model protocol. Error-category examples in the last source are specific to natural-language generation. Generalize the need for systematic failure analysis, not those particular categories or a required number of examples.

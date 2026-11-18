@@ -64,7 +64,7 @@ An optional, accurate two- or three-word bold takeaway in a **caption** is not t
 Known-to-new information flow can diagnose abrupt transitions: if a sentence introduces several unfamiliar entities before giving readers a usable anchor, move established context forward or add a bridge. See `references/composition.md` for examples and context-dependent ordering when that file is also selected by `SKILL.md`.
 
 ## Report actionable findings
-For claim–evidence concerns, name the exact claim, where its support is found (or absent), the condition that bounds it, and the reader's likely mistaken inference. For quantitative work, consider whether the metric actually measures the claimed target, whether evaluation data are independent, and whether comparisons and uncertainty justify the stated conclusion. Use the applicable `problem.md`, `experiments.md`, `results.md`, or `ml.md` guidance rather than applying an ML audit to every prose-only task.
+For claim–evidence concerns, name the exact claim, where its support is found (or absent), the condition that bounds it, and the reader's likely mistaken inference. For quantitative work, consider whether the metric actually measures the claimed target, whether evaluation data are independent, and whether comparisons and uncertainty justify the stated conclusion. Use the applicable `problem.md`, `method.md`, `experiments.md`, or `results.md` guidance, applying training- or model-specific checks only where relevant rather than imposing an ML audit on every prose-only task.
 
 An actionable diagnosis tells the author **where the reader is likely to struggle and what would improve the passage**. Prioritize consequential findings and report:
 

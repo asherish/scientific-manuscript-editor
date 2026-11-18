@@ -33,17 +33,19 @@ Where relevant, document intended use, licensing or access restrictions, privacy
 
 ## Make data allocation and leakage controls visible
 
-When observations are divided for fitting, selection, calibration, or final evaluation, explain **how the partitions were made and what each was used for**. Give meaningful sizes or allocation rules and describe steps that prevent leakage or dependent reuse. For example, a time-dependent evaluation may need a chronological split so later observations do not influence an earlier forecast.  ML-specific data-use decisions are covered in `ml.md`.
+When observations are divided for fitting, selection, calibration, or final evaluation, explain **how the partitions were made and what each was used for**. Give meaningful sizes or allocation rules and describe steps that prevent leakage or dependent reuse. For example, a time-dependent evaluation may need a chronological split so later observations do not influence an earlier forecast. State each partition's construction unit and consequential grouping, temporal, spatial, or class constraints.
 
 Audit **independence at the unit required by the scientific claim**: records can be disjoint yet share a person, location, encounter, recording session, time period, or near-duplicate content. Consider whether feature engineering, preprocessing, normalization, hyperparameter selection, or pretraining exposed test information. If such dependence cannot be ruled out, qualify what the test can establish rather than calling it independent.
+
+For learned or tuned systems, identify which observations influenced development and which were reserved for final evaluation. Explain where preprocessing parameters, hyperparameters, checkpoints, and decision thresholds were fitted or selected. Check whether overlapping pretraining sources or model-selection data contaminate the intended evaluation. Grouped or temporal evaluation is warranted by the scientific generalization or deployment claim, not automatically by the use of ML. If a test set was reused to select a threshold or model, disclose that reuse and its effect on what the evaluation can establish.
 
 ## Choose comparisons that test specific claims
 
 Each baseline or reference condition should serve a scientific purpose. Explain what claim a comparison tests, why the alternatives are relevant, and whether they have comparable inputs, assumptions, tuning, or computational budgets. If important conditions differ, make that limitation clear before interpreting the results.
 
-For trained or tuned models, consider whether search effort, validation access, data availability, and compute budgets are comparable. A single best test-set score may conflate model quality with hyperparameter-search effort; report meaningful development or validation information where available and relevant. Do not manufacture a controlled comparison when the study lacks one.
+For trained or tuned models, assess whether search effort, validation access, data availability, and compute budgets are comparable. Disclose how much validation search and training compute each approach received where known; identify unavailable information and its effect on the comparison. A single best test-set score may conflate model quality with hyperparameter-search effort and does not establish superiority at comparable search budgets. Do not manufacture a controlled comparison when the study lacks one.
 
-An ablation or controlled variation asks whether changing a specified factor alters an outcome under comparable conditions. State the factor, what remains fixed, and the inference the contrast is designed to support. When a controlled variation can answer a meaningful question, **consider** including it.
+An ablation or controlled variation asks whether changing a specified factor alters an outcome under comparable conditions. Identify the evaluated variant, changed component or training condition, other conditions held fixed, and outcome used for comparison, then state the inference the contrast is designed to support. When a controlled variation can answer a meaningful question, **consider** including it.
 
 ## Explain what the metrics measure and what they miss
 
@@ -57,7 +59,13 @@ Define what error bars or intervals represent (for example, independent samples,
 
 ## Document reproducible procedures and analysis status
 
-Reproducibility depends on knowing which procedures and settings could change the outcome. Describe consequential algorithms, parameter-selection procedures, software, instruments, randomization, and computing resources. If the paper makes efficiency claims, report processing or training time, inference cost, or other meaningful measures with a defined workload and measurement environment; ML-specific complexity measures are covered in `ml.md`.
+Reproducibility depends on knowing which procedures and settings could change the outcome. Describe consequential algorithms, parameter-selection procedures, software, instruments, randomization, and computing resources. If the paper makes efficiency claims, report processing or training time, inference cost, or other meaningful measures with a defined workload and measurement environment.
+
+For model-efficiency comparisons, report relevant parameter counts, operations such as FLOPs, memory, training cost, or inference time together with input size, batch size, hardware, precision, and measurement procedure. Parameter count, theoretical operations, measured speed, and energy use measure different properties; do not treat them as interchangeable or require a measure irrelevant to the claim.
+
+When the study trains or fine-tunes a model, report settings that materially affect reproducibility. Depending on the system, these include optimizer settings, learning-rate schedule, batch size, stopping criterion, augmentation, initialization, regularization, seeds, and repetitions. Explain their selection rather than silently supplying defaults. When configurations are numerous or need direct comparison, **consider** a compact table instead of a prose inventory. A study using a fixed pretrained model without training should document the weights and inference conditions actually used, not describe unperformed training.
+
+When the description of data use, optimization, model, and evaluation is difficult to audit, **consider** a compact **Data–Optimization–Model–Evaluation (DOME)** summary: dataset provenance and partitions; search/selection protocol; trained and frozen components; evaluation populations, metrics, and uncertainty. Describe only components and procedures actually present. Explain restrictions on sharing data or model artifacts; discuss consequential model or dataset-use limitations in `discussion.md`.
 
 Keep the protocol's status clear: before experiments, describe intended conditions and unresolved decisions; after experiments, document the conditions actually used and material deviations. The Results section reports what occurred under the protocol and identifies any analyses that were added later. Distinguish analyses planned to test an existing question from exploratory follow-ups suggested by observed data; do not narrate post-hoc discoveries as if they were predetermined confirmation.
 
@@ -74,7 +82,10 @@ Keep the protocol's status clear: before experiments, describe intended conditio
 - Dodge et al. (2019), *Show Your Work* — comparable results relative to hyperparameter-search and compute budgets: https://aclanthology.org/D19-1224/
 - Bean et al. (2025), *Measuring What Matters* — construct validity of tasks and metrics: https://proceedings.nips.cc/paper_files/paper/2025/hash/1967e0fc3aa6cbbace562f5cb8e3954e-Abstract-Datasets_and_Benchmarks_Track.html
 - ACL, *Responsible Research Checklist* — limits, data licensing, privacy, and experiment documentation where relevant: https://ethics.aclweb.org/roles/researchers/
+- Nityasya et al. (2023), *On "Scientific Debt" in NLP: A Case for More Rigour in Language Model Pre-Training Research* — ablations and comparisons under matched conditions (language-model-specific): https://aclanthology.org/2023.acl-long.477/
 - Wagenmakers et al. (2012), *An Agenda for Purely Confirmatory Research* — differentiating planned tests from exploratory analyses: https://doi.org/10.1177/1745691612463078
+
+Apply training-specific guidance only when the study performs training or fine-tuning, and model-efficiency guidance when relevant to the claim. DOME originates in supervised biological ML, and Nityasya et al. addresses language-model pretraining; transfer their applicable reporting and comparison principles without imposing domain-specific protocols.
 
 These sources span ML, NLP, biological ML, LLM benchmarks, and psychology. Adapt their transferable design and reporting principles to the actual study; do not impose a venue's checklist, a biology-specific protocol, or psychology preregistration practices as universal requirements.
 

@@ -106,17 +106,18 @@ The definitions, directive semantics, and workflow above apply throughout. **Ref
 | Writing, diagnosing, or substantially revising an Abstract or summary paragraph | `references/abstract.md` |
 | Writing, diagnosing, or substantially revising Related Work or a literature-positioning passage | `references/related-work.md` |
 | Defining or auditing a research task, formal problem, assumptions, inputs, or outputs | `references/problem.md` |
-| Writing, diagnosing, or substantially revising a Method, Model, or Approach section; **or proposing or evaluating a name for a method** | `references/method.md` |
-| Planning, writing, or auditing an empirical study, experimental setup, metrics, data handling, or evaluation protocol | `references/experiments.md` |
-| Writing, diagnosing, or interpreting an empirical Results or Findings section | `references/results.md` |
+| Writing, diagnosing, or substantially revising a Method, Model, or Approach section; describing architecture, pretrained weights, learned/frozen components, or training objectives; **or proposing or evaluating a name for a method** | `references/method.md` |
+| Planning, writing, or auditing an empirical study, experimental setup, metrics, data handling, or evaluation protocol; training settings, model selection, search budgets, or computational-efficiency evaluation | `references/experiments.md` |
+| Writing, diagnosing, or interpreting an empirical Results or Findings section, or planning or analyzing output-specific errors such as a confusion matrix | `references/results.md` |
 | Writing, diagnosing, or substantially revising a Discussion or interpretation-of-findings passage | `references/discussion.md` |
 | Writing, diagnosing, or substantially revising a Conclusion or closing summary | `references/conclusion.md` |
-| A learning model, ML training, ML-specific experiment, or task-specific classification evaluation | `references/ml.md` (in addition to the relevant section reference) |
 | Systematic diagnosis, reverse outlining, or a structured reader-difficulty report | `references/diagnosis.md` |
 | Writing or substantially revising an implementation-ready pre-experiment manuscript, or explicitly auditing design completeness | `references/pre-experiment.md` |
 | Planning draft page budgets and supporting material for a target venue, checking its submission requirements, or refining a completed manuscript | `references/submission.md` |
 | Establishing notation conventions, resolving symbol ambiguity, or changing symbol identities | `references/notation.md` |
 | Substantive scientific revisions, protected-element checks, or comparing original and revised versions | `references/verification.md` |
+
+ML guidance is integrated into the section references: `references/method.md` covers learned components and objectives; `references/experiments.md` covers training, data use, model selection, and compute; `references/results.md` covers output-specific error analysis. Apply each conditional instruction to the components and procedures actually present; using a pretrained model does not imply performing training.
 
 When designing or revising a complete manuscript, read relevant section references as that work reaches each section, rather than loading every reference by default. The **Question → Answer → Paragraph** scaffold in Section 4 remains available for planning and review. Pre-experiment status alone does **not** authorize a full research-design audit when the user requested only readability feedback; writing an implementation-ready specification does require sufficient implementation detail.
 
